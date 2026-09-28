@@ -1,5 +1,30 @@
 [
   {
+    "id": "2026-09-zcode-dual-festival-ride",
+    "date": "2026-09-25",
+    "platform_slug": "zhipu",
+    "platform_name": "智谱AI（BigModel）",
+    "title": "智谱 ZCode 双节畅享：GLM-5.3-Flash 夜间畅蹬延续至 10/7，9/25–10/7 取消高峰期、全天按非高峰倍率消耗",
+    "type": "limited_time",
+    "reward": "GLM Coding Plan 双节畅享（至 10/7）：①夜间畅蹬延续——每晚 23:00 至次日 09:00，ZCode 中免费无限畅蹬 GLM-5.3-Flash，套餐支持的其他 Agent 中可用额度 ×2；②取消高峰期——9/25 至 10/7，套餐全天按非高峰期倍率消耗额度，白天编码同样省额度",
+    "eligibility": "已订阅 GLM Coding Plan 的用户；夜间畅蹬进入时段自动生效、无需手动开启；非高峰倍率 9/25 起全天自动生效",
+    "deadline": "2026-10-07（限时活动，以官方为准）",
+    "howto": [
+      "打开并登录 ZCode 编程客户端（需订阅 GLM Coding Plan）",
+      "每晚 23:00–次日 09:00 调用 GLM-5.3-Flash，ZCode 内额度消耗为 0（畅蹬）",
+      "在套餐支持的其他 Agent 中使用，可用额度自动 ×2",
+      "9/25–10/7 期间任意时段使用，套餐额度均按非高峰期倍率消耗，无需等待夜间时段"
+    ],
+    "summary": "智谱 GLM Coding Plan 上线双节畅享活动（9/25–10/7）：一是「GLM-5.3-Flash 夜间畅蹬」延续至 10/7，每晚 23:00–次日 09:00 在 ZCode 中免费无限畅蹬，套餐支持的其他 Agent 中额度翻倍；二是双节期间取消高峰期，9/25 至 10/7 套餐全天按非高峰期倍率消耗。注意：活动面向 GLM Coding Plan 订阅用户，额度仅限 ZCode 客户端内 / 套餐支持的 Agent 使用，不是开放平台 API Token；活动以官方公告为准。",
+    "pitfalls": [
+      "该活动仅对 GLM Coding Plan 订阅用户生效，且需套餐内仍有可用额度：若套餐额度已用尽，夜间畅蹬也不会免单。它不是无门槛免费福利，也不是开放平台 API Token，请勿误判。",
+      "「取消高峰期」仅指消耗倍率优惠（9/25–10/7 全天按非高峰期倍率），并非额度不限量；10/8 起恢复高峰期倍率计费。"
+    ],
+    "source": "https://bigmodel.cn",
+    "status": "active",
+    "pinHeadline": false
+  },
+  {
     "id": "2026-09-opencode-longcat-25-free",
     "date": "2026-09-28",
     "platform_slug": "opencode",
