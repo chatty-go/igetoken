@@ -1,5 +1,29 @@
 [
   {
+    "id": "2026-09-zcode-trust-build-100m",
+    "date": "2026-09-28",
+    "platform_slug": "zhipu",
+    "platform_name": "智谱AI（BigModel）",
+    "title": "智谱 ZCode Trust Build：1 亿 GLM-5.3-Flash Token 限时发放（9/28 10:30 起生效，9/29 00:00 到期）",
+    "type": "limited_time",
+    "reward": "1 亿（100M）GLM-5.3-Flash Token（ZCode 客户端内使用），2026-09-28 10:30 起生效",
+    "eligibility": "登录 ZCode 编程客户端领取「ZCode Trust Build」卡片；以产品内浮动卡片形式发放，先到先得",
+    "deadline": "2026-09-29 00:00:00（代币有效期至该时点；9/28 10:30 起生效 → 剩余可用窗口约 13 小时）",
+    "howto": [
+      "立即打开并登录 ZCode 编程客户端",
+      "领取「ZCode Trust Build」卡片（1 亿 GLM-5.3-Flash Token）",
+      "Token 已于 9/28 10:30 生效，当晚 24:00 前在客户端内用完"
+    ],
+    "summary": "ZCode 以「Trust Build」名义发放新一轮 1 亿 GLM-5.3-Flash Token：9/28 10:30 起生效、有效期至 9/29 00:00:00 —— 与「惊喜发放」系列（9/1、9/2 两轮）同系短窗口，本轮可用时间约 13.5 小时（至当日午夜），领了请尽快使用。注意：额度仅限 ZCode 编程客户端内使用，不是开放平台 API Token；以产品内浮动卡片形式发放，无独立外链，source 溯源至智谱官网，以客户端公告为准。",
+    "pitfalls": [
+      "窗口短：9/28 10:30 起生效、9/29 00:00:00 即失效，可用约 13 小时 —— 务必当天用完，请勿留到第二天。",
+      "该额度仅限 ZCode 编程客户端内使用，不是开放平台 API Token，也无法导出到第三方工具，请勿误判。"
+    ],
+    "source": "https://bigmodel.cn",
+    "status": "active",
+    "pinHeadline": false
+  },
+  {
     "id": "2026-09-zcode-dual-festival-ride",
     "date": "2026-09-25",
     "platform_slug": "zhipu",
