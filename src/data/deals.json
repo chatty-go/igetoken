@@ -4,25 +4,27 @@
     "date": "2026-09-28",
     "platform_slug": "zhipu",
     "platform_name": "智谱AI（BigModel）",
-    "title": "智谱 ZCode Trust Build：1 亿 GLM-5.3-Flash Token 限时发放（9/28 10:30 起生效，9/29 00:00 到期）",
+    "title": "智谱 ZCode Trust Build：9/28–10/7 每天可领 1 亿 GLM-5.3-Flash Token（当天用完、不延续，每日限量 10 万份）",
     "type": "limited_time",
-    "reward": "1 亿（100M）GLM-5.3-Flash Token（ZCode 客户端内使用），2026-09-28 10:30 起生效",
-    "eligibility": "登录 ZCode 编程客户端领取「ZCode Trust Build」卡片；以产品内浮动卡片形式发放，先到先得",
-    "deadline": "2026-09-29 00:00:00（代币有效期至该时点；9/28 10:30 起生效 → 剩余可用窗口约 13 小时）",
+    "reward": "每天 1 亿（100M）GLM-5.3-Flash Token（ZCode 客户端内使用），9/28–10/7 每日可领：当天必须用完、不延续到次日；每日限量 10 万份，先到先得",
+    "eligibility": "登录 ZCode 编程客户端领取当日「ZCode Trust Build」卡片；每日限量 10 万份，先到先得",
+    "deadline": "每日 24:00（当日代币到点失效，不延续）；活动整体至 2026-10-07",
     "howto": [
-      "立即打开并登录 ZCode 编程客户端",
-      "领取「ZCode Trust Build」卡片（1 亿 GLM-5.3-Flash Token）",
-      "Token 已于 9/28 10:30 生效，当晚 24:00 前在客户端内用完"
+      "每天打开并登录 ZCode 编程客户端",
+      "领取当日「ZCode Trust Build」卡片（1 亿 GLM-5.3-Flash Token）",
+      "当天 24:00 前在客户端内用完，未用完部分隔日作废"
     ],
-    "summary": "ZCode 以「Trust Build」名义发放新一轮 1 亿 GLM-5.3-Flash Token：9/28 10:30 起生效、有效期至 9/29 00:00:00 —— 与「惊喜发放」系列（9/1、9/2 两轮）同系短窗口，本轮可用时间约 13.5 小时（至当日午夜），领了请尽快使用。注意：额度仅限 ZCode 编程客户端内使用，不是开放平台 API Token；以产品内浮动卡片形式发放，无独立外链，source 溯源至智谱官网，以客户端公告为准。",
+    "summary": "ZCode「Trust Build」活动升级：9/28–10/7 每天发放 1 亿 GLM-5.3-Flash Token，每天可领一次、当天必须用完、不延续到次日，每日限量 10 万份、先到先得。可与同时段的「双节畅享」（9/25–10/7 取消高峰期、全天按非高峰倍率消耗 + 夜间畅蹬）叠加使用。注意：额度仅限 ZCode 编程客户端内使用，不是开放平台 API Token；以产品内浮动卡片形式发放，无独立外链，source 溯源至智谱官网，以客户端公告为准。",
     "pitfalls": [
-      "窗口短：9/28 10:30 起生效、9/29 00:00:00 即失效，可用约 13 小时 —— 务必当天用完，请勿留到第二天。",
+      "当日有效：每天领的 1 亿 Token 到当天 24:00 失效、不延续 —— 不要攒着，当天用不完等于白领。",
+      "每日限量 10 万份、先到先得（官方口径，以客户端实际为准）：领晚了可能当天就没份，建议尽早领取。",
       "该额度仅限 ZCode 编程客户端内使用，不是开放平台 API Token，也无法导出到第三方工具，请勿误判。"
     ],
     "source": "https://bigmodel.cn",
     "status": "active",
-    "pinHeadline": false
+    "pinHeadline": true
   },
+
   {
     "id": "2026-09-zcode-dual-festival-ride",
     "date": "2026-09-25",
@@ -75,7 +77,7 @@
     ],
     "source": "https://opencode.ai/docs/zh-cn/zen/",
     "status": "active",
-    "pinHeadline": true
+    "pinHeadline": false
   },
   {
     "id": "2026-09-xiaomi-mimo-platform-launch",
