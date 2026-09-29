@@ -1,12 +1,30 @@
 [
   {
     "id": "notice-2026-0929-dual-festival-agenda",
-    "text": "双节档期多条大额活动并行：ZCode 每日 1 亿 Token、GLM 夜间畅蹬、LongCat 2.5 限时免费，到期日集中在 10/7–10/10，错过等下一轮",
+    "text": "双节档期多条活动并行，10/7–10/10 陆续到期，错过等下一轮",
     "category": "notice",
     "source": "https://igetoken.com/deals/",
     "linkText": "快讯页",
     "publishedAt": "2026-09-29",
     "expireAt": "2026-10-07"
+  },
+  {
+    "id": "notice-2026-0929-zcode-trust-build-daily",
+    "text": "ZCode Trust Build：每日 1 亿 GLM-5.3-Flash 开领（仅客户端内）",
+    "category": "new",
+    "source": "https://igetoken.com/deals/2026-09-zcode-trust-build-100m/",
+    "linkText": "去领取",
+    "publishedAt": "2026-09-29",
+    "expireAt": "2026-10-07"
+  },
+  {
+    "id": "notice-2026-0929-longcat-25-free",
+    "text": "OpenCode × LongCat 2.5 限时免费：1M 上下文 · 多模态",
+    "category": "new",
+    "source": "https://igetoken.com/deals/2026-09-opencode-longcat-25-free/",
+    "linkText": "去看看",
+    "publishedAt": "2026-09-29",
+    "expireAt": "2026-10-10"
   },
   {
     "id": "notice-2026-0911-perks-new",
