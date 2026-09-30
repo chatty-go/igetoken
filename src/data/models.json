@@ -274,13 +274,14 @@
     "register_url": "https://opencode.ai/auth",
     "docs_url": "https://opencode.ai/docs/zh-cn/zen/",
     "tagline": "开源编程代理官方模型网关，多个编程模型限时免费",
-    "highlight": "Zen 免费模型限时开放，当前 9 款（longcat-2.5-preview-free、mimo-v2.6-flash-free、jev-1.13-free、big-pickle、mimo-v2.5-free、ling-3.0-flash-fin-free 等），名单按周轮换，专为编程场景优化",
+    "highlight": "Zen 免费模型限时开放，当前 10 款（space-bunny-free、longcat-2.5-preview-free、mimo-v2.6-flash-free、jev-1.13-free、big-pickle、mimo-v2.5-free、ling-3.0-flash-fin-free 等），名单按周轮换，专为编程场景优化",
     "tags": ["免费层", "编程场景", "免费模型轮换"],
     "offers": [
-            { "model": "★ 当前免费阵容（9 款，限时轮换）", "quota": "longcat-2.5-preview-free / mimo-v2.6-flash-free / jev-1.13-free / big-pickle / mimo-v2.5-free / ling-3.0-flash-fin-free / nemotron-3-ultra-free / nemotron-3.5-lightning-free / muse-spark-1.3-contributor-free：输入 / 输出 / 缓存全 $0，每日 20 万~100 万 Token 限额（视模型而定）；名单按周轮换，调用前先看 /zen/v1/models 实时列表", "type": "limited" },
+            { "model": "★ 当前免费阵容（10 款，限时轮换）", "quota": "space-bunny-free / longcat-2.5-preview-free / mimo-v2.6-flash-free / jev-1.13-free / big-pickle / mimo-v2.5-free / ling-3.0-flash-fin-free / nemotron-3-ultra-free / nemotron-3.5-lightning-free / muse-spark-1.3-contributor-free：输入 / 输出 / 缓存全 $0，每日 20 万~100 万 Token 限额（视模型而定）；名单按周轮换，调用前先看 /zen/v1/models 实时列表", "type": "limited" },
       { "model": "LongCat 2.5 Preview Free（美团 9/25 上线，限时免费约 2 周）", "quota": "输入 / 输出 / 缓存全免费；1M 上下文、文+图多模态、ZDR 零留存（提供方不留存数据、不用于训练）；官方称使用该模型不消耗 Go 订阅额度；官方 9/26 宣布免费窗口持续 2 周（约 10/10 前后到期），以官方为准", "type": "daily" },
       { "model": "MiMo-V2.6-Flash Free（小米 9/22 开源新模型，限时免费）", "quota": "输入 / 输出 / 缓存全免费；官方称免费期用于收集反馈、改进模型，免费期数据可能被用于改进模型", "type": "daily" },
       { "model": "Muse Spark 1.3 Contributor Free（Meta 新模型，限时免费）", "quota": "输入/输出/缓存全免费；以授权 Meta 用你的提示词与补全训练下一代模型为条件，限 Meta 地理政策允许地区", "type": "daily" },
+      { "model": "Space Bunny Free（匿名 stealth 模型，限时免费延长至 10/5）", "quota": "输入/输出/缓存全免费；1M 上下文、原生多模态、OpenCode 网关侧宣称 ZDR 零留存（提供方不留存、不训练）；官方称不消耗 Go 订阅额度；免费活动延长 5 天至 2026-10-05，近期还有一次模型升级，以 /zen/v1/models 实时列表为准", "type": "daily" },
       { "model": "其他限时免费模型（如 MiMo-V2.5 Free、Nemotron 3 Ultra / 3.5 Lightning Free）", "quota": "限时免费，每日 20 万~100 万 Token 限额（视模型而定）", "type": "daily" },
       { "model": "邀请奖励", "quota": "邀请好友订阅 Go 套餐，双方各得 $5 使用额度", "type": "referral" }
     ],
@@ -1585,8 +1586,8 @@
     "website": "https://qoder.com.cn",
     "register_url": "https://qoder.com.cn",
     "docs_url": "https://docs.qoder.com/zh/cli/model",
-    "tagline": "阿里 AI 编程平台，Qwen3.8-Flash 限时免费（9/18–9/30），官方提供 REST API 与 Agent SDK",
-    "highlight": "Qwen3.8-Flash 活动期调用不计费（计费系数 0.1× 降至 0.0×，至 9/30 23:59:59，多模态 / 工具调用 / 长文档）；叠加「每日登录领 100 通用 Credits」（30 天有效、可累积）；官方 PAT（pt- 前缀）+ REST API / Agent SDK 可站外程序化调用",
+    "tagline": "阿里 AI 编程平台，Qwen3.8-Flash 限时免费（已延期，10/1 起继续免费、结束时间待官方公告），官方提供 REST API 与 Agent SDK",
+    "highlight": "Qwen3.8-Flash 活动期调用不计费（计费系数 0.1× 降至 0.0×，已延长、10/1 起继续免费、结束时间待官方公告，多模态 / 工具调用 / 长文档）；叠加「每日登录领 100 通用 Credits」（30 天有效、可累积）；官方 PAT（pt- 前缀）+ REST API / Agent SDK 可站外程序化调用",
     "tags": [
       "限时免费",
       "编程场景",
@@ -1596,7 +1597,7 @@
     "offers": [
       {
         "model": "Qwen3.8-Flash（限时免费）",
-        "quota": "2026-09-18 10:00 – 09-30 23:59:59 期间计费系数由 0.1× 降至 0.0×，每次调用不消耗 Credits，套餐内额度可留给其他模型",
+        "quota": "2026-09-18 10:00 起（原定 09-30 23:59:59 结束，现已延长、10/1 起继续免费）计费系数由 0.1× 降至 0.0×，每次调用不消耗 Credits，套餐内额度可留给其他模型",
         "type": "limited"
       },
       {
@@ -1613,7 +1614,7 @@
     ],
     "pitfalls": [
       "⚠️ 非 OpenAI 兼容：Qoder 的对外接口是自有 REST API（api.qoder.com.cn/api/v1/）与官方 Agent SDK，不能像 OpenAI 那样直接替换 base_url；社区第三方 provider 走的是逆向签名方式，不属官方支持路径，本站不推荐采用",
-      "⚠️ Qwen3.8-Flash 免费为限时活动（至 2026-09-30 23:59:59），结束后按届时公示系数计费，其他模型或档位仍按各自规则执行",
+      "⚠️ Qwen3.8-Flash 免费已延期（原定 2026-09-30 23:59:59，现 10/1 起继续免费，结束时间官方提前公告），结束前选中即用、不扣 Credits，其他模型或档位仍按各自规则执行",
       "⚠️ 每日 100 Credits 属 Add-on 资源包额度，限同一账号在 Qoder 系产品内使用，并非可随意分发的标准 API Token；每轮限领一次、错过不补",
       "⚠️ 个人 PAT 可勾选的 scope 以控制台创建页实际展示为准（官方文档示例中的 models.read / chat.completions 出自企业 Service Account 场景），接入前先确认权限是否覆盖推理调用",
       "⚠️ 「自定义模型（Custom）」是 Qoder 去接入第三方模型的反向能力，与本站收录的免费额度无关，勿混淆"

@@ -1,5 +1,33 @@
 [
   {
+    "id": "2026-09-opencode-space-bunny-free",
+    "date": "2026-09-30",
+    "platform_slug": "opencode",
+    "platform_name": "OpenCode",
+    "title": "OpenCode 匿名模型 Space Bunny（太空兔）限时免费延长至 10/5：1M 上下文 · 多模态 · ZDR",
+    "type": "limited_time",
+    "reward": "匿名 stealth 模型 Space Bunny（模型 ID stealth/space-bunny-alpha，社区称「太空兔」）已在 OpenCode Zen 免费档开放：输入 / 输出 / 缓存全 $0，1M 上下文、原生多模态（文本+图像）、OpenCode 网关侧宣称 ZDR 零留存（提供方不留存、不用于训练），官方称不消耗 Go 订阅额度；在 /models 里选中「Space Bunny Free」即免费用，无需 API Key / 注册绑卡",
+    "eligibility": "注册 OpenCode 账号即可用免费档，无需订阅 Go；也可在 OpenRouter 用 API Key 调用 stealth/space-bunny-alpha（须遵守 OpenRouter Stealth Model Terms）",
+    "deadline": "2026-10-05（免费活动延长 5 天，原约 9/30 结束；近期 OpenCode 还会做一次模型升级，以 /zen/v1/models 实时列表为准）",
+    "howto": [
+      "打开 opencode.ai/auth 注册账号并登录",
+      "在 OpenCode 里 /connect 选 OpenCode，进 /models 选中「Space Bunny Free」（模型 ID space-bunny-free）",
+      "直接对话 / 编程即可，无需 API Key、无需绑卡；Go 订阅为可选付费项，用免费模型不需要它",
+      "想站外调用可走 OpenRouter：API Key + model=stealth/space-bunny-alpha（需遵守 OpenRouter Stealth Model Terms）"
+    ],
+    "summary": "Space Bunny（stealth/space-bunny-alpha，社区昵称「太空兔」）是 2026 年 9 月下旬上线 OpenCode 与 OpenRouter 的匿名（stealth）大模型，由第三方托管、不公开参数规模 / 架构 / 许可。它具备 1M token 上下文、原生多模态（文本+图像）与工具调用，可调节推理强度（low–max，默认 medium），社区实测推理速度约 120 tokens/s、编程与 agent 工作流达 flash 级别；OpenCode 网关侧宣称 ZDR 零留存（提供方不留存、不用于训练）。OpenCode 内选中即免费用（输入/输出/缓存全 $0，不消耗 Go 额度），OpenRouter 侧定价同为 0。用户资讯补充：上周末 OpenCode 已对 Space Bunny 做了一次模型优化，近期还会有一次升级，免费活动延长 5 天至 2026-10-05。注意其匿名属性 —— 厂商身份未公开、社区猜测归属（Gemini/Qwen/GLM/MiMo 等）均未获证实，且曾一度被 OpenRouter 暂下架后恢复，不宜作为长期稳定源或生产主力。",
+    "pitfalls": [
+      "匿名 stealth 模型：开发方与权重均未公开，能力/归属不可预设；曾于 9 月下旬一度被 OpenRouter 暂下架后恢复 —— 别当长期稳定资源，调用前先看 /zen/v1/models 实时列表",
+      "免费活动延长至 2026-10-05（原约 9/30 结束，延长 5 天），近期还有一次模型升级；结束后按届时定价，结束前尽快用完",
+      "OpenCode 网关侧宣称 ZDR 零留存，但模型本身匿名、归属未披露，仍不建议上传未公开源码、生产凭据、涉密代码等敏感数据",
+      "免费档无固定速率限制、配额随负载浮动，高峰可能响应变慢；且名单按周轮换，随时可能下线",
+      "OpenRouter 侧调用须遵守 OpenRouter Stealth Model Terms；社区实测提示与补全可能被提供方保留（不用于训练），与 OpenCode 网关 ZDR 口径不完全一致，跨渠道注意数据政策差异"
+    ],
+    "source": "https://opencode.ai/docs/zh-cn/zen/",
+    "status": "active",
+    "pinHeadline": false
+  },
+  {
     "id": "2026-09-zcode-trust-build-100m",
     "date": "2026-09-28",
     "platform_slug": "zhipu",
@@ -202,11 +230,11 @@
     "date": "2026-09-18",
     "platform_slug": "qoder",
     "platform_name": "Qoder（阿里 AI 编程平台）",
-    "title": "Qoder 上线 Qwen3.8-Flash 限时免费：调用不扣 Credits（计费系数 0.1× → 0.0×，至 9/30）",
+    "title": "Qoder Qwen3.8-Flash 限时免费已延期：调用不扣 Credits（计费系数 0.1× → 0.0×，10/1 起继续免费、结束时间待官方公告）",
     "type": "new_model",
-    "reward": "活动期间（2026-09-18 10:00 – 09-30 23:59:59）调用 Qwen3.8-Flash 的计费系数由 0.1× 降至 0.0×，每次调用不消耗 Credits，套餐内额度可留给其他模型；模型支持代码编写、长文档处理、图像理解与工具调用。同期叠加「每日登录领 100 通用 Credits」（每笔 30 天有效、可累积）",
+    "reward": "活动期间（2026-09-18 10:00 起，原定 09-30 23:59:59 结束、现已延长，10/1 起继续免费，结束时间官方提前公告）调用 Qwen3.8-Flash 的计费系数由 0.1× 降至 0.0×，每次调用不消耗 Credits，套餐内额度可留给其他模型；模型支持代码编写、长文档处理、图像理解与工具调用。同期叠加「每日登录领 100 通用 Credits」（每笔 30 天有效、可累积）",
     "eligibility": "Qoder CN 与国际版的个人用户全覆盖 —— 免费账号、体验版、各级订阅与会员卡用户、Credits 余额为 0 的账号均可参与；无需领取免费资格，也无需先领每日 Credits，在模型选择器里选中 Qwen3.8-Flash 即可",
-    "deadline": "2026-09-30",
+    "deadline": "结束时间官方未定，将提前在活动页公告（原定 9 月 30 日 23:59:59 已延长，10/1 起继续免费）",
     "howto": [
       "打开 qoder.com.cn（国际版 qoder.com）注册并登录，下载桌面端 Qoder",
       "在模型选择器中选中 Qwen3.8-Flash —— 无需其他操作，活动期内调用不扣 Credits",
@@ -215,7 +243,7 @@
     ],
     "summary": "阿里把 Qwen3.8-Flash 推到 Qoder 上做限时零折：9 月 18 日 10:00 起至 9 月 30 日 23:59:59，模型计费系数从 0.1× 直接降到 0.0×，每次调用都不扣 Credits —— 且按官方口径，套餐内额度与每日奖励可以省下来给别的模型用。门槛几乎为零：免费账号、体验版、付费订阅、会员卡用户乃至 Credits 余额为 0 的账号都能用，不需要领取资格，选中模型即生效；国际版与 Qoder CN 个人用户同步覆盖。同期还有一份可滚动的福利：每天登录领 100 通用 Credits，每笔 30 天有效、未用完可累积，且官方明确「暂时没有结束时间」。Qwen3.8-Flash 本体是千问系列的多模态模型，兼顾响应速度与成本，支持代码编写、长文档处理、图像理解与工具调用，适合日常开发与资料整理。与纯产品内额度不同的是，Qoder 提供官方 PAT（pt- 前缀）与 REST API / Agent SDK，可在站外程序化调用 —— 但接入方式为 Qoder 自有接口，并非 OpenAI 兼容端点。",
     "pitfalls": [
-      "⚠️ 限时窗口明确：Qwen3.8-Flash 免费至 2026-09-30 23:59:59（北京时间），结束后按届时公示系数计费，别把它当长期免费额度",
+      "⚠️ 免费期已延长：原定 2026-09-30 23:59:59 结束，现 10/1 起继续免费，结束时间官方将提前在活动页公告（docs.qoder.com/zh/events/flashoffer），结束前选中即用、不扣 Credits",
       "⚠️ 非 OpenAI 兼容：站外调用走 Qoder 自有 REST API（api.qoder.com.cn/api/v1/）与官方 Agent SDK，不能直接替换 base_url；社区第三方 provider 采用逆向签名对接，不属官方支持路径",
       "⚠️ 每日 100 Credits 是 Add-on（资源包）额度，仅限同一账号在 Qoder 系产品内使用，不能当作可转赠的 API Token；每轮限领一次、错过不补",
       "⚠️ 个人 PAT 可勾选的 scope 以 Settings → API Tokens 创建页实际展示为准（官方文档示例里的 models.read / chat.completions 出自企业 Service Account 场景），接入前先确认权限覆盖",
