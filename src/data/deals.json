@@ -1165,5 +1165,150 @@
     "status": "active",
     "pinHeadline": false,
     "excludeHeadline": false
+  },
+  {
+    "id": "2026-10-groq-free-api",
+    "date": "2026-10-01",
+    "platform_slug": "groq",
+    "platform_name": "Groq",
+    "title": "Groq 永久免费 API：无需信用卡，30 RPM / 1000 RPD（每模型），OpenAI 兼容",
+    "type": "signup_bonus",
+    "reward": "注册即开通永久免费 API：gpt-oss-120b / gpt-oss-20b / qwen3.8-27b / allam-2-7b 等聊天模型免费调用，Whisper 语音识别也免费；限流 30 RPM / 1000 RPD / 8K TPM / 200K TPD（每模型独立、24h 重置），无需信用卡、无试用期强扣费",
+    "eligibility": "Groq Cloud 邮箱注册即可，全程无需绑卡；OpenAI 兼容，改两行代码即可接入",
+    "deadline": null,
+    "howto": [
+      "打开 https://console.groq.com 邮箱注册（无需信用卡）",
+      "左侧 API Keys 创建密钥（仅显示一次）",
+      "OpenAI 兼容，base_url 指向 https://api.groq.com/openai/v1",
+      "选用 gpt-oss-120b / qwen3.8-27b 等免费模型接入任意 Agent"
+    ],
+    "summary": "Groq 提供永久免费 API：注册即开、无需信用卡，OpenAI 兼容。免费档覆盖 gpt-oss-120b / gpt-oss-20b / qwen3.8-27b / allam-2-7b 等聊天模型，Whisper 语音识别同样免费；限流按模型独立计算（30 RPM / 1000 RPD / 8K TPM / 200K TPD，24h 重置）。实测吞吐远超普通 GPU 供应商（gpt-oss-120b 约 480–640 tok/s），适合实时对话、语音、Agent 等低延迟场景。⚠️ 注意：Llama 3.3 70B 等已从免费档转入 Enterprise（联系销售），免费档不再提供；免费额度为共享容量、随负载波动，高峰期可能变慢。",
+    "pitfalls": [
+      "免费档不含 Llama 3.3 70B / 3.1 8B（已转 Enterprise，需联系销售），现免费聊天模型为 gpt-oss 系列、qwen3.8-27b、allam-2-7b 等",
+      "限流按模型独立计算（30 RPM / 1000 RPD / 8K TPM / 200K TPD），免费共享容量随负载波动，高峰可能变慢",
+      "免费模型清单会调整（以官方 /models 实时为准），调用前先确认模型仍在免费档",
+      "无需信用卡、无强制扣费，超出免费档需切换付费计划才会产生费用"
+    ],
+    "source": "https://console.groq.com",
+    "status": "active",
+    "pinHeadline": false,
+    "excludeHeadline": false,
+    "publishedAt": "2026-10-01"
+  },
+  {
+    "id": "2026-10-mistral-experiment-free",
+    "date": "2026-10-01",
+    "platform_slug": "mistral",
+    "platform_name": "Mistral AI",
+    "title": "Mistral La Plateforme Experiment：每月约 10 亿 Token 免费，无需信用卡（验证邮箱+手机）",
+    "type": "signup_bonus",
+    "reward": "注册即开通 Experiment 免费计划：全系模型（Mistral Large / Codestral / Pixtral / 嵌入 / OCR）均可调用，约 1B tokens/月/模型、约 1 req/s 速率限制，无需信用卡",
+    "eligibility": "console.mistral.ai 注册，验证邮箱 + 手机号（每手机号限一个计划，不可复用），无需信用卡",
+    "deadline": null,
+    "howto": [
+      "打开 https://console.mistral.ai 注册（邮箱/Google/GitHub）并验证邮箱",
+      "进入 Subscription → Compare plans → 选 Experiment for free，接受条款",
+      "手机号 SMS 验证后开通，API Keys 创建密钥",
+      "OpenAI 兼容，base_url 指向 https://api.mistral.ai/v1，调用全系模型"
+    ],
+    "summary": "Mistral 的 La Plateforme 提供 Experiment 免费计划：注册（验证邮箱+手机号）即开通，无需信用卡，可调用全系模型（Mistral Large、Codestral、Pixtral、嵌入、OCR），约 1B tokens/月/模型、约 1 req/s 速率限制。适合原型开发、模型评估、批量文本处理。⚠️ 官方条款明示 Experiment 计划的 prompt 可能用于模型训练——含专有代码或用户数据的场景请升级付费计划；免费档限流严格，实时对话体验一般，更适合批量/离线任务。",
+    "pitfalls": [
+      "⚠️ Experiment 计划 prompt 可能用于模型训练（官方条款明示）→ 涉敏/专有代码数据请勿在免费档处理，需升级付费",
+      "速率限制较严（约 1 req/s），不适合实时高并发对话，更适合批量/离线任务",
+      "需手机号 SMS 验证，且每手机号限一个 Experiment 计划，不可多号复用绕过",
+      "免费档为评估用途（eval only），非生产负载；生产请升级 Scale（绑定卡）"
+    ],
+    "source": "https://console.mistral.ai",
+    "status": "active",
+    "pinHeadline": false,
+    "excludeHeadline": false,
+    "publishedAt": "2026-10-01"
+  },
+  {
+    "id": "2026-10-deepseek-newuser-5m",
+    "date": "2026-10-01",
+    "platform_slug": "deepseek",
+    "platform_name": "DeepSeek",
+    "title": "DeepSeek 官方 API：新用户注册送 500 万 Tokens（30 天有效，无需绑卡）",
+    "type": "signup_bonus",
+    "reward": "新用户注册即送 500 万 tokens（输入+输出合计），30 天有效，无需绑卡、自动到账；模型默认指向 deepseek-v4-flash",
+    "eligibility": "platform.deepseek.com 注册即送，无需信用卡；OpenAI / Anthropic 双协议兼容",
+    "deadline": null,
+    "howto": [
+      "打开 https://platform.deepseek.com 注册（无需信用卡）",
+      "新户自动获得 500 万 tokens 免费额度（30 天有效）",
+      "API Keys 创建密钥",
+      "OpenAI 兼容，base_url 指向 https://api.deepseek.com，模型填 deepseek-v4-flash"
+    ],
+    "summary": "DeepSeek 官方 API 新用户注册即送 500 万 tokens（输入+输出合计），30 天有效、无需绑卡、自动到账，兼容 OpenAI 与 Anthropic 双协议（api.deepseek.com / api.deepseek.com/anthropic）。默认模型 deepseek-v4-flash，100 万上下文、38.4 万最大输出，缓存命中输入低至 0.02 元/百万 tokens。额度足够约 3500 次千字级调用，适合评估与轻量开发。⚠️ 国内访问偶尔需网络优化；额度 30 天过期后按量计费（无最低消费）。",
+    "pitfalls": [
+      "免费额度 500 万 tokens 仅 30 天有效，过期后按量计费（输入 1 元/百万、输出 2 元/百万）",
+      "国内访问偶尔需网络优化；企业合规资质不如国内云厂齐全",
+      "非高峰时段（16:30–00:30 GMT）R1/V4 有折扣，重负载可错峰降本",
+      "无硬性速率限制（尽力而为），高峰可能出现延迟或 503，重要任务留备选"
+    ],
+    "source": "https://platform.deepseek.com",
+    "status": "active",
+    "pinHeadline": false,
+    "excludeHeadline": false,
+    "publishedAt": "2026-10-01"
+  },
+  {
+    "id": "2026-10-cloudflare-workers-ai-free",
+    "date": "2026-10-01",
+    "platform_slug": "cloudflare",
+    "platform_name": "Cloudflare Workers AI",
+    "title": "Cloudflare Workers AI：每天 10,000 Neurons 免费，无需信用卡，~80 模型 OpenAI 兼容",
+    "type": "signup_bonus",
+    "reward": "Workers Free 计划内含免费额度：每天 10,000 Neurons（每日 00:00 UTC 重置），无需信用卡；~80 个模型（Llama、Mistral、Qwen、GPT-OSS、DeepSeek 蒸馏等）OpenAI 兼容 REST",
+    "eligibility": "注册 Cloudflare 免费账号，Workers AI 接受条款即可，无需信用卡",
+    "deadline": null,
+    "howto": [
+      "打开 https://dash.cloudflare.com 注册免费账号",
+      "进入 Workers AI 接受条款，创建 API Token（或在 Worker 内绑定 AI）",
+      "OpenAI 兼容 REST，base_url 指向 https://api.cloudflare.com/client/v4/accounts/{account_id}/ai/v1",
+      "在每日 10,000 Neurons 额度内调用 Llama / Qwen 等模型"
+    ],
+    "summary": "Cloudflare Workers AI 在 Workers Free 计划中提供每日 10,000 Neurons 免费额度（每日 00:00 UTC 重置），无需信用卡，覆盖 ~80 个模型（Llama 3.x/4、Mistral、Qwen、GPT-OSS、DeepSeek-R1 蒸馏、FLUX/SD、Whisper、BGE 嵌入等），OpenAI 兼容 REST、全球边缘低延迟。Neuron 为统一算力单位，大模型的每日消耗远快于小模型。⚠️ 部分前沿模型（kimi-k2.6/2.7、glm-5.2/5.3、deepseek-v4-flash/pro）需付费计划或 AI Gateway 额度；超免费额度后按 $0.011/1000 Neurons 计费。",
+    "pitfalls": [
+      "部分前沿模型（@cf/moonshotai/kimi-k2.6、@cf/zai-org/glm-5.3、@cf/deepseek-ai/deepseek-v4-flash-pro 等）需 Workers Paid 或 AI Gateway 额度，免费档不可调",
+      "10,000 Neurons/天为共享池（非每模型），大模型消耗极快，小模型才够日常用",
+      "超出免费额度按 $0.011 / 1000 Neurons 计费，需绑卡才会产生费用",
+      "需自备海外网络环境访问 Cloudflare"
+    ],
+    "source": "https://developers.cloudflare.com/workers-ai/",
+    "status": "active",
+    "pinHeadline": false,
+    "excludeHeadline": false,
+    "publishedAt": "2026-10-01"
+  },
+  {
+    "id": "2026-10-sambanova-free-tier",
+    "date": "2026-10-01",
+    "platform_slug": "sambanova",
+    "platform_name": "SambaNova Cloud",
+    "title": "SambaNova Cloud 持久免费层：Llama 3.1 405B / 70B / Qwen 2.5 72B，加 $5 新户额度",
+    "type": "signup_bonus",
+    "reward": "注册即开通持久免费层：Llama 3.3 70B、Llama 3.1 405B、Qwen 2.5 72B 等开源模型免费推理；另赠 $5 初始额度（约 30 天–3 个月有效），无需信用卡",
+    "eligibility": "cloud.sambanova.ai 注册即开，无需信用卡；OpenAI 兼容",
+    "deadline": null,
+    "howto": [
+      "打开 https://cloud.sambanova.ai 注册（无需信用卡）",
+      "APIs 页面创建密钥",
+      "OpenAI 兼容，base_url 指向 https://api.sambanova.ai/v1",
+      "调用 Meta-Llama-3.1-405B / Llama-3.3-70B / Qwen2.5-72B 等免费模型"
+    ],
+    "summary": "SambaNova Cloud 提供持久免费层（非限时积分）：注册即开、无需信用卡，可免费推理 Llama 3.3 70B、Llama 3.1 405B、Qwen 2.5 72B 等开源大模型，自研 RDU 芯片推理极快（405B 约 129 tok/s）；另赠 $5 初始额度（约 30 天–3 个月有效）。OpenAI 兼容 api.sambanova.ai/v1，适合尝鲜超大开源模型。⚠️ 免费档限流较严（约 10–30 RPM，按模型规模），重度使用易触顶；$5 额度有有效期；免费政策随官方调整。",
+    "pitfalls": [
+      "免费档限流较严（约 10–30 RPM，按模型规模），重度使用很快触顶，适合评估/尝鲜而非生产",
+      "$5 初始额度有有效期（约 30 天–3 个月，来源不一），过期需付费",
+      "免费政策可能随官方调整；模型清单以 cloud.sambanova.ai 实时为准",
+      "需自备海外网络环境访问"
+    ],
+    "source": "https://cloud.sambanova.ai",
+    "status": "active",
+    "pinHeadline": false,
+    "excludeHeadline": false,
+    "publishedAt": "2026-10-01"
   }
 ]
