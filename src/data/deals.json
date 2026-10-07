@@ -4,7 +4,7 @@
     "date": "2026-09-30",
     "platform_slug": "opencode",
     "platform_name": "OpenCode",
-    "title": "OpenCode 匿名模型 Space Bunny（太空兔）限时免费延长至 10/5：1M 上下文 · 多模态 · ZDR",
+    "title": "OpenCode 匿名模型 Space Bunny（太空兔）限时免费延长至 10/5：1M 上下文 · 多模态 · ZDR（已结束）",
     "type": "limited_time",
     "reward": "匿名 stealth 模型 Space Bunny（模型 ID stealth/space-bunny-alpha，社区称「太空兔」）已在 OpenCode Zen 免费档开放：输入 / 输出 / 缓存全 $0，1M 上下文、原生多模态（文本+图像）、OpenCode 网关侧宣称 ZDR 零留存（提供方不留存、不用于训练），官方称不消耗 Go 订阅额度；在 /models 里选中「Space Bunny Free」即免费用，无需 API Key / 注册绑卡",
     "eligibility": "注册 OpenCode 账号即可用免费档，无需订阅 Go；也可在 OpenRouter 用 API Key 调用 stealth/space-bunny-alpha（须遵守 OpenRouter Stealth Model Terms）",
@@ -24,7 +24,7 @@
       "OpenRouter 侧调用须遵守 OpenRouter Stealth Model Terms；社区实测提示与补全可能被提供方保留（不用于训练），与 OpenCode 网关 ZDR 口径不完全一致，跨渠道注意数据政策差异"
     ],
     "source": "https://opencode.ai/docs/zh-cn/zen/",
-    "status": "active",
+    "status": "ended",
     "pinHeadline": false
   },
   {
@@ -32,7 +32,7 @@
     "date": "2026-09-28",
     "platform_slug": "zhipu",
     "platform_name": "智谱AI（BigModel）",
-    "title": "智谱 ZCode Trust Build：9/28–10/7 每天可领 1 亿 GLM-5.3-Flash Token（当天用完、不延续，每日限量 10 万份）",
+    "title": "智谱 ZCode Trust Build：9/28–10/7 每天可领 1 亿 GLM-5.3-Flash Token（当天用完、不延续，每日限量 10 万份）（已结束）",
     "type": "limited_time",
     "reward": "每天 1 亿（100M）GLM-5.3-Flash Token（ZCode 客户端内使用），9/28–10/7 每日可领：当天必须用完、不延续到次日；每日限量 10 万份，先到先得",
     "eligibility": "登录 ZCode 编程客户端领取当日「ZCode Trust Build」卡片；每日限量 10 万份，先到先得",
@@ -49,8 +49,8 @@
       "该额度仅限 ZCode 编程客户端内使用，不是开放平台 API Token，也无法导出到第三方工具，请勿误判。"
     ],
     "source": "https://bigmodel.cn",
-    "status": "active",
-    "pinHeadline": true
+    "status": "ended",
+    "pinHeadline": false
   },
 
   {
@@ -58,7 +58,7 @@
     "date": "2026-09-25",
     "platform_slug": "zhipu",
     "platform_name": "智谱AI（BigModel）",
-    "title": "智谱 ZCode 双节畅享：GLM-5.3-Flash 夜间畅蹬延续至 10/7，9/25–10/7 取消高峰期、全天按非高峰倍率消耗",
+    "title": "智谱 ZCode 双节畅享：GLM-5.3-Flash 夜间畅蹬延续至 10/7，9/25–10/7 取消高峰期、全天按非高峰倍率消耗（已结束）",
     "type": "limited_time",
     "reward": "GLM Coding Plan 双节畅享（至 10/7）：①夜间畅蹬延续——每晚 23:00 至次日 09:00，ZCode 中免费无限畅蹬 GLM-5.3-Flash，套餐支持的其他 Agent 中可用额度 ×2；②取消高峰期——9/25 至 10/7，套餐全天按非高峰期倍率消耗额度，白天编码同样省额度",
     "eligibility": "已订阅 GLM Coding Plan 的用户；夜间畅蹬进入时段自动生效、无需手动开启；非高峰倍率 9/25 起全天自动生效",
@@ -75,7 +75,7 @@
       "「取消高峰期」仅指消耗倍率优惠（9/25–10/7 全天按非高峰期倍率），并非额度不限量；10/8 起恢复高峰期倍率计费。"
     ],
     "source": "https://bigmodel.cn",
-    "status": "active",
+    "status": "ended",
     "pinHeadline": false
   },
   {
