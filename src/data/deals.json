@@ -1,5 +1,34 @@
 [
   {
+    "id": "2026-10-stepfun-step5-preview-free-week",
+    "date": "2026-10-09",
+    "platform_slug": "stepfun",
+    "platform_name": "阶跃星辰（StepFun）",
+    "title": "阶跃星辰 Step 5 Preview 旗舰模型免费一周：经 OpenCode/Cline/Kilo Code/Nous Research 等平台滚动开放（600B MoE · 1M 上下文 · 10/15 开源权重）",
+    "type": "limited_time",
+    "reward": "旗舰基座模型 Step 5 Preview 免费调用一周：600B 总参 / 27B 激活稀疏 MoE，1M Token 上下文，支持文本+图像输入（OpenRouter 口径含视频），面向编程 Agent、长任务与专业工作流；OpenCode 免费档模型 ID 为 step-5-preview-free（已实测在 /zen/v1/models 官方列表），网关侧宣称 ZDR 零留存",
+    "eligibility": "无需绑卡：在 OpenCode / Cline / Kilo Code / Nous Research 等合作平台内选中 Step 5 Preview 即可免费使用，名额随平台滚动发放；OpenRouter 已上架该模型（付费 API $1.00/M 输入、$2.70/M 输出、上线期缓存命中 $0.05/M）",
+    "deadline": "约 2026-10-16（阶跃官方口径「一周」自 10/8 起滚动开放；Cline 官方称免费两周约至 10/22 —— 各平台窗口不一，以各平台实际公告为准）",
+    "howto": [
+      "OpenCode：登录后在 /models 选中「Step 5 Preview Free」（模型 ID step-5-preview-free，已在 /zen/v1/models 官方免费列表）",
+      "Cline：客户端 / CLI 模型选择器选中 Step 5 Preview（Cline 官方称免费两周）",
+      "Kilo Code / Nous Research：按各平台公告入口选用",
+      "OpenRouter：API Key + model=stepfun/step-5（openrouter.ai/stepfun/step-5，按平台定价计费，非免费通道）"
+    ],
+    "summary": "阶跃星辰 9/20 发布的旗舰基座模型 Step 5 Preview 于 10/8 宣布登陆 OpenRouter，并自当日起经 OpenCode、Cline、Nous Research、Kilo Code 等合作平台滚动开放一周免费（Cline 官方口径为两周）。模型采用稀疏 MoE 架构（600B 总参、27B 激活），1M Token 上下文，支持文本与视觉输入（OpenRouter 口径含视频），主打 AI 编程、软件工程、专业知识工作与金融场景；AA 综合智能指数 44 分、开源赛道全球前三，DeepSWE v1.1 得分 67.7%，单任务成本约为 Claude Opus 5 的 1/8。完整权重预计 10/15 开源。官方口号「不用换工具，直接换模型」，名额随平台滚动、早开早试。",
+    "pitfalls": [
+      "窗口口径不一：阶跃官方称「一周」（10/8 起），Cline 官方称「两周」—— 免费截止以各平台实际公告为准，建议尽早使用",
+      "免费主要通过合作平台（OpenCode/Cline/Kilo Code/Nous Research 等）提供；OpenRouter 侧为正常上架定价（$1.00/M 输入、$2.70/M 输出、缓存 $0.05/M），在 OpenRouter 直接调用并非免费，勿混淆",
+      "名额随平台滚动发放，可能存在当日名额用完、需次日再试的情况",
+      "Preview 模型：完整权重 10/15 才开源；免费期结束后按届时定价，模型页与文档见 stepfun.com/step-5-preview 与 platform.stepfun.ai",
+      "多模态口径：官方模型页写「文本与视觉输入」，OpenRouter 推文含视频输入 —— 以实际平台支持为准"
+    ],
+    "source": "https://stepfun.com/step-5-preview",
+    "status": "active",
+    "pinHeadline": false,
+    "publishedAt": "2026-10-09"
+  },
+  {
     "id": "2026-09-opencode-space-bunny-free",
     "date": "2026-09-30",
     "platform_slug": "opencode",
