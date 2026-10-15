@@ -274,10 +274,12 @@
     "register_url": "https://opencode.ai/auth",
     "docs_url": "https://opencode.ai/docs/zh-cn/zen/",
     "tagline": "开源编程代理官方模型网关，多个编程模型限时免费",
-    "highlight": "Zen 免费模型限时开放，当前 11 款（step-5-preview-free、space-bunny-free、longcat-2.5-preview-free、mimo-v2.6-flash-free、jev-1.13-free、big-pickle、ling-3.0-flash-fin-free 等），名单按周轮换，专为编程场景优化",
+    "highlight": "Zen 免费模型限时开放，当前 10 款（deepseek-v4.1-flash-free、step-5-preview-free、space-bunny-free、longcat-2.5-preview-free、mimo-v2.6-flash-free、cat-jam-free 等），名单按周轮换，专为编程场景优化",
     "tags": ["免费层", "编程场景", "免费模型轮换"],
     "offers": [
-            { "model": "★ 当前免费阵容（11 款，限时轮换）", "quota": "step-5-preview-free / space-bunny-free / longcat-2.5-preview-free / mimo-v2.6-flash-free / jev-1.13-free / big-pickle / mimo-v2.5-free / ling-3.0-flash-fin-free / nemotron-3-ultra-free / nemotron-3.5-lightning-free / muse-spark-1.3-contributor-free：输入 / 输出 / 缓存全 $0，每日 20 万~100 万 Token 限额（视模型而定）；名单按周轮换，调用前先看 /zen/v1/models 实时列表", "type": "limited" },
+            { "model": "★ 当前免费阵容（10 款，限时轮换）", "quota": "deepseek-v4.1-flash-free / step-5-preview-free / space-bunny-free / longcat-2.5-preview-free / mimo-v2.6-flash-free / cat-jam-free / jev-1.13-free / muse-spark-1.2-contributor-free / muse-spark-1.3-contributor-free / nemotron-3.5-lightning-free：输入 / 输出 / 缓存全 $0，每日 20 万~100 万 Token 限额（视模型而定）；名单按周轮换，调用前先看 /zen/v1/models 实时列表", "type": "limited" },
+      { "model": "DeepSeek V4.1 Flash Free（限时免费，ZDR 零留存）", "quota": "输入 / 输出 / 缓存全免费；1M 上下文、原生多模态（文本 + 图像）；官方标注该模型提供方执行零留存政策（zero-retention）、不将数据用于模型训练；⚠️ 与付费档 deepseek-v4.1-flash（输入 $0.30/M、输出 $1.20/M）同型号并存，选错 ID 会照常计费；官方未标注截止时间", "type": "daily" },
+      { "model": "Cat Jam Free（匿名 stealth 模型，限时免费 · 中国大陆不可用）", "quota": "输入 / 输出 / 缓存全免费；官方标注提供方不将数据用于训练、但**出于安全原因保留 30 天**；⚠️ 官方明确不在中国（含港澳）等地区开放，大陆用户直接跳过该档", "type": "daily" },
       { "model": "Step 5 Preview Free（阶跃星辰旗舰，限时免费一周）", "quota": "输入 / 输出 / 缓存全免费；600B 总参 / 27B 激活稀疏 MoE、1M 上下文、文+图多模态；阶跃官方称 10/8 起经合作平台免费一周（Cline 侧称两周），10/15 开源完整权重；OpenCode 侧宣称 ZDR 零留存；以 /zen/v1/models 实时列表为准", "type": "daily" },
       { "model": "LongCat 2.5 Preview Free（美团 9/25 上线，限时免费约 2 周）", "quota": "输入 / 输出 / 缓存全免费；1M 上下文、文+图多模态、ZDR 零留存（提供方不留存数据、不用于训练）；官方称使用该模型不消耗 Go 订阅额度；官方 9/26 宣布免费窗口持续 2 周（约 10/10 前后到期），以官方为准", "type": "daily" },
       { "model": "MiMo-V2.6-Flash Free（小米 9/22 开源新模型，限时免费）", "quota": "输入 / 输出 / 缓存全免费；官方称免费期用于收集反馈、改进模型，免费期数据可能被用于改进模型", "type": "daily" },
@@ -300,13 +302,15 @@
       "免费层没有固定速率限制，配额随负载浮动，跑批量任务别依赖",
       "Go 订阅（$10/月）是付费增值项，用免费模型不需要订阅",
       "作为 Claude Code 等第三方编码工具的后端时，近期 OpenCode 要求请求头带 x-opencode-session 标记，否则请求可能被拒绝；接入时按官方说明补该头",
-      "MiMo-V2.6-Flash Free 属「免费期数据可能用于改进模型」一档（与 Big Pickle、MiMo-V2.5 Free、Ling 3.0 Flash Fin Free 同列，官方 Zen 隐私章节明示）→ 涉密代码、未公开源码别走这一档"
+      "MiMo-V2.6-Flash Free 属「免费期数据可能用于改进模型」一档（与 Big Pickle、MiMo-V2.5 Free、Ling 3.0 Flash Fin Free 同列，官方 Zen 隐私章节明示）→ 涉密代码、未公开源码别走这一档",
+ "Cat Jam Free 官方明确**不在中国（含香港、澳门）开放**，同列受限地区还有古巴、伊朗、伊拉克、老挝、利比亚、尼日利亚、朝鲜、俄罗斯、叙利亚等 → 大陆用户直接跳过；另该模型提供方虽不训练数据，但出于安全原因**保留 30 天**",
+ "DeepSeek V4.1 Flash Free 与付费档 deepseek-v4.1-flash 同型号并存（付费档输入 $0.30/M、输出 $1.20/M）→ 确认 ID 带 -free 后缀，否则照常计费"
     ],
     "api_base": "https://opencode.ai/zen/v1/",
     "example_model": "mimo-v2.6-flash-free",
-        "last_verified": "2026-10-09",
+        "last_verified": "2026-10-15",
     "rating": 4,
-        "ratingNote": "编辑部实测：开源编程代理的官方模型网关（Zen），免费档持续上小米 MiMo-V2.6-Flash、Muse Spark 1.3 等编程模型，可直接作 Claude Code 等编码工具的免费后端；扣分点是免费模型名单轮换极快（匿名模型 Union Alpha 上线约 5 天即下线）、免费档数据可能被用于改进模型、Contributor Free 需贡献提示词/补全给 Meta 训练下一代模型、且限 Meta 地理政策允许地区（大陆等受限）——做主力编程源前需看清模型池。",
+        "ratingNote": "编辑部实测：开源编程代理的官方模型网关（Zen），免费档持续上 DeepSeek V4.1 Flash、小米 MiMo-V2.6-Flash、阶跃 Step 5 Preview 等旗舰模型，可直接作 Claude Code 等编码工具的免费后端；扣分点是免费模型名单轮换极快（匿名模型 Union Alpha 上线约 5 天即下线）、部分免费档数据可能用于改进模型、Contributor Free 需贡献提示词/补全给 Meta 训练下一代模型、Cat Jam Free 明确不含中国大陆——做主力编程源前需看清模型池。",
     "devAgent": {
       "name": "OpenCode（开源编程代理 CLI）",
       "url": "https://opencode.ai",
@@ -381,11 +385,13 @@
     "register_url": "https://www.workbuddy.cn",
     "docs_url": "https://www.workbuddy.cn",
     "tagline": "腾讯桌面 AI 智能体办公产品，注册即送海量 Credits",
-    "highlight": "注册送 5000 Credits（约几千万 Token 量级），每日签到可续",
+    "highlight": "注册送 5000 Credits（约几千万 Token 量级），每日签到可续；当前三条模型限免并行：阶跃 Step 5 Preview 独家全免（10/12–10/25）、混元 Hy3 限免、Hy4 preview 夜间限免（均至 10/31）",
     "tags": ["注册送", "签到续额度", "Agent 办公"],
     "offers": [
       { "model": "新人 Credits", "quota": "注册送 5000 Credits（官方称约几千万 Token 量级），产品内使用混元等模型", "type": "credit" },
       { "model": "每月积分 + 签到", "quota": "每月 500 积分，每日签到可续积分", "type": "daily" },
+      { "model": "Step 5 Preview 独家限免（10/12–10/25）", "quota": "阶跃星辰旗舰基座模型 Step 5 Preview 限免期内**全免**（不计积分）：600B 总参 / 27B 激活稀疏 MoE、1M 上下文、原生文本 + 视觉；适合深度研究、数据分析、文档 / PPT 生成与多步骤复杂任务；限免结束（10/25）后定价官方未公布", "type": "limited" },
+      { "model": "混元 Hy3 限免 / Hy4 preview 夜间限免（均至 10/31）", "quota": "Hy3 限免期内免费不限量；Hy4 preview 每晚 23:00–次日 8:00 免费（其余时段按积分计）；两条限免均为 9/30 由官方延期至 10/31；⚠️ 仅对保有可用额度的用户生效，Hy3 为纯文字模型、图片生成仍计积分", "type": "limited" },
       { "model": "成长计划任务奖励", "quota": "完成对话/技能/模板等任务，每任务 100 Credits + 能量盲盒；限量任务可领一个月轻量云服务器", "type": "credit" }
     ],
     "steps": [
@@ -395,7 +401,9 @@
     ],
     "pitfalls": [
       "Credits 是产品内积分，不能导出为 API Token 调用",
-      "高级模型消耗 Credits 更快，重任务注意余额",
+      "模型限免（Step 5 Preview、Hy3、Hy4 preview）均为**客户端内额度**，同样不可导出为 API Key，只能在 WorkBuddy 内使用",
+ "「独家限免」指仅 WorkBuddy 有此窗口：Step 5 Preview 同期在 OpenCode / Cline 等平台有各自免费活动但窗口不同（约至 10/16–10/22），别当成同一活动、也别以为到期会同步结束",
+      "高级模型消耗 Credits 更快，重任务注意余额；上下文越长单轮积分消耗越多（官方建议多数场景保持默认 200K 窗口）",
       "积分体系与签到规则可能调整，以官网为准"
     ],
     "devAgent": {
@@ -403,7 +411,7 @@
       "url": "https://www.workbuddy.cn",
       "note": "WorkBuddy 本身就是桌面 AI 智能体（agent）产品：注册即送 Credits，可作为 Claude Code / Cursor 等编码工具的免费后端，也可直接在客户端内对话、写技能、跑工作流。额度产品内使用，不可导出为 API。"
     },
-    "last_verified": "2026-08-29"
+    "last_verified": "2026-10-15"
   },
   {
     "slug": "sensenova",

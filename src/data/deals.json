@@ -1,5 +1,61 @@
 [
   {
+    "id": "2026-10-workbuddy-step5-preview-exclusive-free",
+    "date": "2026-10-15",
+    "platform_slug": "workbuddy",
+    "platform_name": "WorkBuddy（腾讯云）",
+    "title": "腾讯 WorkBuddy 独家限时免费 Step 5 Preview 两周（10/12–10/25）：阶跃旗舰 600B MoE 接入办公工作台",
+    "type": "limited_time",
+    "reward": "阶跃星辰旗舰基座模型 Step 5 Preview 在国内版 WorkBuddy 独家限时免费开放两周（2026-10-12 至 10-25）：600B 总参 / 27B 激活稀疏 MoE、1M 上下文、原生文本 + 视觉输入；面向深度研究、信息检索、数据分析、文档与 PPT 生成等办公任务，支持多步骤复杂任务持续执行",
+    "eligibility": "WorkBuddy 国内版（workbuddy.cn）登录即可在模型列表选用，无需额外配置；官方未设卡点门槛，名额按客户端实际开放为准",
+    "deadline": "2026-10-25",
+    "howto": [
+      "登录 WorkBuddy 国内版客户端（workbuddy.cn，Windows / macOS / 移动端）",
+      "在模型列表选择「Step 5 Preview」即可直接使用，限免期内不计积分",
+      "适合把大块量、需要长上下文与多步骤执行的任务放在本周内跑完",
+      "模型规格与后续开源信息见阶跃星辰官网 stepfun.com/step-5-preview"
+    ],
+    "pitfalls": [
+      "🔴 产品内额度，不可导出为 API：Step 5 Preview 限免仅在 WorkBuddy 客户端内生效，额度按「模型倍率 × Token 量」扣减（限免期为 0），无法作为 API Key 站外调用",
+      "⚠️ 「独家」指仅 WorkBuddy 有此免费窗口，同一模型同期在 OpenCode / Cline / Kilo Code / Nous Research 等平台亦有各自免费活动，窗口长度不一致（OpenCode/Cline 侧约至 10/16–10/22），别混为同一活动",
+      "⚠️ 限免结束（10/25）后的定价与是否续期官方尚未公布，别预设会一直免费",
+      "上下文越长单轮积分消耗越多（官方建议多数场景保持默认 200K 窗口），限免期内不限积分但仍受客户端调度与上下文上限约束",
+      "同期 WorkBuddy 还有 Hy3 限免与 Hy4 preview 夜间限免（均至 10/31），三条限免独立计费口径、互不叠加"
+    ],
+    "source": "https://www.workbuddy.cn/",
+    "status": "active",
+    "pinHeadline": false,
+    "publishedAt": "2026-10-15"
+  },
+  {
+    "id": "2026-10-opencode-deepseek-v41-flash-free",
+    "date": "2026-10-15",
+    "platform_slug": "opencode",
+    "platform_name": "OpenCode（Zen 网关）",
+    "title": "OpenCode Zen 免费档新增 DeepSeek V4.1 Flash：1M 上下文 · 原生多模态 · 网关侧 ZDR 零留存（限时免费）",
+    "type": "limited_time",
+    "reward": "OpenCode Zen 免费档新增 DeepSeek V4.1 Flash Free（模型 ID deepseek-v4.1-flash-free）：输入 / 输出 / 缓存读写全 $0，1M 超长上下文、原生多模态（文本 + 图像）；官方标注该模型提供方执行零留存政策（zero-retention）且不将你的数据用于模型训练",
+    "eligibility": "注册 OpenCode 账号并创建 API Key 即可调用，无需绑卡；免费档无需 Go 订阅（$10/月为付费增值项）",
+    "deadline": "官方未标注截止日期（限时免费，随时可能下线）",
+    "howto": [
+      "打开 https://opencode.ai/auth 注册并登录，创建 API Key",
+      "在 OpenCode 里 /connect 选 OpenCode 粘贴 Key，或直接调用 https://opencode.ai/zen/v1/chat/completions（OpenAI 兼容）",
+      "模型 ID 填 deepseek-v4.1-flash-free（免费档），勿误用付费档 deepseek-v4.1-flash",
+      "调用前先看 /zen/v1/models 实时列表确认该模型仍在免费档（免费名单按周轮换）"
+    ],
+    "pitfalls": [
+      "⚠️ 免费档与付费档同型号并存：deepseek-v4.1-flash-free 为 $0，而 deepseek-v4.1-flash 付费档为输入 $0.30/M、输出 $1.20/M、缓存读 $0.006/M —— 选错 ID 会照常计费",
+      "免费模型名单轮换很快，官方明确「限时免费、随时可能下线」，别把免费档当长期可用资源建生产依赖",
+      "免费层没有固定速率限制、配额随负载浮动，跑批量任务别依赖；每日限额按模型在 20 万~100 万 Token 量级（以官方控制台为准）",
+      "「ZDR 零留存」为 OpenCode 网关/提供方口径，指不留存数据、不用于训练；与其他免费档（如 MiMo-V2.6-Flash Free 免费期数据可能用于改进模型）不同档位，涉密代码仍应自行判断",
+      "中国大陆用户注意：同期新增的 Cat Jam Free 官方明确**不含中国（含港澳）**，别把它当可用的免费档；本条 DeepSeek V4.1 Flash Free 无地区限制说明"
+    ],
+    "source": "https://opencode.ai/docs/zh-cn/zen/",
+    "status": "active",
+    "pinHeadline": false,
+    "publishedAt": "2026-10-15"
+  },
+  {
     "id": "2026-10-stepfun-step5-preview-free-week",
     "date": "2026-10-09",
     "platform_slug": "stepfun",
