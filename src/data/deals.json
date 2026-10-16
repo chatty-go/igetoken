@@ -8,7 +8,7 @@
     "type": "limited_time",
     "reward": "智谱 GLM-5.3-Flash 进入 OpenCode Zen 免费档（模型 ID glm-5.3-flash-free）：输入 / 输出 / 缓存全 $0。GLM-5.3-Flash 是 GLM-5 系列首个原生多模态模型，1M 超长上下文，官方定位为代码生成、代码理解、问题修复，同时在 Office 文档类任务与金融、法律等专业任务上显著提升",
     "eligibility": "注册 OpenCode 账号并创建 API Key 即可调用，无需绑卡、无需 Go 订阅（$10/月为付费增值项）；免费档每日限额按模型在 20 万~100 万 Token 量级（以官方控制台为准）",
-    "deadline": "官方未标注截止日期（限时免费、随时可能下线；2026-10-16 上线，官方文档当日尚未收录该条目，以 /zen/v1/models 实时列表为准）",
+    "deadline": "官方未标注截止日期（限时免费、随时可能下线；上线时官方文档当日尚未收录该条目，以 /zen/v1/models 实时列表为准）",
     "howto": [
       "打开 https://opencode.ai/auth 注册并登录，创建 API Key",
       "在 OpenCode 里 /connect 选 OpenCode 粘贴 Key，或直接调用 https://opencode.ai/zen/v1/chat/completions（OpenAI 兼容）",
@@ -202,7 +202,7 @@
     "type": "limited_time",
     "reward": "美团 9/25 上线的 LongCat-2.5-Preview（约 1.6T 总参 / 48B 激活 MoE，1M 上下文，文+图多模态输入）已进入 OpenCode Zen 免费档，限时输入 / 输出 / 缓存全免（模型 ID：longcat-2.5-preview-free）；官方称使用该模型不消耗 Go 订阅额度；提供方执行 ZDR 零留存政策（不留存数据、不用于模型训练）",
     "eligibility": "注册 OpenCode 账号即可使用免费档，无需订阅 Go 套餐；Go 订阅为可选付费项，用免费模型不需要它",
-"deadline": "官方未标注截止日期（2026-10-15 复核：官方 Go 页面仍列 LongCat 2.5 Preview Free「Free for a limited time」且月额度 Unlimited，免费档在原 2 周窗口后延续；限时会随时调整，以 /zen/v1/models 与官方页面实时列表为准）",
+"deadline": "官方未标注截止日期（复核：官方 Go 页面仍列 LongCat 2.5 Preview Free「Free for a limited time」且月额度 Unlimited，免费档在原 2 周窗口后延续；限时会随时调整，以 /zen/v1/models 与官方页面实时列表为准）",
 "howto": [
       "打开 opencode.ai/auth 注册账号并登录",
       "创建并复制 API Key，在 OpenCode 里 /connect 选择 OpenCode Zen",
