@@ -1,5 +1,33 @@
 [
   {
+    "id": "2026-10-opencode-glm-53-flash-free",
+    "date": "2026-10-16",
+    "platform_slug": "opencode",
+    "platform_name": "OpenCode（Zen 网关）",
+    "title": "OpenCode Zen 免费档新增 GLM 5.3 Flash：1M 上下文 · 原生多模态 · 智谱旗舰编码模型限时免费",
+    "type": "limited_time",
+    "reward": "智谱 GLM-5.3-Flash 进入 OpenCode Zen 免费档（模型 ID glm-5.3-flash-free）：输入 / 输出 / 缓存全 $0。GLM-5.3-Flash 是 GLM-5 系列首个原生多模态模型，1M 超长上下文，官方定位为代码生成、代码理解、问题修复，同时在 Office 文档类任务与金融、法律等专业任务上显著提升",
+    "eligibility": "注册 OpenCode 账号并创建 API Key 即可调用，无需绑卡、无需 Go 订阅（$10/月为付费增值项）；免费档每日限额按模型在 20 万~100 万 Token 量级（以官方控制台为准）",
+    "deadline": "官方未标注截止日期（限时免费、随时可能下线；2026-10-16 上线，官方文档当日尚未收录该条目，以 /zen/v1/models 实时列表为准）",
+    "howto": [
+      "打开 https://opencode.ai/auth 注册并登录，创建 API Key",
+      "在 OpenCode 里 /connect 选 OpenCode 粘贴 Key，或直接调用 https://opencode.ai/zen/v1/chat/completions（OpenAI 兼容）",
+      "模型 ID 填 glm-5.3-flash-free（免费档）；调用前先看 /zen/v1/models 确认仍在免费档",
+      "编码 Agent 场景可直接在 Claude Code / Cline 等工具里把 OpenCode Zen 设为后端"
+    ],
+    "pitfalls": [
+      "⚠️ 免费档与付费档同型号并存：glm-5.3-flash-free 为 $0，而付费档 glm-5.3-flash 为输入 $0.15/M、输出 $0.50/M、缓存读 $0.03/M —— 选错 ID 会照常计费",
+      "⚠️ **官方文档尚未收录该免费档说明**（2026-10-16 复核：Zen 文档 Free models 段落与定价表均未列出 glm-5.3-flash-free，仅 /zen/v1/models 实时列表有该 ID）→ 新上架条目常见文档滞后；更关键的是**官方未标注该免费档的隐私口径**（是否留存数据、是否用于训练均无说明），按「未标注即保守对待」处理，涉密代码别走这一档，调用前再查文档是否已补",
+      "与智谱自家活动别混淆：GLM-5.3-Flash 在智谱侧的多项活动（ZCode Trust Build、WEEKEND BUILD 系列、夜间畅蹬、双节畅享）均为 **ZCode 客户端内额度、不可导出 API**，且均已结束；本条是 OpenCode 网关侧的独立免费档，两者额度、入口、期限都不同",
+      "同型号匿名化历史：2026-08 的 Ox Alpha 匿名模型揭晓即为 GLM-5.3-Flash（1M 上下文）；本条为官方正式 ID，非 stealth 模型",
+      "免费模型名单轮换很快（近期已见 Union Alpha 上线约 5 天即下线），官方明确限时免费，别建生产依赖；免费层无固定速率限制、配额随负载浮动"
+    ],
+    "source": "https://opencode.ai/docs/zh-cn/zen/",
+    "status": "active",
+    "pinHeadline": false,
+    "publishedAt": "2026-10-16"
+  },
+  {
     "id": "2026-10-workbuddy-step5-preview-exclusive-free",
     "date": "2026-10-15",
     "platform_slug": "workbuddy",
@@ -60,7 +88,7 @@
     "date": "2026-10-09",
     "platform_slug": "stepfun",
     "platform_name": "阶跃星辰（StepFun）",
-    "title": "阶跃星辰 Step 5 Preview 旗舰模型免费一周：经 OpenCode/Cline/Kilo Code/Nous Research 等平台滚动开放（600B MoE · 1M 上下文 · 10/15 开源权重）",
+    "title": "阶跃星辰 Step 5 Preview 旗舰模型免费一周：经 OpenCode/Cline/Kilo Code/Nous Research 等平台滚动开放（600B MoE · 1M 上下文 · 10/15 开源权重）（已结束）",
     "type": "limited_time",
     "reward": "旗舰基座模型 Step 5 Preview 免费调用一周：600B 总参 / 27B 激活稀疏 MoE，1M Token 上下文，支持文本+图像输入（OpenRouter 口径含视频），面向编程 Agent、长任务与专业工作流；OpenCode 免费档模型 ID 为 step-5-preview-free（已实测在 /zen/v1/models 官方列表），网关侧宣称 ZDR 零留存",
     "eligibility": "无需绑卡：在 OpenCode / Cline / Kilo Code / Nous Research 等合作平台内选中 Step 5 Preview 即可免费使用，名额随平台滚动发放；OpenRouter 已上架该模型（付费 API $1.00/M 输入、$2.70/M 输出、上线期缓存命中 $0.05/M）",
@@ -77,11 +105,13 @@
       "免费主要通过合作平台（OpenCode/Cline/Kilo Code/Nous Research 等）提供；OpenRouter 侧为正常上架定价（$1.00/M 输入、$2.70/M 输出、缓存 $0.05/M），在 OpenRouter 直接调用并非免费，勿混淆",
       "名额随平台滚动发放，可能存在当日名额用完、需次日再试的情况",
       "Preview 模型：完整权重 10/15 才开源；免费期结束后按届时定价，模型页与文档见 stepfun.com/step-5-preview 与 platform.stepfun.ai",
-      "多模态口径：官方模型页写「文本与视觉输入」，OpenRouter 推文含视频输入 —— 以实际平台支持为准"
+      "多模态口径：官方模型页写「文本与视觉输入」，OpenRouter 推文含视频输入 —— 以实际平台支持为准",
+      "【已结束 · 2026-10-16 复核】各平台免费窗口已陆续到期：OpenCode Zen 免费档已于 10/15 下线 step-5-preview-free（实测 /zen/v1/models 已无该 ID，官方文档 Free models 段落亦已移除）；Cline 侧原称两周（约 10/22），实际以各平台公告为准",
+      "⚠️ 免费周结束 ≠ 模型停用：腾讯 WorkBuddy 侧的**独家限免至 10/25**仍在（见 2026-10-workbuddy-step5-preview-exclusive-free），且产品内额度本就不可导出 API"
     ],
     "source": "https://stepfun.com/step-5-preview",
-    "status": "active",
-    "pinHeadline": true,
+    "status": "ended",
+    "pinHeadline": false,
     "publishedAt": "2026-10-09"
   },
   {
