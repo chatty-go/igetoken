@@ -286,7 +286,7 @@
       { "model": "LongCat 2.5 Preview Free（美团 9/25 上线，限时免费·已延续）", "quota": "输入 / 输出 / 缓存全免费；1M 上下文、文+图多模态、ZDR 零留存（提供方不留存数据、不用于训练）；官方称使用该模型不消耗 Go 订阅额度；官方 9/26 宣布免费 2 周（约 10/10 到期），2026-10-15 复核官方 Go 页面仍列该模型「限時」、月额度 Unlimited → 实为延续而非结束，官方未设新截止日，以 /zen/v1/models 实时列表为准", "type": "daily" },
       { "model": "MiMo-V2.6-Flash Free（小米 9/22 开源新模型，限时免费）", "quota": "输入 / 输出 / 缓存全免费；官方称免费期用于收集反馈、改进模型，免费期数据可能被用于改进模型", "type": "daily" },
       { "model": "Muse Spark 1.3 Contributor Free（Meta 模型，限时免费 · 已从免费档移除）", "quota": "曾限时免费：输入/输出/缓存全免费；以授权 Meta 用你的提示词与补全训练下一代模型为条件，限 Meta 地理政策允许地区；2026-10-19 实测实时列表已无 muse-spark-1.2/1.3-contributor-free（官方文档仍列）→ 免费名单轮换很快，以实时列表为准", "type": "daily" },
-      { "model": "Space Bunny Free（已于 10/19 换名：前身即 MiniMax M3.1 Flash）", "quota": "曾限时免费：1M 上下文、原生多模态、OpenCode 网关侧宣称 ZDR 零留存（提供方不留存、不训练）、不消耗 Go 订阅额度；原定免费延长至 2026-10-05，实际持续更久；2026-10-19 MiniMax 官方认领后，同一模型免费档 ID 换为 minimax-m3.1-flash-free（实测实时列表已无 space-bunny-free）", "type": "daily" },
+      { "model": "Space Bunny Free（已于 10/19 换名：前身即 MiniMax M3.1 Flash）", "quota": "曾限时免费：1M 上下文、原生多模态、OpenCode 网关侧宣称 ZDR 零留存（提供方不留存、不训练）、不消耗 Go 订阅额度；原定免费延长至 2026-10-05，实际持续更久；2026-10-19 MiniMax 官方认领后，同一模型免费档 ID 换为 minimax-m3.1-flash-free，实测实时列表已无 space-bunny-free、该 ID 已下线移除", "type": "daily" },
       { "model": "其他限时免费模型（如 Nemotron 3.5 Super VL Free）", "quota": "限时免费，每日 20 万~100 万 Token 限额（视模型而定）", "type": "daily" },
       { "model": "邀请奖励", "quota": "邀请好友订阅 Go 套餐，双方各得 $5 使用额度", "type": "referral" }
     ],
