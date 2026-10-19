@@ -1,5 +1,35 @@
 [
   {
+    "id": "2026-10-minimax-m31-flash-free",
+    "date": "2026-10-19",
+    "platform_slug": "opencode",
+    "platform_name": "OpenCode（Zen 网关）",
+    "title": "MiniMax M3.1 Flash 官方认领 Space Bunny（太空兔）：OpenCode 免费档限时开放，1M 上下文 · 200+ TPS · Agentic 编程",
+    "type": "new_model",
+    "reward": "MiniMax 官方于 10/19 认领匿名模型 Space Bunny（太空兔）为 **MiniMax M3.1 Flash**，并在 OpenCode Zen 免费档开放 **minimax-m3.1-flash-free**（输入 / 输出 / 缓存全 $0）：稀疏注意力架构、1M 上下文、最高 512K 输出、200+ TPS（P50 稳定 170+）、可调推理强度，官方称 Agentic 任务成本较上代降 70%。官方称该模型匿名期累计处理超 200 万亿 Token",
+    "eligibility": "注册 OpenCode 账号并创建 API Key 即可调用，无需绑卡、无需 Go 订阅（$10/月为付费增值项）；⚠️ OpenCode 侧为限时免费档，官方未公布截止日期",
+    "deadline": "官方未标注截止日期（限时免费、随时可能下线；以 /zen/v1/models 实时列表为准）",
+    "howto": [
+      "打开 https://opencode.ai/auth 注册并登录，创建 API Key",
+      "在 OpenCode 里 /connect 选 OpenCode 粘贴 Key，或直接调用 https://opencode.ai/zen/v1/chat/completions（OpenAI 兼容）",
+      "模型 ID 填 minimax-m3.1-flash-free；调用前先看 /zen/v1/models 确认仍在免费档",
+      "需要正式版能力也可走 MiniMax 官方渠道：API 每百万 Token 输入 ¥1 / 输出 ¥4 / 缓存读 ¥0.1（10/19 起价格，较上代降 50%+）"
+    ],
+    "pitfalls": [
+      "🔑 **匿名期与正式版是两个模型 ID**：Space Bunny 时期的 OpenCode ID 是 space-bunny-free，官方认领后同一模型在免费档换成 minimax-m3.1-flash-free；2026-10-19 实测 /zen/v1/models 已无 space-bunny-free，新旧 ID 不可混用",
+      "⚠️ **官方文档滞后于实时列表**：OpenCode Zen 文档的 Free models 段落与定价表 10/19 仍列 Space Bunny Free、未收录 MiniMax M3.1 Flash Free → **站内一律以 /zen/v1/models 实时列表为准**，调用前先自查",
+      "⚠️ **官方未标注该免费档的隐私口径**：与 GLM 5.3 Flash Free / DeepSeek V4.1 Flash Free（明确标注 zero-retention）不同，文档未见 M3.1 Flash Free 的留存与训练说明 → 按「未标注即保守对待」处理，涉密代码别走这一档",
+      "⚠️ 与付费档同型号并存：minimax-m3 付费档为输入 $0.30/M、输出 $1.20/M；M3.1 Flash 官方 API 价为 ¥1/M 输入、¥4/M 输出（≈$0.15/$0.60）→ 确认 ID 带 -free 后缀，否则照常计费",
+      "身份溯源（供兴趣参考）：社区此前用分词器指纹（50 组 / 7 组字符串比对）推断 Space Bunny 属 MiniMax M 系，9/28 M3.1-Flash-Preview 上线后时间线吻合，但**官方当时未认领**；直到 10/19 官方账号发「Welcome back, Space Bunny」短视频 + 发布 M3.1 Flash，才正式对上",
+      "MiniMax 官方文档另有时间线：M2.5 / M2.7 自 2026-10-19 起**对新用户关闭**、11-18 正式退役，M Plan / Token Plan 用户请求自动路由到 M3.1 Flash Preview（旧模型名兼容）→ 用旧名的新用户需留意",
+      "模型权重尚未开源（官方称稍后发布），Pro 版本「即将推出」→ 当前跑分均为 MiniMax 自报，尚无独立第三方榜单评分"
+    ],
+    "source": "https://opencode.ai/docs/zh-cn/zen/",
+    "status": "active",
+    "pinHeadline": false,
+    "publishedAt": "2026-10-19"
+  },
+  {
     "id": "2026-10-opencode-glm-53-flash-free",
     "date": "2026-10-16",
     "platform_slug": "opencode",
