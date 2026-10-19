@@ -1,5 +1,45 @@
 [
   {
+    "id": "notice-2026-1019-space-bunny-identity",
+    "text": "Space Bunny（太空兔）真身已揭晓：MiniMax 官方认领，即 M3.1 Flash，免费档模型 ID 已同步换名",
+    "category": "new",
+    "source": "https://igetoken.com/deals/2026-10-minimax-m31-flash-free/",
+    "linkText": "查看快讯",
+    "publishedAt": "2026-10-19",
+    "expireAt": "2026-11-02",
+    "priority": 10
+  },
+  {
+    "id": "notice-2026-1019-search-column-refresh",
+    "text": "Web Search API 专栏扩容至 13 条：新增 Parallel / Diffbot / Linkup / You.com，并修正 Brave、Exa、Firecrawl 三家已变更的免费额度",
+    "category": "notice",
+    "source": "https://igetoken.com/search/",
+    "linkText": "查看专栏",
+    "publishedAt": "2026-10-19",
+    "expireAt": "2026-11-02",
+    "priority": 8
+  },
+  {
+    "id": "notice-2026-1019-opencode-lineup-refresh",
+    "text": "OpenCode Zen 免费档完成一轮轮换（当前 9 款）：Step 5 Preview Free、Muse Spark 1.3 等已下线，GLM 5.3 Flash Free 官方已补零留存说明",
+    "category": "notice",
+    "source": "https://igetoken.com/models/opencode/",
+    "linkText": "查看平台",
+    "publishedAt": "2026-10-19",
+    "expireAt": "2026-11-02",
+    "priority": 6
+  },
+  {
+    "id": "notice-2026-1019-upcoming-expiry",
+    "text": "到期提醒：WorkBuddy 独家 Step 5 Preview 限免 10/25 结束；混元 Hy3 / Hy4 preview 限免与开学季福利同于 10/31 到期",
+    "category": "notice",
+    "source": "https://igetoken.com/deals/",
+    "linkText": "查看快讯",
+    "publishedAt": "2026-10-19",
+    "expireAt": "2026-10-31",
+    "priority": 9
+  },
+  {
     "id": "notice-2026-0929-dual-festival-agenda",
     "text": "双节档期多条活动并行，10/7–10/10 陆续到期，错过等下一轮",
     "category": "notice",
@@ -33,7 +73,8 @@
     "source": "https://igetoken.com/perks/",
     "linkText": "去看看",
     "publishedAt": "2026-09-11",
-    "expireAt": "2026-09-25"
+    "expireAt": "2026-09-25",
+    "status": "removed"
   },
   {
     "id": "notice-2026-0911-quota-review",
@@ -42,7 +83,8 @@
     "source": "https://igetoken.com/models/",
     "linkText": "查看资源库",
     "publishedAt": "2026-09-11",
-    "expireAt": "2026-09-25"
+    "expireAt": "2026-09-25",
+    "status": "removed"
   },
   {
     "id": "notice-2026-0830-new-platforms",
