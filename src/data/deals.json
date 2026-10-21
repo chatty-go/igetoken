@@ -1,5 +1,36 @@
 [
   {
+    "id": "2026-10-qoder-deepseek-v41-flash-free",
+    "date": "2026-10-21",
+    "platform_slug": "qoder",
+    "platform_name": "Qoder（阿里 AI 编程平台）",
+    "title": "Qoder x DeepSeek-V4.1-Flash-1017 限时 0 元购：计费系数 0.1× → 0×，个人版免费至 10/25 00:00（UTC+8）",
+    "type": "new_model",
+    "reward": "Qoder 内DeepSeek-Flash（完整型号 DeepSeek-V4.1-Flash-1017）活动期内计费系数由 0.1× 直接降至 0×，**调用不扣任何 Credits**，等于「零元购」；该版本为 DeepSeek 10/17 切上的正式小版本（模型名与价格不变），官方自评 DeepSWE v1.1 通过率 77.0%（Claude Opus 5 为 74.0%）、Terminal-Bench 4.0 由 31.2 跳到 42.3、ProgramBench 由 20.3 拉到 29.1，权重 MIT 开源；Qoder 客户端另提供低/高/最大三档思考强度",
+    "eligibility": "个人版账号（免费版与付费版均可，Credits 余额为 0 也可），无需报名 / 领券 / 邀请码；国际版与 CN 版同步开放。⚠️ 客户端文案为「个人限时免费」，Teams / Enterprise 是否适用未见官方说明",
+    "deadline": "2026-10-25",
+    "howto": [
+      "打开 Qoder（桌面端 / IDE / CLI / 网页版均可）并用个人账号登录",
+      "在模型选择器中找到「DeepSeek-Flash」，副标题即 DeepSeek-V4.1-Flash-1017",
+      "确认该行消耗倍率显示为 0×（若仍是 0.1×，先更新客户端；看不到该模型可在「模型管理」里检查显示开关）",
+      "直接选用即可，无需领券；每日 10:00 另可领 100 通用 Credits（活动结束后日常轻度使用也够）",
+      "站外程序化调用：Settings → API Tokens 创建 PAT（pt- 前缀），配合官方 Agent SDK 或 REST API（https://api.qoder.com.cn/api/v1/）"
+    ],
+    "pitfalls": [
+      "⚠️ **两套截止表述，按最保守的算**：Qoder 官方 X（@qoder_ai_ide，10/19）写「FREE through Oct 24」+「0.0x credits for free and paid users」，客户端显示「至 10/25 00:00（UTC+8）」→ 实为**北京时间 10/24 当天结束、10/25 零点关闭**，别拖到深夜",
+      "⚠️ **公开文档尚未跟上**：Qoder 文档站模型表里 DeepSeek-Flash 仍写常规 0.1×，只有 Qwen3.8-Flash 与国际版 Efficient 档标 0.0×；本次 DeepSeek 限免**更像产品内开关 + 官方社交帖**（此前 Qwen3.8 那次有专门 events 页）→ 官方口径「可用模型及系数以客户端为准」，以你账号里实际显示的倍率为准",
+      "⚠️ 免费的是这一个模型的调用，**不是 Qoder 全部功能**：高阶功能、其他模型、超出套餐的额度照常扣 Credits",
+      "⚠️ **用的是自己的 API Key 接入 DeepSeek 不属于本活动**，仅限 Qoder 内置模型的 0× 系数",
+      "⚠️ 范围仅「个人版」，Teams / Enterprise 是否适用官方未公开说明，别默认能蹭；Credits 余额为 0 的个人账号按官方口径仍可用",
+      "⚠️ 速度可能有波动：社区同期反馈 OpenCode 侧同款模型生成速度从高峰 490 tokens/s 到低谷 50 tokens/s 都出现过；Qoder 网络与调度策略不同但高峰期排队/降速并不意外",
+      "⚠️ 与同平台「Qwen3.8-Flash 限时免费」「每日 100 Credits」「首月订购翻倍」是并行的不同活动，权益口径不要混写；10/25 后 DeepSeek-Flash 预计恢复 0.1×"
+    ],
+    "source": "https://docs.qoder.com/zh/cli/model",
+    "status": "active",
+    "pinHeadline": false,
+    "publishedAt": "2026-10-21"
+  },
+  {
     "id": "2026-10-minimax-m31-flash-free",
     "date": "2026-10-19",
     "platform_slug": "opencode",
