@@ -189,19 +189,19 @@
   {
     "id": "jina-reader-api",
     "product": "Jina Reader",
-    "title": "URL→LLM 就绪 Markdown 内容提取 API，免费 100 万 tokens/月",
+    "title": "URL→LLM 就绪 Markdown 提取 API：新用户一次性 1000 万 tokens 免费试用",
     "type": "free_tier",
-    "amount": "100 万 tokens/月（免 key 也可用 r.jina.ai，约 20 RPM）",
-    "auth": "API Key（Bearer，免 key 低限频）",
+    "amount": "新用户一次性 1000 万 tokens 免费试用（官方 FAQ 原文「ten million tokens」，**非每月刷新**）；Reader 端点 r.jina.ai 免 key 也能用（20 RPM）",
+    "auth": "API Key（Bearer，免费 key 与付费 key 分档）；免 key 低限频可用",
     "interfaces": ["REST", "SDK"],
-    "rate_limit": "免 key ~20 RPM；带 key 500 RPM",
-    "recurrence": "monthly",
+    "rate_limit": "r.jina.ai：免 key 20 RPM / 免费 key 500 RPM / 付费 500 RPM / Premium 5000 RPM；s.jina.ai：免 key 100 RPM / 免费 key 100 RPM / 付费 1000 RPM；全局 Free 档另限 100 RPM + 100K TPM + 2 并发，另有按 IP 的 10,000 次/60 秒",
+    "recurrence": "once",
     "deadline": null,
-    "validity": "每月重置；超出 $0.002–0.05/百万 tokens（按档）",
+    "validity": "免费额度用尽后需充值：Standard $50/10 亿 tokens（$0.050/百万）、Premium $500/110 亿 tokens（$0.045/百万）；失败请求不扣 tokens",
     "source": "https://jina.ai/reader",
     "publishedAt": "2026-09-09",
-    "last_verified": "2026-10-19",
-    "note": "非纯搜索 API，是内容提取（给 URL 返回 clean markdown/JSON，处理 JS/PDF）；s.jina.ai 有搜索端点。与 Serper/Brave 搜索搭配做「搜索→抓取正文」第二步。新 key 常送 10M tokens（以官网为准）；免 key 也可低频使用。"
+    "last_verified": "2026-10-28",
+    "note": "非纯搜索 API，是内容提取（给 URL 返回 clean markdown/JSON，处理 JS/PDF），另有搜索端点 s.jina.ai（`https://s.jina.ai/?q=` 直连可当 SERP API 用，返回 top 5 结果的 URL + 正文）。与 Serper/Brave 等搜索搭配做「搜索→抓取正文」第二步。⚠️ **2026-10-24 重大变更**：Reader 的 premium 转换模式从 **ReaderLM-v2（3× tokens）换成 jina-ocr-v1（40× tokens）** —— 同样一个标准模式计 5,000 tokens 的页面，旧 premium 约 15,000、现在约 200,000，**成本涨约 13 倍**，且工具已换成「把页面当图片读」的 OCR 模式（3.4B MoE、激活 570M/参数，单次输出含公式、表格与阅读顺序的 Markdown）→ 扫描件 / 图片型 PDF 才值得开 OCR，普通网页别开、务必设 token 预算；曾全局默认开旧 premium 的流水线要检查是否已被改路由。⚠️ **s.jina.ai 每次请求固定扣 10,000 tokens 起**，高频搜索比抓正文贵得多。⚠️ 免费额度**仅限非商业用途**，且是新用户一次性赠送、不按月刷新。✅ 官方 FAQ 明确不用你的请求训练任何模型。"
   },
   {
     "id": "tinyfish-web",
