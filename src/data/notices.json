@@ -1,10 +1,50 @@
 [
   {
+    "id": "notice-2026-1028-qiniu-conatus-free",
+    "text": "七牛云 Conatus 限时免费模型上线：1024 程序员节专属，实名认证每日 1 亿 Token（充值后最高 10 亿，至 11/30）",
+    "category": "new",
+    "source": "https://igetoken.com/deals/2026-10-qiniu-conatus-free/",
+    "linkText": "查看快讯",
+    "publishedAt": "2026-10-28",
+    "expireAt": "2026-11-16",
+    "priority": 10
+  },
+  {
+    "id": "notice-2026-1028-opencode-lineup-change",
+    "text": "OpenCode Zen 免费档又一轮轮换：MiniMax M3.1 Flash Free、LongCat 2.5 Preview Free 已下线，当前 8 款（新增 Flint 40B Free）",
+    "category": "notice",
+    "source": "https://igetoken.com/models/opencode/",
+    "linkText": "查看平台",
+    "publishedAt": "2026-10-28",
+    "expireAt": "2026-11-16",
+    "priority": 8
+  },
+  {
+    "id": "notice-2026-1028-qoder-free-extended",
+    "text": "Qoder x DeepSeek-V4.1-Flash-1017 0× 限免官方延长至 11/1 00:00（UTC+8），原定 10/25 结束已作废",
+    "category": "new",
+    "source": "https://igetoken.com/deals/2026-10-qoder-deepseek-v41-flash-free/",
+    "linkText": "查看快讯",
+    "publishedAt": "2026-10-28",
+    "expireAt": "2026-11-16",
+    "priority": 9
+  },
+  {
+    "id": "notice-2026-1028-upcoming-expiry",
+    "text": "到期提醒：混元 Hy3 / Hy4 preview 限免与 WorkBuddy 开学季福利同于 10/31 到期；WorkBuddy 独家 Step 5 Preview 限免已于 10/25 结束",
+    "category": "notice",
+    "source": "https://igetoken.com/deals/",
+    "linkText": "查看快讯",
+    "publishedAt": "2026-10-28",
+    "expireAt": "2026-11-08",
+    "priority": 9
+  },
+  {
     "id": "notice-2026-1019-space-bunny-identity",
-    "text": "Space Bunny（太空兔）真身已揭晓：MiniMax 官方认领，即 M3.1 Flash，免费档模型 ID 已同步换名",
+    "text": "Space Bunny（太空兔）真身已揭晓：MiniMax 官方认领，即 M3.1 Flash（免费档已于 10/28 下线，官方 API 仍可用）",
     "category": "new",
     "source": "https://igetoken.com/deals/2026-10-minimax-m31-flash-free/",
-    "linkText": "查看快讯",
+    "linkText": "查看归档",
     "publishedAt": "2026-10-19",
     "expireAt": "2026-11-02",
     "priority": 10
@@ -21,7 +61,7 @@
   },
   {
     "id": "notice-2026-1019-opencode-lineup-refresh",
-    "text": "OpenCode Zen 免费档完成一轮轮换（当前 9 款）：Step 5 Preview Free、Muse Spark 1.3 等已下线，GLM 5.3 Flash Free 官方已补零留存说明",
+    "text": "OpenCode Zen 免费档完成一轮轮换（当前 8 款）：Step 5 Preview Free、Muse Spark 1.3 等已下线，GLM 5.3 Flash Free 官方已补零留存说明",
     "category": "notice",
     "source": "https://igetoken.com/models/opencode/",
     "linkText": "查看平台",
@@ -31,7 +71,7 @@
   },
   {
     "id": "notice-2026-1019-upcoming-expiry",
-    "text": "到期提醒：WorkBuddy 独家 Step 5 Preview 限免 10/25 结束；混元 Hy3 / Hy4 preview 限免与开学季福利同于 10/31 到期",
+    "text": "到期提醒（已更新）：WorkBuddy 独家 Step 5 Preview 限免 10/25 结束；混元 Hy3 / Hy4 preview 限免与开学季福利同于 10/31 到期",
     "category": "notice",
     "source": "https://igetoken.com/deals/",
     "linkText": "查看快讯",

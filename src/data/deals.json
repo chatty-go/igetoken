@@ -1,14 +1,44 @@
 [
   {
+    "id": "2026-10-qiniu-conatus-free",
+    "date": "2026-10-28",
+    "platform_slug": "qiniu",
+    "platform_name": "七牛云 AI 大模型平台",
+    "title": "七牛云 Conatus 限时免费模型：1024 程序员节专属，实名认证每日 1 亿 Token（充值后最高 10 亿，至 11/30）",
+    "type": "limited_time",
+    "reward": "七牛云 1024 程序员节限时免费模型 **Conatus**（模型 ID `qiniu/conatus-free`）：由多个顶级模型能力融合而成的统一模型，**已完成实名认证的用户每日可享 1 亿 Token 免费额度**，任意一笔大于 100 元且已到账的充值可把每日上限提升至 **10 亿 Token**（历史充值同样计入，多笔不累计）。规格：**1M（1000K）上下文、最大输出 128K**，支持文本 / 图像输入与文本输出，具备工具调用、结构化输出、图像理解、深度思考、内容缓存能力",
+    "eligibility": "活动期内**已登录 + 完成实名认证 + 未受风控限制**的用户；无需领券，登录后即可调用。⚠️ 免费额度每日 00:00（北京时间）重置，当日未用完不累计；同一账号下所有 API Key 共享额度",
+    "deadline": "2026-11-30",
+    "howto": [
+      "注册并登录七牛云账号，进入 AI 大模型平台控制台完成实名认证",
+      "在模型广场找到「Conatus 限时免费模型」，或直接用模型 ID qiniu/conatus-free",
+      "控制台创建 API Key（Bearer / OAuth 2.0 令牌）",
+      "OpenAI 兼容：Base URL `https://api.qnaigc.com/v1`（支持 OpenAI SDK、Codex）；Anthropic Messages 兼容：`https://api.qnaigc.com/`（可配置到 Claude Code）",
+      "想拉高每日上限：任意一笔大于 100 元且已到账的充值即可提升至 10 亿 Token/日"
+    ],
+    "pitfalls": [
+      "🔴 **只吃活动免费额度、不计费也不切换**：免费额度不足时该模型请求**直接被拒绝**，不扣账户余额、不扣资源包、不扣订阅额度与积分，**也不会自动切换到其他模型** → 想继续用需改用模型广场的付费模型",
+      "⚠️ **充值提额度 ≠ 付费续用**：充值只是把每日免费额度上限从 1 亿提到 10 亿，**活动结束（11/30 23:59）后即使还有余额也不能继续调用**，且不自动转为付费模型",
+      "⚠️ **需实名认证**：未完成实名或账号受风控限制的用户无法调用；查询资格与剩余额度在控制台 Conatus 模型入口",
+      "⚠️ 融合模型**底层构成未公开固定**，官方称聚合多个顶级模型能力 → 结果不可完全复现，适合探索与高额度压测，**不适合严格基准测试**",
+      "⚠️ 免费额度不结转：每日 00:00 重置，前一日没用完的直接作废，别指望攒着",
+      "⚠️ 计量含缓存命中：按输入 Token + 输出 Token 计算，命中缓存的输入 Token 也计入免费额度"
+    ],
+    "source": "https://www.qiniu.com/ai/free-models/conatus-2026",
+    "status": "active",
+    "pinHeadline": false,
+    "publishedAt": "2026-10-28"
+  },
+  {
     "id": "2026-10-qoder-deepseek-v41-flash-free",
     "date": "2026-10-21",
     "platform_slug": "qoder",
     "platform_name": "Qoder（阿里 AI 编程平台）",
-    "title": "Qoder x DeepSeek-V4.1-Flash-1017 限时 0 元购：计费系数 0.1× → 0×，个人版免费至 10/25 00:00（UTC+8）",
+    "title": "Qoder x DeepSeek-V4.1-Flash-1017 限时 0 元购：计费系数 0.1× → 0×，个人版免费至 11/1 00:00（UTC+8，官方已延期）",
     "type": "new_model",
     "reward": "Qoder 内DeepSeek-Flash（完整型号 DeepSeek-V4.1-Flash-1017）活动期内计费系数由 0.1× 直接降至 0×，**调用不扣任何 Credits**，等于「零元购」；该版本为 DeepSeek 10/17 切上的正式小版本（模型名与价格不变），官方自评 DeepSWE v1.1 通过率 77.0%（Claude Opus 5 为 74.0%）、Terminal-Bench 4.0 由 31.2 跳到 42.3、ProgramBench 由 20.3 拉到 29.1，权重 MIT 开源；Qoder 客户端另提供低/高/最大三档思考强度",
     "eligibility": "个人版账号（免费版与付费版均可，Credits 余额为 0 也可），无需报名 / 领券 / 邀请码；国际版与 CN 版同步开放。⚠️ 客户端文案为「个人限时免费」，Teams / Enterprise 是否适用未见官方说明",
-    "deadline": "2026-10-25",
+    "deadline": "2026-11-01",
     "howto": [
       "打开 Qoder（桌面端 / IDE / CLI / 网页版均可）并用个人账号登录",
       "在模型选择器中找到「DeepSeek-Flash」，副标题即 DeepSeek-V4.1-Flash-1017",
@@ -17,13 +47,14 @@
       "站外程序化调用：Settings → API Tokens 创建 PAT（pt- 前缀），配合官方 Agent SDK 或 REST API（https://api.qoder.com.cn/api/v1/）"
     ],
     "pitfalls": [
-      "⚠️ **两套截止表述，按最保守的算**：Qoder 官方 X（@qoder_ai_ide，10/19）写「FREE through Oct 24」+「0.0x credits for free and paid users」，客户端显示「至 10/25 00:00（UTC+8）」→ 实为**北京时间 10/24 当天结束、10/25 零点关闭**，别拖到深夜",
+      "✅ **官方已延长至 11/1**：原定 10/25 结束，Qoder 官方账号 10/24 发帖「The free window just got longer 🚀 DeepSeek-V4.1-Flash-1017 stays at 0x credits in Qoder until **Nov 1, 00:00 (UTC+8)**」，官方论坛公告标题同步为「0.0x Credits Until Nov 1」",
+      "⚠️ **原始两套截止表述（历史口径）**：官方 X 10/19 帖写「FREE through Oct 24」+「0.0x credits for free and paid users」，客户端当时显示「至 10/25 00:00（UTC+8）」→ 即**北京时间 10/24 当天结束、10/25 零点关闭**；现延长后同理，**11/1 零点关闭**",
       "⚠️ **公开文档尚未跟上**：Qoder 文档站模型表里 DeepSeek-Flash 仍写常规 0.1×，只有 Qwen3.8-Flash 与国际版 Efficient 档标 0.0×；本次 DeepSeek 限免**更像产品内开关 + 官方社交帖**（此前 Qwen3.8 那次有专门 events 页）→ 官方口径「可用模型及系数以客户端为准」，以你账号里实际显示的倍率为准",
       "⚠️ 免费的是这一个模型的调用，**不是 Qoder 全部功能**：高阶功能、其他模型、超出套餐的额度照常扣 Credits",
       "⚠️ **用的是自己的 API Key 接入 DeepSeek 不属于本活动**，仅限 Qoder 内置模型的 0× 系数",
       "⚠️ 范围仅「个人版」，Teams / Enterprise 是否适用官方未公开说明，别默认能蹭；Credits 余额为 0 的个人账号按官方口径仍可用",
       "⚠️ 速度可能有波动：社区同期反馈 OpenCode 侧同款模型生成速度从高峰 490 tokens/s 到低谷 50 tokens/s 都出现过；Qoder 网络与调度策略不同但高峰期排队/降速并不意外",
-      "⚠️ 与同平台「Qwen3.8-Flash 限时免费」「每日 100 Credits」「首月订购翻倍」是并行的不同活动，权益口径不要混写；10/25 后 DeepSeek-Flash 预计恢复 0.1×"
+      "⚠️ 与同平台「Qwen3.8-Flash 限时免费」「每日 100 Credits」「首月订购翻倍」是并行的不同活动，权益口径不要混写；窗口结束后 DeepSeek-Flash 预计恢复 0.1×"
     ],
     "source": "https://docs.qoder.com/zh/cli/model",
     "status": "active",
@@ -35,18 +66,19 @@
     "date": "2026-10-19",
     "platform_slug": "opencode",
     "platform_name": "OpenCode（Zen 网关）",
-    "title": "MiniMax M3.1 Flash 官方认领 Space Bunny（太空兔）：OpenCode 免费档限时开放，1M 上下文 · 200+ TPS · Agentic 编程",
+    "title": "MiniMax M3.1 Flash 官方认领 Space Bunny（太空兔）：OpenCode 免费档限时开放，1M 上下文 · 200+ TPS · Agentic 编程（已结束 · 10/28 复核已从免费档移除）",
     "type": "new_model",
-    "reward": "MiniMax 官方于 10/19 认领匿名模型 Space Bunny（太空兔）为 **MiniMax M3.1 Flash**，并在 OpenCode Zen 免费档开放 **minimax-m3.1-flash-free**（输入 / 输出 / 缓存全 $0）：稀疏注意力架构、1M 上下文、最高 512K 输出、200+ TPS（P50 稳定 170+）、可调推理强度，官方称 Agentic 任务成本较上代降 70%。官方称该模型匿名期累计处理超 200 万亿 Token",
+    "reward": "【已下线 · 2026-10-28 复核】MiniMax 官方于 10/19 认领匿名模型 Space Bunny（太空兔）为 **MiniMax M3.1 Flash**，并曾在 OpenCode Zen 免费档开放 **minimax-m3.1-flash-free**（输入 / 输出 / 缓存全 $0）：稀疏注意力架构、1M 上下文、最高 512K 输出、200+ TPS（P50 稳定 170+）、可调推理强度，官方称 Agentic 任务成本较上代降 70%。官方称该模型匿名期累计处理超 200 万亿 Token。⚠️ **该免费档已于 10/28 从 OpenCode 免费档移除（已下线）**",
     "eligibility": "注册 OpenCode 账号并创建 API Key 即可调用，无需绑卡、无需 Go 订阅（$10/月为付费增值项）；⚠️ OpenCode 侧为限时免费档，官方未公布截止日期",
     "deadline": "官方未标注截止日期（限时免费、随时可能下线；以 /zen/v1/models 实时列表为准）",
     "howto": [
       "打开 https://opencode.ai/auth 注册并登录，创建 API Key",
       "在 OpenCode 里 /connect 选 OpenCode 粘贴 Key，或直接调用 https://opencode.ai/zen/v1/chat/completions（OpenAI 兼容）",
-      "模型 ID 填 minimax-m3.1-flash-free；调用前先看 /zen/v1/models 确认仍在免费档",
+      "模型 ID 填 minimax-m3.1-flash-free（曾限时免费，现已下线）；调用前先看 /zen/v1/models 确认是否仍在免费档",
       "需要正式版能力也可走 MiniMax 官方渠道：API 每百万 Token 输入 ¥1 / 输出 ¥4 / 缓存读 ¥0.1（10/19 起价格，较上代降 50%+）"
     ],
     "pitfalls": [
+      "【已结束 · 2026-10-28 复核】**minimax-m3.1-flash-free 已从 OpenCode 免费档移除**（实测 /zen/v1/models 实时列表已无该 ID，官方文档 Free models 段落与定价表亦无该档）→ 该免费窗口实际仅维持约 9 天；⚠️ 同一轮还移出了 longcat-2.5-preview-free，并新增 flint-40b-free",
       "🔑 **匿名期与正式版是两个模型 ID**：Space Bunny 时期的 OpenCode ID 是 space-bunny-free，官方认领后同一模型在免费档换成 minimax-m3.1-flash-free；2026-10-19 实测 /zen/v1/models 已无 space-bunny-free，新旧 ID 不可混用",
       "⚠️ **官方文档滞后于实时列表**：OpenCode Zen 文档的 Free models 段落与定价表 10/19 仍列 Space Bunny Free、未收录 MiniMax M3.1 Flash Free → **站内一律以 /zen/v1/models 实时列表为准**，调用前先自查",
       "⚠️ **官方未标注该免费档的隐私口径**：与 GLM 5.3 Flash Free / DeepSeek V4.1 Flash Free（明确标注 zero-retention）不同，文档未见 M3.1 Flash Free 的留存与训练说明 → 按「未标注即保守对待」处理，涉密代码别走这一档",
@@ -56,8 +88,8 @@
       "模型权重尚未开源（官方称稍后发布），Pro 版本「即将推出」→ 当前跑分均为 MiniMax 自报，尚无独立第三方榜单评分"
     ],
     "source": "https://opencode.ai/docs/zh-cn/zen/",
-    "status": "active",
-    "pinHeadline": true,
+    "status": "ended",
+    "pinHeadline": false,
     "publishedAt": "2026-10-19"
   },
   {
@@ -93,7 +125,7 @@
     "date": "2026-10-15",
     "platform_slug": "workbuddy",
     "platform_name": "WorkBuddy（腾讯云）",
-    "title": "腾讯 WorkBuddy 独家限时免费 Step 5 Preview 两周（10/12–10/25）：阶跃旗舰 600B MoE 接入办公工作台",
+    "title": "腾讯 WorkBuddy 独家限时免费 Step 5 Preview 两周（10/12–10/25）：阶跃旗舰 600B MoE 接入办公工作台（已结束 · 恢复 0.43× 积分倍率）",
     "type": "limited_time",
     "reward": "阶跃星辰旗舰基座模型 Step 5 Preview 在国内版 WorkBuddy 独家限时免费开放两周（2026-10-12 至 10-25）：600B 总参 / 27B 激活稀疏 MoE、1M 上下文、原生文本 + 视觉输入；面向深度研究、信息检索、数据分析、文档与 PPT 生成等办公任务，支持多步骤复杂任务持续执行",
     "eligibility": "WorkBuddy 国内版（workbuddy.cn）登录即可在模型列表选用，无需额外配置；官方未设卡点门槛，名额按客户端实际开放为准",
@@ -105,14 +137,15 @@
       "模型规格与后续开源信息见阶跃星辰官网 stepfun.com/step-5-preview"
     ],
     "pitfalls": [
+      "【已结束 · 2026-10-28 复核】限免窗口 10/25 结束，**Step 5 Preview 恢复按 0.43× 积分倍率计费**（推理模型消耗更多、文件处理按文件大小、自动化任务每次执行消耗固定 Credits）→ 限免结束不等于不能继续用，只是回到积分计费规则",
       "🔴 产品内额度，不可导出为 API：Step 5 Preview 限免仅在 WorkBuddy 客户端内生效，额度按「模型倍率 × Token 量」扣减（限免期为 0），无法作为 API Key 站外调用",
-      "⚠️ 「独家」指仅 WorkBuddy 有此免费窗口，同一模型同期在 OpenCode / Cline / Kilo Code / Nous Research 等平台亦有各自免费活动，窗口长度不一致（OpenCode/Cline 侧约至 10/16–10/22），别混为同一活动",
-      "⚠️ 限免结束（10/25）后的定价与是否续期官方尚未公布，别预设会一直免费",
-      "上下文越长单轮积分消耗越多（官方建议多数场景保持默认 200K 窗口），限免期内不限积分但仍受客户端调度与上下文上限约束",
-      "同期 WorkBuddy 还有 Hy3 限免与 Hy4 preview 夜间限免（均至 10/31），三条限免独立计费口径、互不叠加"
+      "⚠️ 「独家」指仅 WorkBuddy 有此免费窗口，同一模型同期在 OpenCode / Cline / Kilo Code / Nous Research 等平台亦有各自免费活动，窗口长度不一致（OpenCode 侧已于 10/15 下线），别混为同一活动",
+      "⚠️ 上下文越长单轮积分消耗越多（官方建议多数场景保持默认 200K 窗口）——**开到 1M 不会让模型更聪明、只会让积分消耗成倍增加**，窗口期内用 1M 跑长任务划算，窗口结束后就得不按需开启",
+      "同期 WorkBuddy 还有 Hy3 限免与 Hy4 preview 夜间限免（均至 10/31），三条限免独立计费口径、互不叠加",
+      "💡 想长期用可走另一条路：领阶跃星辰 Step Plan 会员时长后，在 WorkBuddy「设置→模型→添加模型」填接口地址 https://api.stepfun.com/step_plan/v1（Step Plan 专用地址，填普通 API 地址会走按量计费）+ API Key + 模型名 step-5-preview，自定义模型仅支持 OpenAI 兼容协议"
     ],
     "source": "https://www.workbuddy.cn/",
-    "status": "active",
+    "status": "ended",
     "pinHeadline": false,
     "publishedAt": "2026-10-15"
   },
@@ -259,20 +292,21 @@
     "date": "2026-09-28",
     "platform_slug": "opencode",
     "platform_name": "OpenCode",
-    "title": "OpenCode x 美团 LongCat 2.5 Preview 限时免费开放（1M 上下文 · 多模态 · ZDR）",
+    "title": "OpenCode x 美团 LongCat 2.5 Preview 限时免费开放（1M 上下文 · 多模态 · ZDR）（已结束 · 10/28 复核已从免费档移除）",
     "type": "limited_time",
-    "reward": "美团 9/25 上线的 LongCat-2.5-Preview（约 1.6T 总参 / 48B 激活 MoE，1M 上下文，文+图多模态输入）已进入 OpenCode Zen 免费档，限时输入 / 输出 / 缓存全免（模型 ID：longcat-2.5-preview-free）；官方称使用该模型不消耗 Go 订阅额度；提供方执行 ZDR 零留存政策（不留存数据、不用于模型训练）",
+    "reward": "【已下线 · 2026-10-28 复核】美团 9/25 上线的 LongCat-2.5-Preview（约 1.6T 总参 / 48B 激活 MoE，1M 上下文，文+图多模态输入）曾进入 OpenCode Zen 免费档，限时输入 / 输出 / 缓存全免（模型 ID：longcat-2.5-preview-free）；官方称使用该模型不消耗 Go 订阅额度；提供方执行 ZDR 零留存政策（不留存数据、不用于模型训练）。⚠️ **该免费档已于 10/28 从 OpenCode 免费档移除（已下线）**",
     "eligibility": "注册 OpenCode 账号即可使用免费档，无需订阅 Go 套餐；Go 订阅为可选付费项，用免费模型不需要它",
 "deadline": "官方未标注截止日期（复核：官方 Go 页面仍列 LongCat 2.5 Preview Free「Free for a limited time」且月额度 Unlimited，免费档在原 2 周窗口后延续；限时会随时调整，以 /zen/v1/models 与官方页面实时列表为准）",
 "howto": [
       "打开 opencode.ai/auth 注册账号并登录",
       "创建并复制 API Key，在 OpenCode 里 /connect 选择 OpenCode Zen",
-      "在 /models 里选 LongCat 2.5 Preview Free（模型 ID：longcat-2.5-preview-free，端点 https://opencode.ai/zen/v1/chat/completions）",
+      "在 /models 里选 LongCat 2.5 Preview Free（模型 ID：longcat-2.5-preview-free，端点 https://opencode.ai/zen/v1/chat/completions；⚠️ 该免费档已于 10/28 下线，调用前先看实时列表）",
       "已订阅 Go 的用户走 /zen/go/v1 端点，按官方口径该模型不消耗 Go 额度（官方标注该模型月度限额为 Unlimited，仍属限时空档）"
     ],
-    "summary": "美团第二代 LongCat（约 1.6T 总参 / 48B 激活 MoE，agent-first 定位：长程任务执行、工具调用、多步规划）9/25 上线 LongCat-2.5-Preview，OpenCode 同步接住：Zen 免费档新增 LongCat 2.5 Preview Free，输入 / 输出 / 缓存读写全部 $0，模型 ID 为 longcat-2.5-preview-free。规格亮点：1M token 上下文（适配大仓库、长重构）、文+图多模态（UI 与图表分析）、ZDR 零留存（官方明确提供方不留存数据、不用于模型训练，隐私档位高于多数免费模型）、官方称不消耗 Go 订阅额度。免费窗口官方宣布持续 2 周（9/26 起算，约 10/10 前后到期）。注意区分：美团官方 API 平台侧是限时速价（$0.30/$0.006/$1.20 每百万）+ 老用户赠 500 万 token，并非全免；「免费 2 周」仅指 OpenCode Zen 网关侧。以官方为准。",
+    "summary": "【已下线 · 2026-10-28 复核】美团第二代 LongCat（约 1.6T 总参 / 48B 激活 MoE，agent-first 定位：长程任务执行、工具调用、多步规划）9/25 上线 LongCat-2.5-Preview，OpenCode 同步接住：Zen 免费档曾新增 LongCat 2.5 Preview Free，输入 / 输出 / 缓存读写全部 $0，模型 ID 为 longcat-2.5-preview-free。规格亮点：1M token 上下文（适配大仓库、长重构）、文+图多模态（UI 与图表分析）、ZDR 零留存（官方明确提供方不留存数据、不用于模型训练，隐私档位高于多数免费模型）、官方称不消耗 Go 订阅额度。⚠️ **该免费档已于 10/28 从 OpenCode 免费档移除（已下线），实际免费窗口约维持 1 个月**。注意区分：美团官方 API 平台侧是限时速价（$0.30/$0.006/$1.20 每百万）+ 老用户赠 500 万 token，并非全免；「免费」仅指 OpenCode Zen 网关侧。以官方为准。",
     "pitfalls": [
-      "免费窗口官方原宣布 2 周（9/26 起算、约 10/10 前后到期），但 2026-10-15 复核官方 Go 页面仍将其列为 LongCat 2.5 Preview Free「Free for a limited time」、月度限额 Unlimited → 实为**在原窗口后延续**、未设新截止日；限时会随时调整，调用前先看 /zen/v1/models 实时列表",
+      "【已结束 · 2026-10-28 复核】**longcat-2.5-preview-free 已从 OpenCode 免费档移除**（实测 /zen/v1/models 实时列表已无该 ID，官方文档 Free models 段落与定价表亦不再列出）→ 10/15 复核时「原 2 周窗口后延续、无新截止日」的判断已失效，实际免费窗口约维持 1 个月",
+      "免费窗口官方原宣布 2 周（9/26 起算、约 10/10 前后到期），但 2026-10-15 复核官方 Go 页面仍将其列为 LongCat 2.5 Preview Free「Free for a limited time」、月度限额 Unlimited → 当时判定为**在原窗口后延续**、未设新截止日；最终 10/28 复核确认已下线，**免费档轮换不预告、随时可能下线**，调用前先看 /zen/v1/models 实时列表",
       "「免费 2 周」仅指 OpenCode Zen 网关侧 —— 美团官方 API 平台侧是限时速价（输入 $0.30 / 缓存 $0.006 / 输出 $1.20 每百万，目录价 $0.75/$0.015/$2.95）+ 老用户赠 500 万 token，不是全免，两边别混",
       "LongCat 2.5 Preview Free 走 ZDR 零留存档（提供方不留存、不训练），隐私档位高于「免费期数据可能用于改进模型」的 MiMo 系免费档 —— 但未公开源码、生产凭据、涉密代码仍不建议走任何免费档",
       "模型是 Preview：无独立复现的第三方跑分，厂商基准分数仅供参考；生产关键路径别迁移上去，官方也明示 Preview 内容可能变化",
@@ -280,7 +314,7 @@
       "「不消耗 Go 额度」为官方口径；Zen 免费档（/zen/v1）与 Go 渠道（/zen/go/v1）是两个端点，配置时别混用"
     ],
     "source": "https://opencode.ai/docs/zh-cn/zen/",
-    "status": "active",
+    "status": "ended",
     "pinHeadline": false
   },
   {
