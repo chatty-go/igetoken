@@ -150,7 +150,7 @@
     "source": "https://exa.ai/pricing",
     "publishedAt": "2026-09-09",
     "last_verified": "2026-10-19",
-    "note": "自建 embedding 索引（非Google），语义/神经搜索，返回结构化 JSON + 引用，与 LangChain/LlamaIndex 集成成熟。⚠️ 2026-10-19 复核：免费计量口径已由「1,000 次/月」改为「$10 credits/月 + $10 新人礼」；因 Search 单价 $7/千次，实际约 1,400 次/月。官方托管 MCP（mcp.exa.ai/mcp，默认工具 web_search_exa / web_fetch_exa），另有 Claude Connector、ChatGPT 插件与 Agent Skills。"
+    "note": "自建 embedding 索引（非Google），语义/神经搜索，返回结构化 JSON + 引用，与 LangChain/LlamaIndex 集成成熟。⚠️ 2026-10-19 复核：免费计量口径已由「1,000 次/月」改为「$10 credits/月 + $10 新人礼」；因 Search 单价 $7/千次，实际约 1,400 次/月。官方托管 MCP（mcp.exa.ai/mcp，默认工具 web_search_exa / web_fetch_exa），另有 Claude Connector、ChatGPT 插件与 Agent Skills。💡 **限时优惠码**：据第三方优惠汇总站信息，控制台账单页输入 `EXA20FREEBUFF` 与 `EXA20FIRESHIP` 可各获赠 $20、双码叠加合计 $40 检索额度（官方定价页未公示，以实际控制台为准）"
   },
   {
     "id": "serpapi-search-api",

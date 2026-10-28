@@ -1,5 +1,47 @@
 [
   {
+    "id": "workbuddy-teacher-charity-2026",
+    "product": "WorkBuddy 教育公益版",
+    "title": "全国教师每月 2000 积分，连续 12 个月（不限地区与学段）",
+    "type": "limited",
+    "amount": "每月 2000 积分，连续 12 个月（合计 24000 积分）",
+    "condition": "全国范围内小学 / 中学 / 高校教师均可申领；通过「腾讯 WorkBuddy」微信公众号底部菜单「教育公益」或官方二维码进入申领入口，填写姓名、手机号、学校等身份信息并提交审核；以学校或区域为单位申领的，可由相关单位统一报送、集中办理开通",
+    "recurrence": "monthly",
+    "deadline": null,
+    "validity": "审核通过后 3 个工作日内开通；此后每月 1 号积分自动补满、无需手动领取，连续 12 个月",
+    "source": "https://www.workbuddy.cn/",
+    "last_verified": "2026-10-28",
+    "note": "🔴 产品内积分，不可导出为 API Key，仅限 WorkBuddy 教育公益版内使用（备课、课件生成、家校沟通、学情分析等）。腾讯 SSV 数字教育实验室与 WorkBuddy 团队联合研发，首发实验地为深圳福田区（约 110 所学校、近 1.3 万名教师全配备）。内置 209 位教育专家（联合北大、北师大），把教学设计、家校共育、学生成长等场景做成现成入口，教师不必先写提示词。⚠️ 登录需在账号列表里选「教育公益版」，看不到要先升级客户端至 5.8.0 及以上。官方未公布 12 个月计划的截止日期，申领前建议先确认入口仍开放。"
+  },
+  {
+    "id": "workbuddy-wecom-teacher-free-2026",
+    "product": "WorkBuddy（企业微信入口）",
+    "title": "企业微信内领 2000 积分限免名额：先到先得，11/14 截止",
+    "type": "limited",
+    "amount": "2000 积分（限免试用名额）",
+    "condition": "已开通学校企业微信的师生：企业微信桌面端升级至 5.0.12 及以上 → 左上角头像 → 设置 → 关于 → 检查更新 → 左侧边栏「智能机器人」→ 进入首页点击 WorkBuddy「领取使用」",
+    "recurrence": "once",
+    "deadline": "2026-11-14",
+    "validity": "名额有限、先到先得，官方未公布积分有效期",
+    "source": "https://www.workbuddy.cn/",
+    "last_verified": "2026-10-28",
+    "note": "🔴 产品内积分，不可导出为 API Key，仅限 WorkBuddy 产品内使用。⚠️ **与「教育公益版」是两个独立入口、名额与积分不互通**（官方明确）：企业微信渠道先到先得且有硬截止（11/14），建议已开通企微的教师优先走这条；未领到的再走公众号教育公益版入口（审核制、无硬截止）。名额耗尽后入口即关闭。"
+  },
+  {
+    "id": "freebuff-coding-agent-2026",
+    "product": "Freebuff（Codebuff 团队）",
+    "title": "免订阅 / 免绑卡 / 免 API Key 的免费编程 Agent：自带 9 个子 Agent 与多款免费模型",
+    "type": "free_tier",
+    "amount": "每日免费额度按地区差异：美加英澳新等 30 小时/天，其他国家 5 小时/天，VPN 或代理 4 小时/天；按「Freebucks」计量，免费档每天 25 Freebucks（VPN 20）",
+    "condition": "无需注册、无需配置：`npm install -g freebuff`（需 Node.js 18+），进入项目目录执行 `freebuff` 即可；提供终端 CLI、桌面端、网页端、云端与聊天五种形态",
+    "recurrence": "daily",
+    "deadline": null,
+    "validity": "每日额度午夜重置、当日不结转；广告支持（终端提示符上方一行文字广告）",
+    "source": "https://freebuff.com/cli",
+    "last_verified": "2026-10-28",
+    "note": "🔴 产品内额度，不可导出为 API Key：免费模型（MiMo V2.6 Flash 为默认、GLM 5.3 Flash、DeepSeek V4.1 Flash 10/17、Solar Pro 4、Solar Mini 4、Space Bunny Alpha 等）只能在 Freebuff 客户端内消耗。⚠️ **免费档是 limited mode**：每天 6 个 1 小时会话，GPT-6 Luna、MiMo V2.6 Pro、DeepSeek V4.1 Flash Fast 等只对 full access（付费）开放。⚠️ 地区差异极大——上述 20 国 30 小时/天，其他国家仅 5 小时/天、用 VPN 反而降到 4 小时/天。🔴 隐私需注意：官方明示会收集 prompts、messages、代码、文件、仓库数据与 agent trace 用于广告个性化（上传的文件与所连仓库不共享给广告方）→ 涉密 / NDA 代码别用，改用 BYOK 工具。"
+  },
+  {
     "id": "workbuddy-ai-invite-2026",
     "product": "WorkBuddy 海外版",
     "title": "邀请好友各得积分：你 +100 / 好友 +350，注册再送 250 Credits",

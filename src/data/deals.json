@@ -1,5 +1,93 @@
 [
   {
+    "id": "2026-10-scnet-maas-extended",
+    "date": "2026-10-28",
+    "platform_slug": "scnet",
+    "platform_name": "超算互联网（SCNet）",
+    "title": "超算互联网 MaaS 特惠专场延长至 11/10：新客仍可免费领 1000 万 Token，首单 0.1 元秒 DeepSeek-V4.1-Flash-1017",
+    "type": "limited_time",
+    "reward": "超算互联网（scnet.cn）「MaaS 特惠专场」活动期由 8/13 延至 **11/10 23:59**（北京时间），新客两档福利仍在：**① 新客尝鲜** —— 注册即领 **1000 万 Token** 量包（模型 GLM-5.3-Flash、上下文 1024K，实时到账、**到账后 30 天有效**）；**② 新客首单秒杀** —— 每天 10:00 开抢、库存有限，**DeepSeek-V4.1-Flash-1017 5000 万 Token 仅 ¥0.10**（原价 ¥20.50，约 0.04 折）、GLM-5.3-Flash 5000 万 ¥0.10、DeepSeek-V4.1-Flash 2000 万 ¥0.10、Qwen3.8-Flash 1000 万 ¥0.10；Kimi-K3 / Qwen3.8-Max 也参与折扣",
+    "eligibility": "限 **2026-08-13 至 11-10 活动期间首次注册**的超算互联网用户（纯新户，老账号不在此列），每账号限领 1 次、总量有限先到先得；手机号注册即可，无需绑卡",
+    "deadline": "2026-11-10",
+    "howto": [
+      "手机号注册登录 https://www.scnet.cn",
+      "进入活动页「MaaS 特惠专场」→ 先在「新客尝鲜」领 1000 万 Token 量包（实时到账，30 天有效）",
+      "再到「新客首单特惠」选 0.1 元套餐（每天 10:00 开抢、每日库存有限，售完即止）",
+      "控制台 → 模型服务 → API Key 管理创建 Key（完整 Key 只显示一次，当场复制）",
+      "接入端点：OpenAI 兼容 `https://api.scnet.cn/api/llm/v1`；Anthropic 兼容 `https://api.scnet.cn/api/llm/anthropic`（官方点名兼容 Claude Code、Cursor、Cline、RooCode、OpenCode、Codex、OpenClaw）"
+    ],
+    "pitfalls": [
+      "🔴 **赠送额度用完会自动扣现金余额**：官方结算顺序是「赠送免费 Tokens → 现金余额」，且**不弹窗确认**；如果充过值，额度烧完下一笔调用直接从余额扣 → 不想产生扣费就别充值，或在额度见底前停用 Key / 停掉自动任务",
+      "⚠️ **30 天账期是硬线**：1000 万 Token 到账起 30 天内有效、过期作废，**不是每天续杯**，别领回来放着；临近收口再领，可用天数与活动剩余时间重叠更少",
+      "⚠️ **发放模型可能变**：海报印的是 GLM-5.3-Flash，官方规则写明「实际发放的模型可能根据供应情况调整为其他规格模型，以到账时平台显示为准」",
+      "🔴 **禁止多号叠加**：平台按手机号、身份证号、支付账号、邮箱、设备识别码、IP 等多维信息判定「同一自然人」，多账号重复领会被合并计算，超出部分算违规、可取消资格并收回已发福利",
+      "⚠️ **首单秒杀每天 10:00 开抢、库存有限**，不是想买就有；量包自生效起 30 天有效且**不支持无理由退款**（仅平台技术原因无法使用可 7 日内申请退）",
+      "⚠️ **Token Plan 订阅 Key（sk-tp-）与通用 Key 完全不同、不能混用**：官方 FAQ 明确 Token Plan「仅限在 AI 编程工具、智能体工具中交互式使用」，Dify / Postman / cURL 等算违规、可能导致订阅被暂停；用错不会报错而是直接按量扣钱",
+      "⚠️ 第三方讨论提到部分模型缓存命中价高于模型厂商官方渠道，且用量统计可能延迟 → 真实账单按所用模型、缓存命中率与输入输出比例算，不是按海报数字算"
+    ],
+    "source": "https://www.scnet.cn/home/subject/maas/index.html",
+    "status": "active",
+    "pinHeadline": false,
+    "publishedAt": "2026-10-28"
+  },
+  {
+    "id": "2026-10-inferx-deepseek-v41-flash-free",
+    "date": "2026-10-28",
+    "platform_slug": "inferx",
+    "platform_name": "InferX",
+    "title": "InferX x DeepSeek-V4.1-Flash-1017 单价归零：输入输出全 $0（100% off，限时促销，余额 $0 也能调）",
+    "type": "limited_time",
+    "reward": "InferX 端点 `deepseek-v4.1-flash-1017` 打 **100% off**，输入 $0.30→**$0**、输出 $1.20→**$0**、缓存读 $0.006→**$0**（512K 上下文）——注意这不是「注册送额度」，而是**直接把价目表单价划成零**，所以账户余额 $0、额度上限 $0 也照样能调；同门不带 1017 的 `deepseek-v4.1-flash` 仅 5 折（1M 上下文但要钱），GLM-5.3 Flash 7 折，Kimi K3 / Qwen3.8 Max 原价",
+    "eligibility": "Google / GitHub OAuth 一键注册，不用邮箱验证、**不绑卡**；OpenAI 兼容接口，标准 OpenAI SDK 三行即可调用",
+    "deadline": "官方未公布截止日期（官方 X 10/24 原话「接下来几天」），属限时促销、随时可能恢复原价",
+    "howto": [
+      "打开 https://model.inferx.net/ 注册（建议走 Google 登录，GitHub OAuth 授权链当前有故障）",
+      "控制台创建 API Key（形如 `ix_…`），复制完整",
+      "调用端点填 `https://model.inferx.net/endpoints/v1`（⚠️ 官方 Quickstart 文档写的 model.inferx.net/v1 是错的，会报 tenant is not allowed）",
+      "模型 ID 填 deepseek-v4.1-flash-1017，OpenAI SDK 直接用"
+    ],
+    "pitfalls": [
+      "⚠️ **免费 = 价目表 100% off，不是送额度**：所以没有「额度用完」这回事，但也意味着一旦运营关掉促销、单价立刻恢复 $0.30/$1.20 → 看到就用，别收藏",
+      "⚠️ **会挤**：实测 3 次请求有 1 次返回「all replicas at capacity」（HTTP 200 都不到、直接一段 service failure 文本），退避几秒重试即可，失败不收费",
+      "⚠️ **base URL 以端点详情页为准**：`/endpoints/v1` 才是能用的，文档里的 model.inferx.net/v1 报「tenant is not allowed on provider API」；官方文档滞后是常态",
+      "⚠️ GitHub OAuth 当前报 Access denied（平台自身 redirect 配置问题），走 Google 登录；端点带 reasoning 字段、流式可见思维链",
+      "⚠️ 促销随时结束且官方不预告；本条仅覆盖 1017 版本，不带 1017 的 deepseek-v4.1-flash 只有 5 折（要钱）"
+    ],
+    "source": "https://model.inferx.net/",
+    "status": "active",
+    "pinHeadline": false,
+    "publishedAt": "2026-10-28"
+  },
+  {
+    "id": "2026-10-coderabbit-deep-scan-free",
+    "date": "2026-10-28",
+    "platform_slug": "coderabbit",
+    "platform_name": "CodeRabbit",
+    "title": "CodeRabbit 限时承担 100 万美元 Deep Scan 安全扫描费用：2 人及以上组织每家最高 $5,000（至 11/8）",
+    "type": "limited_time",
+    "reward": "CodeRabbit 拿出**最高 100 万美元**覆盖 Deep Scan 用量（先到先得）：**11/8 前**任意**成员数 ≥ 2** 的组织可免费使用，每组织最高覆盖 **$5,000** 的 Deep Scan 扫描与修复用量；开源项目、现有客户、过往客户与从未用过的团队都符合资格。Deep Scan 会扫描整个仓库的已提交代码、映射代码库并做语义分析判断漏洞是否真可被利用，还会用独立验证器复核后才把结论交给团队（只报有证据支撑的发现），并可对选中的发现起草符合仓库规范的修复 PR（人工 review 后合并）",
+    "eligibility": "组织成员数 **≥ 2** 即可；开源维护者团队、现有 / 过往客户、从未用过 CodeRabbit 的团队均可参加；需登录或注册账号并连接代码仓库",
+    "deadline": "2026-11-08",
+    "howto": [
+      "登录或注册 CodeRabbit 账号",
+      "连接一个代码仓库（可先从团队 / 社区最依赖的那个仓库开始）",
+      "运行 Deep Scan，官方在总额度未耗尽前替你承担费用",
+      "结算方式：只有被判定「有证据支撑」的发现才会转成修复，额度买的是排查与修复本身，不承诺所有发现都会被修掉"
+    ],
+    "pitfalls": [
+      "🔴 **单人维护者不适用**：官方写明是「2 人及以上成员的组织」，一人维护的仓库不满足条件，报名也不会改变这一点",
+      "⚠️ **总额 $100 万先到先得**：每组织 $5,000 的上限取决于共享额度池是否还有余额，池子耗尽即止，不是人人保底",
+      "⚠️ **已领取未使用的额度不结转**：不能跨过截止日、也不能跨过共享池耗尽",
+      "🔴 **这是产品服务额度、不是 API Token 额度**：Deep Scan 是 CodeRabbit Secure 的一项扫描能力（用 GPT-6.1 Sol 与 GPT Cyber 模型），无法导出为 API Key 站外调用",
+      "⚠️ 官方口径窗口是 10/23–11/8（23:59:59 PST 截止），与国内时区换算后**实际可用到 11/9 早上**；站内按官方日期写 11/8",
+      "💡 值得先自查的三类配置失误：密钥 / 令牌是否进了仓库、CI 权限与云角色是否过宽、依赖锁文件多久没更新"
+    ],
+    "source": "https://www.coderabbit.ai/blog/one-million-security-scans-and-fixes",
+    "status": "active",
+    "pinHeadline": false,
+    "publishedAt": "2026-10-28"
+  },
+  {
     "id": "2026-10-qiniu-conatus-free",
     "date": "2026-10-28",
     "platform_slug": "qiniu",
@@ -26,7 +114,7 @@
     ],
     "source": "https://www.qiniu.com/ai/free-models/conatus-2026",
     "status": "active",
-    "pinHeadline": false,
+    "pinHeadline": true,
     "publishedAt": "2026-10-28"
   },
   {
