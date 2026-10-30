@@ -1,5 +1,37 @@
 [
   {
+    "id": "2026-10-zhipu-weekend-build-vii",
+    "date": "2026-10-30",
+    "platform_slug": "zhipu",
+    "platform_name": "智谱AI（BigModel）",
+    "title": "智谱 ZCode WEEKEND BUILD 第七轮：5 亿 GLM-5.3-Flash Token（10/30 23:00 生效 → 11/2 09:00 过期）",
+    "type": "limited_time",
+    "reward": "每人 **5 亿（500,000,000）GLM-5.3-Flash Token**（本轮单份额度较往轮 3 亿提升至 5 亿）：ZCode 客户端左下角「1024 程序员节」/ WEEKEND BUILD 卡片领取，**北京时间 2026-10-30（周五）23:00 生效，有效期至 2026-11-02（周一）09:00**，到点清零不累积。额度对应 GLM-5.3-Flash（GLM-5 系列首个原生多模态模型，100 万 Token 上下文、支持文本 / 图像 / 视频输入，权重 MIT 开源）",
+    "eligibility": "所有登录 ZCode 客户端的用户（新老用户均可，无需绑卡、无需订阅 Coding Plan；国内账号走 BigModel 登录、海外账号走 Z.ai 登录）；打开客户端看到左下角卡片即可点击领取，额度到点自动生效",
+    "deadline": "2026-11-02 09:00",
+    "howto": [
+      "更新到最新版 ZCode 客户端（官方提示 3.10 以下版本没有活动入口；支持 macOS / Windows / Linux，官网 zcode.z.ai 下载）",
+      "登录后点左下角「1024 程序员节」/ WEEKEND BUILD 按钮领取；卡片没弹出就完全退出客户端再重启动刷新",
+      "领取后显示「待生效」属正常状态，额度到 10/30 23:00 自动进账，不必反复点击",
+      "生效后把使用通道切到 **Global Building**、模型选为 **GLM-5.3-Flash**（漏这一步会照扣 Coding Plan 套餐额度），可在 Settings → Usage stats 确认计量是否暂停"
+    ],
+    "pitfalls": [
+      "🔴 **产品内额度，不可导出为 API**：这些 Token 只能在 ZCode 客户端内用，转不成 API Key、也接不进 Cursor / Claude Code 等其他工具 —— 定位是「一段免费算力」，白天的活该走 API 还得走 API",
+      "⚠️ **「领取」与「生效」之间有 4 小时空档**：19:00 开放领取、23:00 才进入使用窗口；19 点领完发现跑不起来不是 Bug，等到 23 点即可（官方公告用 UTC 表述：领取 11:00 起、使用 15:00–次日 01:00 UTC，换算即北京时间 19:00 / 23:00–次日 09:00）",
+      "⚠️ **只免 Flash、不免 GLM-5.3**：窗口里若手滑选了旗舰模型 GLM-5.3，照常扣套餐额度 —— 领取后务必确认模型停在 GLM-5.3-Flash、通道在 Global Building",
+      "⚠️ **到点清零、不累积**：11/2 09:00 失效，未用完直接作废，别指望攒到下周",
+      "⚠️ **「5 亿」是这一份包的总量、不是每模型各 5 亿**：1024 程序员节那波 5 亿的构成是 GLM-5.3 两亿 + Flash 三亿；本轮卡片标注的是 GLM-5.3-Flash · 5 亿，别按截图大字误读",
+      "⚠️ **「5 亿」也不等于无限流畅**：社区反馈高峰期（尤其周末深夜）会有速率限制与排队，客户端可能出现 Reconnecting 重连甚至任务中断，付费用户同样中招 → 重要改动先在 Git 留好分叉",
+      "⚠️ 当前并发上限为 **3 个任务**；额度虽大，但并发才是真瓶颈",
+      "⚠️ **别与「每天 3 亿」常态活动混淆**：智谱自 10/27 起改为**每天免费送 3 亿 GLM-5.3-Flash**（每天 19:00 领取、当晚 23:00–次日 09:00 可用、次日清零）；本条是**周末专属 5 亿包**（跨到下周一 09:00），两个是并行活动、额度独立，别混着算",
+      "活动以客户端内活动卡片形式发布，无独立外链与公开活动页；来源为智谱官方 ZCode 官网，具体时间与规则以客户端卡片及官方公告为准"
+    ],
+    "source": "https://zcode.z.ai/",
+    "status": "active",
+    "pinHeadline": true,
+    "publishedAt": "2026-10-30"
+  },
+  {
     "id": "2026-10-scnet-maas-extended",
     "date": "2026-10-28",
     "platform_slug": "scnet",
@@ -114,7 +146,7 @@
     ],
     "source": "https://www.qiniu.com/ai/free-models/conatus-2026",
     "status": "active",
-    "pinHeadline": true,
+    "pinHeadline": false,
     "publishedAt": "2026-10-28"
   },
   {

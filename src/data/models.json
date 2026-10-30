@@ -53,9 +53,10 @@
     "register_url": "https://bigmodel.cn",
     "docs_url": "https://docs.bigmodel.cn",
     "tagline": "GLM 系列模型官方开放平台，免费力度国内第一梯队",
-    "highlight": "新用户注册送 2000 万 Token，GLM-4-Flash 永久免费",
+    "highlight": "新用户注册送 2000 万 Token，GLM-4-Flash 永久免费；ZCode 客户端侧免费额度密集：10/30–11/2 周末专属 5 亿 GLM-5.3-Flash（23:00 生效→周一 9:00 过期），10/27 起另有每天 3 亿 GLM-5.3-Flash（19:00 领、当晚 23:00–次日 9:00）",
     "tags": ["注册送", "永久免费", "国内直连"],
     "offers": [
+      { "model": "ZCode WEEKEND BUILD 第七轮：5 亿 GLM-5.3-Flash Token（10/30 23:00 → 11/2 09:00）", "quota": "每人 5 亿（500,000,000）GLM-5.3-Flash Token，ZCode 客户端左下角「1024 程序员节」/ WEEKEND BUILD 卡片领取，10/30（周五）23:00 生效、有效期至 11/2（周一）09:00，到点清零不累积；⚠️ **仅限 ZCode 客户端内使用、不可导出为 API Key**；⚠️ 领取（19:00 起）与生效（23:00）之间有 4 小时空档；⚠️ 只免 Flash 不免旗舰 GLM-5.3，需把通道切到 Global Building 且模型选 GLM-5.3-Flash；当前并发上限 3 个任务", "type": "limited" },
       { "model": "GLM-4-Flash", "quota": "永久免费不限量（限约 30 并发）", "type": "permanent" },
       { "model": "全系模型体验包", "quota": "新用户注册送 2000 万 Token（时效以控制台为准）", "type": "signup" },
       { "model": "GLM-5.3（ZCode Start 体验套餐）", "quota": "每天赠送 300 万 Token", "type": "daily" },
@@ -68,6 +69,10 @@
       "用下方调用示例或客户端配置接入，先拿 GLM-4-Flash 免费练手"
     ],
     "pitfalls": [
+      "🔴 **ZCode 客户端侧额度 ≠ 开放平台 API Token**：WEEKEND BUILD 5 亿、每天 3 亿、Trust Build 等一律只在客户端内消耗，转不成 API Key、也接不进 Cursor / Claude Code；别拿「免费额度很大」误当成可站外调用的 API 资源",
+      "⚠️ **别与「每天 3 亿」混淆**：智谱自 10/27 起改为每天送 3 亿 GLM-5.3-Flash（19:00 领取、当晚 23:00–次日 09:00 可用、次日清零）；10/30 起另有**周末专属 5 亿包**（周五 23:00 生效→周一 09:00 过期），两者并行、额度独立",
+      "⚠️ **领取后 4 小时内不能用**：19:00 开放领取、23:00 才进账生效，领完显示「待生效」属正常；且只免 Flash 不免旗舰 GLM-5.3，选错模型照样扣 Coding Plan 套餐额度",
+      "⚠️ **周末深夜高峰会限流排队**，客户端可能出现 Reconnecting 重连甚至任务中断（付费用户同样中招）→ 重要改动先在 Git 留分叉",
       "GLM-4-Flash 免费但有并发限制，高峰期可能限流",
       "2000 万体验包有有效期，在控制台注意到期时间，别攒着不用",
       "网页版聊天的额度与 API Token 是两套体系，别混淆",
@@ -83,7 +88,7 @@
       { "name": "Coding Plan · OpenAI Chat Completion 协议", "url": "https://open.bigmodel.cn/api/coding/paas/v4" },
       { "name": "Coding Plan · OpenAI Response 协议", "url": "https://open.bigmodel.cn/api/v1" }
     ],
-    "last_verified": "2026-09-22",
+    "last_verified": "2026-10-30",
     "rating": 4,
     "ratingNote": "编辑部实测：GLM 系列模型质量稳定、国内直连延迟低、免费力度第一梯队；仅高峰期偶有限流、长上下文缓存成本偏高，属正常范畴。另外 GLM 近期在 ZCode 客户端中赠送 Token 的活动较为频繁，可以多关注，常有免费额度惊喜。",
     "devAgent": {
