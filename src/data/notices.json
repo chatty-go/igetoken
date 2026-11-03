@@ -1,6 +1,7 @@
 [
   {
     "id": "notice-2026-1030-zcode-weekend-build-vii",
+    "status": "removed",
     "text": "智谱 ZCode WEEKEND BUILD 第七轮：5 亿 GLM-5.3-Flash Token，今晚 23:00 生效 → 11/2 09:00 过期（客户端内领取）",
     "category": "new",
     "source": "https://igetoken.com/deals/2026-10-zhipu-weekend-build-vii/",
@@ -51,6 +52,7 @@
   },
   {
     "id": "notice-2026-1028-qoder-free-extended",
+    "status": "removed",
     "text": "Qoder x DeepSeek-V4.1-Flash-1017 0× 限免官方延长至 11/1 00:00（UTC+8），原定 10/25 结束已作废",
     "category": "new",
     "source": "https://igetoken.com/deals/2026-10-qoder-deepseek-v41-flash-free/",
@@ -71,6 +73,7 @@
   },
   {
     "id": "notice-2026-1019-space-bunny-identity",
+    "status": "removed",
     "text": "Space Bunny（太空兔）真身已揭晓：MiniMax 官方认领，即 M3.1 Flash（免费档已于 10/28 下线，官方 API 仍可用）",
     "category": "new",
     "source": "https://igetoken.com/deals/2026-10-minimax-m31-flash-free/",
@@ -81,6 +84,7 @@
   },
   {
     "id": "notice-2026-1019-search-column-refresh",
+    "status": "removed",
     "text": "Web Search API 专栏扩容至 13 条：新增 Parallel / Diffbot / Linkup / You.com，并修正 Brave、Exa、Firecrawl 三家已变更的免费额度",
     "category": "notice",
     "source": "https://igetoken.com/search/",
@@ -91,6 +95,7 @@
   },
   {
     "id": "notice-2026-1019-opencode-lineup-refresh",
+    "status": "removed",
     "text": "OpenCode Zen 免费档完成一轮轮换（当前 8 款）：Step 5 Preview Free、Muse Spark 1.3 等已下线，GLM 5.3 Flash Free 官方已补零留存说明",
     "category": "notice",
     "source": "https://igetoken.com/models/opencode/",
@@ -101,6 +106,7 @@
   },
   {
     "id": "notice-2026-1019-upcoming-expiry",
+    "status": "removed",
     "text": "到期提醒（已更新）：WorkBuddy 独家 Step 5 Preview 限免 10/25 结束；混元 Hy3 / Hy4 preview 限免与开学季福利同于 10/31 到期",
     "category": "notice",
     "source": "https://igetoken.com/deals/",
@@ -111,6 +117,7 @@
   },
   {
     "id": "notice-2026-0929-dual-festival-agenda",
+    "status": "removed",
     "text": "双节档期多条活动并行，10/7–10/10 陆续到期，错过等下一轮",
     "category": "notice",
     "source": "https://igetoken.com/deals/",
@@ -120,6 +127,7 @@
   },
   {
     "id": "notice-2026-0929-zcode-trust-build-daily",
+    "status": "removed",
     "text": "ZCode Trust Build：每日 1 亿 GLM-5.3-Flash 开领（仅客户端内）",
     "category": "new",
     "source": "https://igetoken.com/deals/2026-09-zcode-trust-build-100m/",
@@ -129,6 +137,7 @@
   },
   {
     "id": "notice-2026-0929-longcat-25-free",
+    "status": "removed",
     "text": "OpenCode × LongCat 2.5 限时免费：1M 上下文 · 多模态",
     "category": "new",
     "source": "https://igetoken.com/deals/2026-09-opencode-longcat-25-free/",
@@ -178,6 +187,7 @@
   },
   {
     "id": "notice-2026-0907-dots-studio",
+    "status": "removed",
     "text": "小红书 Dots Studio dots3-note Preview（280B MoE、512K 上下文、多模态、限时免费 API）",
     "category": "new",
     "source": "https://igetoken.com/models/dots/",
@@ -187,6 +197,7 @@
   },
   {
     "id": "notice-2026-0907-search-api",
+    "status": "removed",
     "text": "「Web Search API」专栏上线：可站外调用的免费搜索接口聚合（Keenable / Brave / Tavily 等）",
     "category": "new",
     "source": "https://igetoken.com/search/",
@@ -196,6 +207,7 @@
   },
   {
     "id": "notice-2026-0908-amd-radeon-cloud",
+    "status": "removed",
     "text": "AMD Radeon Cloud Token Factory 上新：免费 DeepSeek-V4-Flash / Qwen3.8 多模态 API（免绑卡、国内直连、1M 上下文、OpenAI + Anthropic 双协议）",
     "category": "new",
     "source": "https://igetoken.com/models/amd-radeon-cloud/",

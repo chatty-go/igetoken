@@ -1,10 +1,10 @@
 [
-  {
+    {
     "id": "2026-10-zhipu-weekend-build-vii",
     "date": "2026-10-30",
     "platform_slug": "zhipu",
     "platform_name": "智谱AI（BigModel）",
-    "title": "智谱 ZCode WEEKEND BUILD 第七轮：5 亿 GLM-5.3-Flash Token（10/30 23:00 生效 → 11/2 09:00 过期）",
+    "title": "智谱 ZCode WEEKEND BUILD 第七轮：5 亿 GLM-5.3-Flash Token（10/30 23:00 生效 → 11/2 09:00 过期）（已结束）",
     "type": "limited_time",
     "reward": "每人 **5 亿（500,000,000）GLM-5.3-Flash Token**（本轮单份额度较往轮 3 亿提升至 5 亿）：ZCode 客户端左下角「1024 程序员节」/ WEEKEND BUILD 卡片领取，**北京时间 2026-10-30（周五）23:00 生效，有效期至 2026-11-02（周一）09:00**，到点清零不累积。额度对应 GLM-5.3-Flash（GLM-5 系列首个原生多模态模型，100 万 Token 上下文、支持文本 / 图像 / 视频输入，权重 MIT 开源）",
     "eligibility": "所有登录 ZCode 客户端的用户（新老用户均可，无需绑卡、无需订阅 Coding Plan；国内账号走 BigModel 登录、海外账号走 Z.ai 登录）；打开客户端看到左下角卡片即可点击领取，额度到点自动生效",
@@ -27,8 +27,8 @@
       "活动以客户端内活动卡片形式发布，无独立外链与公开活动页；来源为智谱官方 ZCode 官网，具体时间与规则以客户端卡片及官方公告为准"
     ],
     "source": "https://zcode.z.ai/",
-    "status": "active",
-    "pinHeadline": true,
+    "status": "ended",
+    "pinHeadline": false,
     "publishedAt": "2026-10-30"
   },
   {
@@ -119,7 +119,7 @@
     "pinHeadline": false,
     "publishedAt": "2026-10-28"
   },
-  {
+    {
     "id": "2026-10-qiniu-conatus-free",
     "date": "2026-10-28",
     "platform_slug": "qiniu",
@@ -146,15 +146,15 @@
     ],
     "source": "https://www.qiniu.com/ai/free-models/conatus-2026",
     "status": "active",
-    "pinHeadline": false,
+    "pinHeadline": true,
     "publishedAt": "2026-10-28"
   },
-  {
+    {
     "id": "2026-10-qoder-deepseek-v41-flash-free",
     "date": "2026-10-21",
     "platform_slug": "qoder",
     "platform_name": "Qoder（阿里 AI 编程平台）",
-    "title": "Qoder x DeepSeek-V4.1-Flash-1017 限时 0 元购：计费系数 0.1× → 0×，个人版免费至 11/1 00:00（UTC+8，官方已延期）",
+    "title": "Qoder x DeepSeek-V4.1-Flash-1017 限时 0 元购：计费系数 0.1× → 0×，个人版免费至 11/1 00:00（UTC+8，官方已延期）（已结束）",
     "type": "new_model",
     "reward": "Qoder 内DeepSeek-Flash（完整型号 DeepSeek-V4.1-Flash-1017）活动期内计费系数由 0.1× 直接降至 0×，**调用不扣任何 Credits**，等于「零元购」；该版本为 DeepSeek 10/17 切上的正式小版本（模型名与价格不变），官方自评 DeepSWE v1.1 通过率 77.0%（Claude Opus 5 为 74.0%）、Terminal-Bench 4.0 由 31.2 跳到 42.3、ProgramBench 由 20.3 拉到 29.1，权重 MIT 开源；Qoder 客户端另提供低/高/最大三档思考强度",
     "eligibility": "个人版账号（免费版与付费版均可，Credits 余额为 0 也可），无需报名 / 领券 / 邀请码；国际版与 CN 版同步开放。⚠️ 客户端文案为「个人限时免费」，Teams / Enterprise 是否适用未见官方说明",
@@ -177,7 +177,7 @@
       "⚠️ 与同平台「Qwen3.8-Flash 限时免费」「每日 100 Credits」「首月订购翻倍」是并行的不同活动，权益口径不要混写；窗口结束后 DeepSeek-Flash 预计恢复 0.1×"
     ],
     "source": "https://docs.qoder.com/zh/cli/model",
-    "status": "active",
+    "status": "ended",
     "pinHeadline": false,
     "publishedAt": "2026-10-21"
   },
@@ -1204,31 +1204,31 @@
     "source": "https://www.workbuddy.cn/",
     "status": "active"
   },
-  {
+    {
     "id": "2026-07-hunyuan-hy3-trial",
     "date": "2026-08-29",
     "platform_slug": "hunyuan",
     "platform_name": "腾讯混元（腾讯云）",
-    "title": "混元 Hy3 限免延期至 10/31：WorkBuddy 每日送免费额度",
+    "title": "混元 Hy3 限免延期至 11/15：WorkBuddy 每日送免费额度（第 5 次延期）",
     "type": "limited_time",
     "reward": "Hy3 每日赠送免费额度（客户端内 0.00x 倍率）",
     "eligibility": "WorkBuddy 全体用户",
-    "deadline": "2026-10-31",
+    "deadline": "2026-11-15",
     "howto": [
       "打开 WorkBuddy，在模型列表选择 Hy3（带「限时免费」角标）",
       "每日自动赠送免费额度，当天用即可",
       "点模型右侧详情可查看活动窗口与剩余规则"
     ],
-    "summary": "客户端模型详情页一手信息（官方公告 cloud.tencent.com/developer/article/2734830 同步确认）：Hy3 活动窗口 7月6日开启，原定 9月30日结束，现已延期至 10月31日，每日赠送免费额度（客户端内 0.00x 倍率）。注意是产品内使用，非 API Token。",
+    "summary": "客户端模型详情页一手信息（官方公告 cloud.tencent.com/developer/article/2734830 同步确认）：Hy3 活动窗口 7月6日开启，原定 9月30日结束，现已延期至 11月15日（第 5 次延期，客户端 UI 实锤、官方未发公告），每日赠送免费额度（客户端内 0.00x 倍率）。注意是产品内使用，非 API Token。",
     "source": "https://cloud.tencent.com/developer/article/2734830",
     "status": "active"
   },
-  {
+    {
     "id": "2026-09-hunyuan-hy4-preview-free",
     "date": "2026-09-09",
     "platform_slug": "hunyuan",
     "platform_name": "腾讯混元（腾讯云）",
-    "title": "混元 Hy4 preview 限免延期至 10/31：新用户首开 14 天免费（10/10 23:59 前首开）/ 老用户夜间(23:00-8:00)免费",
+    "title": "混元 Hy4 preview 限免延期至 10/31：新用户首开 14 天免费（10/10 23:59 前首开）/ 老用户夜间(23:00-8:00)免费（已结束）",
     "type": "limited_time",
     "reward": "新用户（9/11 起注册或此前未体验）首次开启 Hy4 preview 起 14 天每日免费额度；老用户闲时 23:00-次日 8:00 继续免费（本轮夜间限免统一延期至 2026-10-31），其余时间正常消耗积分",
     "eligibility": "WorkBuddy 用户：9/11 及以后注册的新用户 + 此前未体验过 Hy4 preview 的老用户 → 首开起 14 天每日免费（须 2026-10-10 23:59 前首开）；已体验过的老用户 → 仅夜间 23:00-8:00 免费（至 2026-10-31）",
@@ -1241,7 +1241,7 @@
     ],
     "summary": "Hy4 preview 是 8/28 发布的 770B/49B MoE 旗舰，主攻长任务编程、复杂办公与科学推理。首轮限免（9/10 23:59 结束）后，9/11 起调整为：新用户（含 9/11 起注册及此前未体验者）首次开启后 14 天每日免费；老用户仅夜间 23:00-8:00 免费、其余时段消耗积分。本轮（官方公告）进一步将夜间限免与整体活动延期至 2026-10-31：老用户夜间免费延长到 10/31；新用户仍须在 2026-10-10 23:59 前首次开启，方可获得 14 天免费（如 10/10 开启可用至 10/24）。两点说明：① Hy4 preview 暂不具备多模态能力，视频/图像任务会切换多模态模型并正常计积分；② 免费额度按日合理分配，繁忙时排队并提示重置时间。产品内使用，非 API Token。",
     "source": "https://cloud.tencent.com/developer/article/2734830",
-    "status": "active"
+    "status": "ended"
   },
   {
     "id": "2026-08-opencode-zen-free",
