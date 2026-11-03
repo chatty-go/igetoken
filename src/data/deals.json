@@ -1089,12 +1089,12 @@
     "source": "https://www.gmicloud.ai/minimax-week",
     "status": "ended"
   },
-  {
+    {
     "id": "2026-08-volcengine-doubao-seed-2-1-pro",
     "date": "2026-08-30",
     "platform_slug": "volcengine",
     "platform_name": "火山引擎方舟（豆包）",
-    "title": "火山引擎方舟 Q3 普惠：Doubao-Seed-2.1-pro 新用户每日领最高 500 万 Tokens",
+    "title": "火山引擎方舟 Q3 普惠：Doubao-Seed-2.1-pro 新用户每日领最高 500 万 Tokens（已结束）",
     "type": "limited_time",
     "reward": "新用户每日可领取单模型最高 500 万 Tokens 免费额度（代码调试场景），可直接抵扣调用费用",
     "eligibility": "方舟平台新用户",
@@ -1106,7 +1106,7 @@
     ],
     "summary": "2026 年 Q3 火山引擎方舟大模型普惠活动，主打代码调试场景。注意：这是限时活动，与常规「安心体验 50 万/模型 + 协作奖励计划每日 200 万」相互独立，到期以官方公告为准。",
     "source": "https://www.volcengine.com/article/2602565",
-    "status": "active"
+    "status": "ended"
   },
   {
     "id": "2026-08-scnet-maas-promo",
