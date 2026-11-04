@@ -1,6 +1,17 @@
 [
   {
+    "id": "notice-2026-1104-hunyuan-hy4-free",
+    "text": "混元 Hy4 正式版限时免费：11/4–11/15 23:59，WorkBuddy 每日送免费额度、订阅用户更高配额（产品内额度，不可导出 API）",
+    "category": "new",
+    "source": "https://igetoken.com/deals/2026-11-hunyuan-hy4-free/",
+    "linkText": "查看快讯",
+    "publishedAt": "2026-11-04",
+    "expireAt": "2026-11-16",
+    "priority": 10
+  },
+  {
     "id": "notice-2026-1103-zcode-global-build",
+    "status": "removed",
     "text": "智谱 ZCode GLOBAL BUILD：3 亿 GLM-5.3-Flash Token，今晚 23:00 生效 → 11/4 09:00 过期（客户端内领取）",
     "category": "new",
     "source": "https://igetoken.com/deals/2026-11-zhipu-global-build/",
@@ -73,6 +84,7 @@
   },
   {
     "id": "notice-2026-1028-upcoming-expiry",
+    "status": "removed",
     "text": "到期提醒：混元 Hy3 / Hy4 preview 限免与 WorkBuddy 开学季福利同于 10/31 到期；WorkBuddy 独家 Step 5 Preview 限免已于 10/25 结束",
     "category": "notice",
     "source": "https://igetoken.com/deals/",
