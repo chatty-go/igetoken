@@ -301,7 +301,7 @@
     "example_model": "deepseek-v4.1-flash-1017",
     "last_verified": "2026-10-28"
   },
-  {
+    {
     "slug": "opencode",
     "name": "OpenCode（Zen 网关）",
     "category": "aggregator",
@@ -309,50 +309,113 @@
     "register_url": "https://opencode.ai/auth",
     "docs_url": "https://opencode.ai/docs/zh-cn/zen/",
     "tagline": "开源编程代理官方模型网关，多个编程模型限时免费",
-    "highlight": "Zen 免费模型限时开放，当前 8 款（glm-5.3-flash-free、deepseek-v4.1-flash-free、mimo-v2.6-flash-free、flint-40b-free 等），名单按周轮换，专为编程场景优化",
-    "tags": ["免费层", "编程场景", "免费模型轮换"],
+    "highlight": "Zen 免费模型限时开放，当前 10 款（glm-5.3-flash-free、deepseek-v4.1-flash-free、crouton-alpha-free、iceman-free 等），名单按周轮换，专为编程场景优化",
+    "tags": [
+      "免费层",
+      "编程场景",
+      "免费模型轮换"
+    ],
     "offers": [
-            { "model": "★ 当前免费阵容（8 款，限时轮换）", "quota": "glm-5.3-flash-free / deepseek-v4.1-flash-free / mimo-v2.6-flash-free / flint-40b-free / beam-free / nemotron-3.5-super-vl-free / nemotron-3.5-lightning-free / jev-1.13-free：输入 / 输出 / 缓存全 $0，每日 20 万~100 万 Token 限额（视模型而定）；名单按周轮换，调用前先看 /zen/v1/models 实时列表（官方文档常滞后于实时列表）", "type": "limited" },
-      { "model": "DeepSeek V4.1 Flash Free（限时免费，ZDR 零留存）", "quota": "输入 / 输出 / 缓存全免费；1M 上下文、原生多模态（文本 + 图像）；官方标注该模型提供方执行零留存政策（zero-retention）、不将数据用于模型训练；⚠️ 与付费档 deepseek-v4.1-flash（输入 $0.30/M、输出 $1.20/M）同型号并存，选错 ID 会照常计费；官方未标注截止时间", "type": "daily" },
-      { "model": "MiniMax M3.1 Flash Free（旗舰编码模型 · 前身即匿名模型 Space Bunny · 已于 10/28 从免费档移除）", "quota": "曾限时免费：输入 / 输出 / 缓存全免费；1M 上下文、最高 512K 输出、稀疏注意力、200+ TPS（P50 稳定 170+）、官方称 Agentic 任务成本较上代降 70%；🔑 10/19 MiniMax 官方认领 Space Bunny（太空兔）即本模型，同一模型免费档 ID 由 space-bunny-free 换为 minimax-m3.1-flash-free；⚠️ **10/28 实测已从免费档移除**（实时列表与官方文档均无该档），免费窗口实际仅维持约 9 天；模型权重官方称稍后开源", "type": "daily" },
-      { "model": "Flint 40B Free（新入档 · 免费期数据可能用于改进模型）", "quota": "输入 / 输出 / 缓存全免费；官方称限时免费、「这段时间用来收集反馈与改进模型」，即**免费期数据可能被用于改进模型**；隐私章节另注明**保留 30 天**；具体参数与归属以官方模型页为准", "type": "daily" },
-      { "model": "GLM 5.3 Flash Free（智谱旗舰编码模型，限时免费 · 已标注零留存）", "quota": "输入 / 输出 / 缓存全免费；GLM-5.3-Flash 为 GLM-5 系列首个原生多模态模型、1M 上下文，官方定位代码生成 / 理解 / 修复与 Office 文档、金融法律等专业任务；官方已标注该档 zero-retention（不留存数据、不用于训练）；⚠️ 与付费档 glm-5.3-flash（输入 $0.15/M、输出 $0.50/M、缓存 $0.03/M）同型号并存，确认 ID 带 -free 后缀", "type": "daily" },
-      { "model": "Beam Free（新入档 · 中国大陆不可用）", "quota": "输入 / 输出 / 缓存全免费；官方标注提供方不将数据用于训练、但出于安全原因保留 30 天；⚠️ 官方明确不在中国（含港澳）等地区开放，大陆用户直接跳过该档（同类还有 Cat Jam Free 亦已于 10/19 从免费档移除）", "type": "daily" },
-      { "model": "Step 5 Preview Free（阶跃星辰旗舰 · 已于 10/15 从免费档下线）", "quota": "曾限时免费：输入 / 输出 / 缓存全免费；600B 总参 / 27B 激活稀疏 MoE、1M 上下文、文+图多模态、ZDR 零留存；2026-10-16 实测 /zen/v1/models 已无 step-5-preview-free、官方文档 Free models 段落亦已移除 → 各平台免费周陆续到期；⚠️ 免费周结束 ≠ 模型停用：腾讯 WorkBuddy 独家限免至 10/25 仍在（产品内额度，不可导出 API）", "type": "limited" },
-      { "model": "LongCat 2.5 Preview Free（美团 9/25 上线 · 已于 10/28 从免费档移除）", "quota": "曾限时免费：输入 / 输出 / 缓存全免费；1M 上下文、文+图多模态、ZDR 零留存（提供方不留存数据、不用于训练）；官方称使用该模型不消耗 Go 订阅额度；官方 9/26 宣布免费 2 周（约 10/10 到期），10/15 复核时官方 Go 页面仍列「限時」、月额度 Unlimited，**最终 10/28 复核确认已从免费档移除** → 实际免费窗口约维持 1 个月；免费档轮换不预告，以 /zen/v1/models 实时列表为准", "type": "daily" },
-      { "model": "MiMo-V2.6-Flash Free（小米 9/22 开源新模型，限时免费）", "quota": "输入 / 输出 / 缓存全免费；官方称免费期用于收集反馈、改进模型，免费期数据可能被用于改进模型", "type": "daily" },
-      { "model": "Muse Spark 1.3 Contributor Free（Meta 模型，限时免费 · 已从免费档移除）", "quota": "曾限时免费：输入/输出/缓存全免费；以授权 Meta 用你的提示词与补全训练下一代模型为条件，限 Meta 地理政策允许地区；2026-10-19 实测实时列表已无 muse-spark-1.2/1.3-contributor-free（官方文档仍列）→ 免费名单轮换很快，以实时列表为准", "type": "daily" },
-      { "model": "Space Bunny Free（已于 10/19 换名：前身即 MiniMax M3.1 Flash）", "quota": "曾限时免费：1M 上下文、原生多模态、OpenCode 网关侧宣称 ZDR 零留存（提供方不留存、不训练）、不消耗 Go 订阅额度；原定免费延长至 2026-10-05，实际持续更久；2026-10-19 MiniMax 官方认领后，同一模型免费档 ID 换为 minimax-m3.1-flash-free，实测实时列表已无 space-bunny-free、该 ID 已下线移除", "type": "daily" },
-      { "model": "其他限时免费模型（如 Nemotron 3.5 Super VL Free）", "quota": "限时免费，每日 20 万~100 万 Token 限额（视模型而定）", "type": "daily" },
-      { "model": "邀请奖励", "quota": "邀请好友订阅 Go 套餐，双方各得 $5 使用额度", "type": "referral" }
+      {
+        "model": "★ 当前免费阵容（10 款，限时轮换 · 11/9 实测）",
+        "quota": "glm-5.3-flash-free / deepseek-v4.1-flash-free / mimo-v2.6-flash-free / flint-40b-free / beam-free / nemotron-3.5-super-vl-free / nemotron-3.5-lightning-free / crouton-alpha-free / iceman-free / inkling-2-small-free：输入 / 输出 / 缓存全 $0，每日 20 万~100 万 Token 限额（视模型而定）；名单按周轮换，调用前先看 /zen/v1/models 实时列表（官方文档常滞后于实时列表）；⚠️ 11/9 实测 jev-1.13-free 已下线移除、pulse-alpha-free 短暂上架后亦已移除，照旧名单复制这些 ID 会直接报模型不存在",
+        "type": "limited"
+      },
+      {
+        "model": "★ 11/9 新入档三款（Crouton Alpha / Iceman / Inkling 2 Small Free）",
+        "quota": "crouton-alpha-free / iceman-free / inkling-2-small-free：输入 / 输出 / 缓存全 $0；均为匿名或小体量模型，官方未标注上下文规格与隐私口径（是否留存数据 / 是否用于训练），按「未标注即保守对待」处理 —— 涉密代码、未公开源码别走这几档；免费档随时可能下线，调用前先看 /zen/v1/models 实时列表",
+        "type": "daily"
+      },
+      {
+        "model": "DeepSeek V4.1 Flash Free（限时免费，ZDR 零留存）",
+        "quota": "输入 / 输出 / 缓存全免费；1M 上下文、原生多模态（文本 + 图像）；官方标注该模型提供方执行零留存政策（zero-retention）、不将数据用于模型训练；⚠️ 与付费档 deepseek-v4.1-flash（输入 $0.30/M、输出 $1.20/M）同型号并存，选错 ID 会照常计费；官方未标注截止时间",
+        "type": "daily"
+      },
+      {
+        "model": "MiniMax M3.1 Flash Free（旗舰编码模型 · 前身即匿名模型 Space Bunny · 已于 10/28 从免费档移除）",
+        "quota": "曾限时免费：输入 / 输出 / 缓存全免费；1M 上下文、最高 512K 输出、稀疏注意力、200+ TPS（P50 稳定 170+）、官方称 Agentic 任务成本较上代降 70%；🔑 10/19 MiniMax 官方认领 Space Bunny（太空兔）即本模型，同一模型免费档 ID 由 space-bunny-free 换为 minimax-m3.1-flash-free；⚠️ **10/28 实测已从免费档移除**（实时列表与官方文档均无该档），免费窗口实际仅维持约 9 天；模型权重官方称稍后开源",
+        "type": "daily"
+      },
+      {
+        "model": "Flint 40B Free（新入档 · 免费期数据可能用于改进模型）",
+        "quota": "输入 / 输出 / 缓存全免费；官方称限时免费、「这段时间用来收集反馈与改进模型」，即**免费期数据可能被用于改进模型**；隐私章节另注明**保留 30 天**；具体参数与归属以官方模型页为准",
+        "type": "daily"
+      },
+      {
+        "model": "GLM 5.3 Flash Free（智谱旗舰编码模型，限时免费 · 已标注零留存）",
+        "quota": "输入 / 输出 / 缓存全免费；GLM-5.3-Flash 为 GLM-5 系列首个原生多模态模型、1M 上下文，官方定位代码生成 / 理解 / 修复与 Office 文档、金融法律等专业任务；官方已标注该档 zero-retention（不留存数据、不用于训练）；⚠️ 与付费档 glm-5.3-flash（输入 $0.15/M、输出 $0.50/M、缓存 $0.03/M）同型号并存，确认 ID 带 -free 后缀",
+        "type": "daily"
+      },
+      {
+        "model": "Beam Free（新入档 · 中国大陆不可用）",
+        "quota": "输入 / 输出 / 缓存全免费；官方标注提供方不将数据用于训练、但出于安全原因保留 30 天；⚠️ 官方明确不在中国（含港澳）等地区开放，大陆用户直接跳过该档（同类还有 Cat Jam Free 亦已于 10/19 从免费档移除）",
+        "type": "daily"
+      },
+      {
+        "model": "Step 5 Preview Free（阶跃星辰旗舰 · 已于 10/15 从免费档下线）",
+        "quota": "曾限时免费：输入 / 输出 / 缓存全免费；600B 总参 / 27B 激活稀疏 MoE、1M 上下文、文+图多模态、ZDR 零留存；2026-10-16 实测 /zen/v1/models 已无 step-5-preview-free、官方文档 Free models 段落亦已移除 → 各平台免费周陆续到期；⚠️ 免费周结束 ≠ 模型停用：腾讯 WorkBuddy 独家限免至 10/25 仍在（产品内额度，不可导出 API）",
+        "type": "limited"
+      },
+      {
+        "model": "LongCat 2.5 Preview Free（美团 9/25 上线 · 已于 10/28 从免费档移除）",
+        "quota": "曾限时免费：输入 / 输出 / 缓存全免费；1M 上下文、文+图多模态、ZDR 零留存（提供方不留存数据、不用于训练）；官方称使用该模型不消耗 Go 订阅额度；官方 9/26 宣布免费 2 周（约 10/10 到期），10/15 复核时官方 Go 页面仍列「限時」、月额度 Unlimited，**最终 10/28 复核确认已从免费档移除** → 实际免费窗口约维持 1 个月；免费档轮换不预告，以 /zen/v1/models 实时列表为准",
+        "type": "daily"
+      },
+      {
+        "model": "MiMo-V2.6-Flash Free（小米 9/22 开源新模型，限时免费）",
+        "quota": "输入 / 输出 / 缓存全免费；官方称免费期用于收集反馈、改进模型，免费期数据可能被用于改进模型",
+        "type": "daily"
+      },
+      {
+        "model": "Muse Spark 1.3 Contributor Free（Meta 模型，限时免费 · 已从免费档移除）",
+        "quota": "曾限时免费：输入/输出/缓存全免费；以授权 Meta 用你的提示词与补全训练下一代模型为条件，限 Meta 地理政策允许地区；2026-10-19 实测实时列表已无 muse-spark-1.2/1.3-contributor-free（官方文档仍列）→ 免费名单轮换很快，以实时列表为准",
+        "type": "daily"
+      },
+      {
+        "model": "Space Bunny Free（已于 10/19 换名：前身即 MiniMax M3.1 Flash）",
+        "quota": "曾限时免费：1M 上下文、原生多模态、OpenCode 网关侧宣称 ZDR 零留存（提供方不留存、不训练）、不消耗 Go 订阅额度；原定免费延长至 2026-10-05，实际持续更久；2026-10-19 MiniMax 官方认领后，同一模型免费档 ID 换为 minimax-m3.1-flash-free，实测实时列表已无 space-bunny-free、该 ID 已下线移除",
+        "type": "daily"
+      },
+      {
+        "model": "其他限时免费模型（如 Nemotron 3.5 Super VL Free）",
+        "quota": "限时免费，每日 20 万~100 万 Token 限额（视模型而定）",
+        "type": "daily"
+      },
+      {
+        "model": "邀请奖励",
+        "quota": "邀请好友订阅 Go 套餐，双方各得 $5 使用额度",
+        "type": "referral"
+      }
     ],
     "steps": [
       "打开 opencode.ai/auth 注册账号并登录",
       "创建并复制 API Key",
       "在 OpenCode 里运行 /connect 选择 OpenCode，粘贴 Key",
-            "多数免费模型是 OpenAI 兼容接口（/zen/v1/chat/completions）；接入 Claude Code 等使用 Anthropic 协议的工具时，改走 /zen/v1/messages 端点"
+      "多数免费模型是 OpenAI 兼容接口（/zen/v1/chat/completions）；接入 Claude Code 等使用 Anthropic 协议的工具时，改走 /zen/v1/messages 端点"
     ],
     "pitfalls": [
-            "Big Pickle 等为匿名（stealth）模型：官方未公布开发方与权重，能力与归属不可预设；虽官方称上游 provider 零保留（ZDR）、不用于训练，但在身份与合规边界披露前，别上传未公开源码、生产凭据等敏感数据",
-            "匿名模型下线不留存：Union Alpha（2026-09-16 上线、262K 上下文）已于 2026-09-21 从免费档移除且身份始终未公布；前代 Ox Alpha（1M 上下文）则揭晓为智谱 GLM-5.3-Flash —— 别把两者混写，也别把任何 stealth 模型当作长期可用资源",
+      "Big Pickle 等为匿名（stealth）模型：官方未公布开发方与权重，能力与归属不可预设；虽官方称上游 provider 零保留（ZDR）、不用于训练，但在身份与合规边界披露前，别上传未公开源码、生产凭据等敏感数据",
+      "匿名模型下线不留存：Union Alpha（2026-09-16 上线、262K 上下文）已于 2026-09-21 从免费档移除且身份始终未公布；前代 Ox Alpha（1M 上下文）则揭晓为智谱 GLM-5.3-Flash —— 别把两者混写，也别把任何 stealth 模型当作长期可用资源",
       "免费模型名单轮换很快，限时免费随时可能下线，以 Zen 模型列表为准",
       "Muse Spark 1.3 / 1.2 的 Contributor 档会拿你的提示词与补全训练 Meta 下一代模型，涉密代码别用；且仅限 Meta 地理政策允许地区（中国大陆等受限）",
       "免费层没有固定速率限制，配额随负载浮动，跑批量任务别依赖",
       "Go 订阅（$10/月）是付费增值项，用免费模型不需要订阅",
       "作为 Claude Code 等第三方编码工具的后端时，近期 OpenCode 要求请求头带 x-opencode-session 标记，否则请求可能被拒绝；接入时按官方说明补该头",
       "MiMo-V2.6-Flash Free 属「免费期数据可能用于改进模型」一档（与 Big Pickle、MiMo-V2.5 Free、Ling 3.0 Flash Fin Free 同列，官方 Zen 隐私章节明示）→ 涉密代码、未公开源码别走这一档",
- "Cat Jam Free 官方明确**不在中国（含香港、澳门）开放**，同列受限地区还有古巴、伊朗、伊拉克、老挝、利比亚、尼日利亚、朝鲜、俄罗斯、叙利亚等 → 大陆用户直接跳过；另该模型提供方虽不训练数据，但出于安全原因**保留 30 天**。⚠️ **Cat Jam Free 已于 10/19 从免费档移除**，接替的 Beam Free 同样是「不训练 + 保留 30 天 + 不含中国大陆」组合",
- "DeepSeek V4.1 Flash Free 与付费档 deepseek-v4.1-flash 同型号并存（付费档输入 $0.30/M、输出 $1.20/M）→ 确认 ID 带 -free 后缀，否则照常计费",
- "GLM 5.3 Flash Free 同理：与付费档 glm-5.3-flash（$0.15/M 输入、$0.50/M 输出）并存 → 确认 ID 带 -free 后缀；官方已于 10/19 补上该档的 zero-retention 说明",
- "🔑 **Space Bunny（太空兔）身份已揭晓 = MiniMax M3.1 Flash**：9/23 匿名上线（stealth，无任何官方公告），靠分词器指纹（50 组 / 7 组字符串比对）被社区推断为 MiniMax M 系，9/28 M3.1-Flash-Preview 上线后时间线吻合，但官方近一个月未认领；**10/19 官方账号发「Welcome back, Space Bunny」短视频 + 正式发布 M3.1 Flash，等于官宣**。同期 OpenCode 免费档 ID 由 space-bunny-free 换为 minimax-m3.1-flash-free（实测实时列表已无旧 ID），两者是同一模型的新旧 ID，别当成两个模型。⚠️ **10/28 复核：minimax-m3.1-flash-free 亦已从免费档移除**，该档实际只维持约 9 天",
- "免费档下线是常态且不可预告：Step 5 Preview Free（10/15 下线）、LongCat 2.5 Preview Free 与 MiniMax M3.1 Flash Free（均 10/28 下线）、Muse Spark 1.2/1.3 Contributor Free 与 Cat Jam Free（10/19 下线）、Union Alpha 上线约 5 天即下线 → 免费名单只当「当下可用」看，重要任务别只押一个免费模型",
- "⚠️ **官方文档 ≠ 实时列表**：Zen 文档的 Free models 段落与定价表更新滞后（10/19 仍列 Space Bunny Free、未收录 MiniMax M3.1 Flash Free），**一律以 /zen/v1/models 实时列表为准**"
+      "Cat Jam Free 官方明确**不在中国（含香港、澳门）开放**，同列受限地区还有古巴、伊朗、伊拉克、老挝、利比亚、尼日利亚、朝鲜、俄罗斯、叙利亚等 → 大陆用户直接跳过；另该模型提供方虽不训练数据，但出于安全原因**保留 30 天**。⚠️ **Cat Jam Free 已于 10/19 从免费档移除**，接替的 Beam Free 同样是「不训练 + 保留 30 天 + 不含中国大陆」组合",
+      "DeepSeek V4.1 Flash Free 与付费档 deepseek-v4.1-flash 同型号并存（付费档输入 $0.30/M、输出 $1.20/M）→ 确认 ID 带 -free 后缀，否则照常计费",
+      "GLM 5.3 Flash Free 同理：与付费档 glm-5.3-flash（$0.15/M 输入、$0.50/M 输出）并存 → 确认 ID 带 -free 后缀；官方已于 10/19 补上该档的 zero-retention 说明",
+      "🔑 **Space Bunny（太空兔）身份已揭晓 = MiniMax M3.1 Flash**：9/23 匿名上线（stealth，无任何官方公告），靠分词器指纹（50 组 / 7 组字符串比对）被社区推断为 MiniMax M 系，9/28 M3.1-Flash-Preview 上线后时间线吻合，但官方近一个月未认领；**10/19 官方账号发「Welcome back, Space Bunny」短视频 + 正式发布 M3.1 Flash，等于官宣**。同期 OpenCode 免费档 ID 由 space-bunny-free 换为 minimax-m3.1-flash-free（实测实时列表已无旧 ID），两者是同一模型的新旧 ID，别当成两个模型。⚠️ **10/28 复核：minimax-m3.1-flash-free 亦已从免费档移除**，该档实际只维持约 9 天",
+      "免费档下线是常态且不可预告：Step 5 Preview Free（10/15 下线）、LongCat 2.5 Preview Free 与 MiniMax M3.1 Flash Free（均 10/28 下线）、Muse Spark 1.2/1.3 Contributor Free 与 Cat Jam Free（10/19 下线）、Jev 1.13 Free（11/9 下线）、Union Alpha 上线约 5 天即下线 → 免费名单只当「当下可用」看，重要任务别只押一个免费模型",
+      "⚠️ **官方文档 ≠ 实时列表**：Zen 文档的 Free models 段落与定价表更新滞后（10/19 仍列 Space Bunny Free、未收录 MiniMax M3.1 Flash Free），**一律以 /zen/v1/models 实时列表为准**",
+      "⚠️ **11/9 实测新一轮轮换：8 款 → 10 款**：`jev-1.13-free` 已下线移除（10/28 名单里的 ID 现已不可用）、`pulse-alpha-free` 11/4 短暂上架后亦已移除；新增 `crouton-alpha-free` / `iceman-free` / `inkling-2-small-free`。站内名单每轮按 /zen/v1/models 实测刷新，别照抄旧文里的 ID",
+      "🔴 **新上架档隐私口径常缺**：11/9 新增三款官方均未标注数据留存与训练用途，与 Flint 40B、MiMo-V2.6-Flash 同属「未标注即保守对待」一档；别用它们处理未公开源码、生产凭据"
     ],
     "api_base": "https://opencode.ai/zen/v1/",
     "example_model": "glm-5.3-flash-free",
-        "last_verified": "2026-10-28",
+    "last_verified": "2026-11-09",
     "rating": 4,
-        "ratingNote": "编辑部实测：开源编程代理的官方模型网关（Zen），免费档持续上 MiniMax M3.1 Flash（前身即匿名模型 Space Bunny）、GLM 5.3 Flash、DeepSeek V4.1 Flash、LongCat 2.5 Preview 等旗舰模型，可直接作 Claude Code 等编码工具的免费后端；扣分点是免费模型名单轮换极快且不可预告（Step 5 Preview Free 10/15 下线、Muse Spark 1.2/1.3 与 Cat Jam Free 10/19 下线，Union Alpha 上线约 5 天即下线）、部分免费档数据可能用于改进模型、新上架档官方隐私口径常滞后未标（官方文档常慢于实时列表）、Beam Free / Cat Jam Free 明确不含中国大陆——做主力编程源前需看清模型池。",
+    "ratingNote": "编辑部实测：开源编程代理的官方模型网关（Zen），免费档轮番上 GLM 5.3 Flash、DeepSeek V4.1 Flash、MiniMax M3.1 Flash（前身即匿名模型 Space Bunny）等旗舰模型，可直接作 Claude Code 等编码工具的免费后端；扣分点是免费模型名单轮换极快且不可预告（Step 5 Preview Free 10/15 下线、Muse Spark 1.2/1.3 与 Cat Jam Free 10/19 下线，Union Alpha 上线约 5 天即下线、Jev 1.13 Free 11/9 下线）、部分免费档数据可能用于改进模型、新上架档官方隐私口径常滞后未标（官方文档常慢于实时列表）、Beam Free / Cat Jam Free 明确不含中国大陆——做主力编程源前需看清模型池。",
     "devAgent": {
       "name": "OpenCode（开源编程代理 CLI）",
       "url": "https://opencode.ai",

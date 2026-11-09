@@ -1,5 +1,35 @@
 [
   {
+    "id": "notice-2026-1109-upcoming-expiry",
+    "text": "到期提醒：11/10 超算互联网 MaaS 特惠、11/14 企微教师限免、11/15 23:59 混元 Hy4 与 Hy3 限免同日结束",
+    "category": "notice",
+    "source": "https://igetoken.com/deals/",
+    "linkText": "查看快讯",
+    "publishedAt": "2026-11-09",
+    "expireAt": "2026-11-16",
+    "priority": 8
+  },
+  {
+    "id": "notice-2026-1109-scnet-double11-client",
+    "text": "超算互联网双 11：客户端旗舰模型词元不限量至 11/30，11/9 起新用户再领 1 亿词元（客户端内权益，不可导出 API）",
+    "category": "new",
+    "source": "https://igetoken.com/deals/2026-11-scnet-double11-client/",
+    "linkText": "查看快讯",
+    "publishedAt": "2026-11-09",
+    "expireAt": "2026-11-30",
+    "priority": 9
+  },
+  {
+    "id": "notice-2026-1109-zhipu-autoclaw-double11",
+    "text": "智谱 AutoClaw 双十一：11/9–11/15 登录领 5000 万 Token（海外版 1 亿），11/15 23:59 一并清零（客户端内额度）",
+    "category": "new",
+    "source": "https://igetoken.com/deals/2026-11-zhipu-autoclaw-double11/",
+    "linkText": "查看快讯",
+    "publishedAt": "2026-11-09",
+    "expireAt": "2026-11-16",
+    "priority": 10
+  },
+  {
     "id": "notice-2026-1104-hunyuan-hy4-free",
     "text": "混元 Hy4 正式版限时免费：11/4–11/15 23:59，WorkBuddy 每日送免费额度、订阅用户更高配额（产品内额度，不可导出 API）",
     "category": "new",
@@ -51,25 +81,25 @@
     "expireAt": "2026-11-16",
     "priority": 7
   },
-  {
+    {
     "id": "notice-2026-1028-qiniu-conatus-free",
     "text": "七牛云 Conatus 限时免费模型上线：1024 程序员节专属，实名认证每日 1 亿 Token（充值后最高 10 亿，至 11/30）",
     "category": "new",
     "source": "https://igetoken.com/deals/2026-10-qiniu-conatus-free/",
     "linkText": "查看快讯",
     "publishedAt": "2026-10-28",
-    "expireAt": "2026-11-16",
+    "expireAt": "2026-11-30",
     "priority": 10
   },
-  {
+    {
     "id": "notice-2026-1028-opencode-lineup-change",
-    "text": "OpenCode Zen 免费档又一轮轮换：MiniMax M3.1 Flash Free、LongCat 2.5 Preview Free 已下线，当前 8 款（新增 Flint 40B Free）",
+    "text": "OpenCode Zen 免费档 11/9 实测轮换至 10 款：Jev 1.13 Free 已下线，新增 Crouton Alpha / Iceman / Inkling 2 Small Free",
     "category": "notice",
     "source": "https://igetoken.com/models/opencode/",
     "linkText": "查看平台",
-    "publishedAt": "2026-10-28",
-    "expireAt": "2026-11-16",
-    "priority": 8
+    "publishedAt": "2026-11-09",
+    "expireAt": "2026-11-30",
+    "priority": 9
   },
   {
     "id": "notice-2026-1028-qoder-free-extended",
