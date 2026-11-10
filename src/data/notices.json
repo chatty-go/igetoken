@@ -1,5 +1,15 @@
 [
   {
+    "id": "notice-2026-1110-zcode-global-build",
+    "text": "智谱 ZCode GLOBAL BUILD 今日卡：3 亿 GLM-5.3-Flash Token，今晚 23:00 生效 → 11/11 09:00 清零（常态每日卡，客户端内额度）",
+    "category": "new",
+    "source": "https://igetoken.com/deals/2026-11-zhipu-global-build-1110/",
+    "linkText": "查看快讯",
+    "publishedAt": "2026-11-10",
+    "expireAt": "2026-11-11",
+    "priority": 10
+  },
+  {
     "id": "notice-2026-1110-antling-ling32-flash-free",
     "text": "蚂蚁百灵 Ling-3.2-flash 上线前两周 API 免费：560B 原生多模态、1M 上下文，OpenAI + Anthropic 双协议可站外调用（推算至 11/19，以官方为准）",
     "category": "new",
