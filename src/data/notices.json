@@ -1,11 +1,21 @@
 [
   {
+    "id": "notice-2026-1110-antling-ling32-flash-free",
+    "text": "蚂蚁百灵 Ling-3.2-flash 上线前两周 API 免费：560B 原生多模态、1M 上下文，OpenAI + Anthropic 双协议可站外调用（推算至 11/19，以官方为准）",
+    "category": "new",
+    "source": "https://igetoken.com/deals/2026-11-antling-ling-32-flash-free/",
+    "linkText": "查看快讯",
+    "publishedAt": "2026-11-10",
+    "expireAt": "2026-11-20",
+    "priority": 10
+  },
+  {
     "id": "notice-2026-1109-upcoming-expiry",
-    "text": "到期提醒：11/10 超算互联网 MaaS 特惠、11/14 企微教师限免、11/15 23:59 混元 Hy4 与 Hy3 限免同日结束",
+    "text": "到期提醒：11/14 企微教师限免、11/15 23:59 混元 Hy4 与 Hy3 限免同日结束；超算互联网 MaaS 特惠已延至 12/31（第三期），不在到期名单",
     "category": "notice",
     "source": "https://igetoken.com/deals/",
     "linkText": "查看快讯",
-    "publishedAt": "2026-11-09",
+    "publishedAt": "2026-11-10",
     "expireAt": "2026-11-16",
     "priority": 8
   },
@@ -63,7 +73,7 @@
   },
   {
     "id": "notice-2026-1028-new-resources",
-    "text": "本周新增 4 项收录：七牛云 Conatus 每日 1 亿 Token、超算互联网 MaaS 延长至 11/10、InferX 单价归零、CodeRabbit 免 $5,000 安全扫描",
+    "text": "近期收录速览：混元 Hy4 正式版限免、智谱 AutoClaw 双十一、SCNet 双 11 客户端特权、蚂蚁百灵 Ling-3.2-flash API 限免（可站外调用）；MaaS 特惠已延至 12/31、CodeRabbit 免费扫描已结束",
     "category": "new",
     "source": "https://igetoken.com/deals/",
     "linkText": "查看快讯",
@@ -93,11 +103,11 @@
   },
     {
     "id": "notice-2026-1028-opencode-lineup-change",
-    "text": "OpenCode Zen 免费档 11/9 实测轮换至 10 款：Jev 1.13 Free 已下线，新增 Crouton Alpha / Iceman / Inkling 2 Small Free",
+    "text": "OpenCode Zen 免费档 11/10 实测再度轮换（仍 10 款）：Crouton Alpha Free 入档 1 天即下线，新增 LongCat 2.5 Free",
     "category": "notice",
     "source": "https://igetoken.com/models/opencode/",
     "linkText": "查看平台",
-    "publishedAt": "2026-11-09",
+    "publishedAt": "2026-11-10",
     "expireAt": "2026-11-30",
     "priority": 9
   },

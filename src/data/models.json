@@ -309,7 +309,7 @@
     "register_url": "https://opencode.ai/auth",
     "docs_url": "https://opencode.ai/docs/zh-cn/zen/",
     "tagline": "开源编程代理官方模型网关，多个编程模型限时免费",
-    "highlight": "Zen 免费模型限时开放，当前 10 款（glm-5.3-flash-free、deepseek-v4.1-flash-free、crouton-alpha-free、iceman-free 等），名单按周轮换，专为编程场景优化",
+    "highlight": "Zen 免费模型限时开放，当前 10 款（glm-5.3-flash-free、deepseek-v4.1-flash-free、longcat-2.5-free、iceman-free 等，11/10 实测），名单按周轮换，专为编程场景优化",
     "tags": [
       "免费层",
       "编程场景",
@@ -317,13 +317,13 @@
     ],
     "offers": [
       {
-        "model": "★ 当前免费阵容（10 款，限时轮换 · 11/9 实测）",
-        "quota": "glm-5.3-flash-free / deepseek-v4.1-flash-free / mimo-v2.6-flash-free / flint-40b-free / beam-free / nemotron-3.5-super-vl-free / nemotron-3.5-lightning-free / crouton-alpha-free / iceman-free / inkling-2-small-free：输入 / 输出 / 缓存全 $0，每日 20 万~100 万 Token 限额（视模型而定）；名单按周轮换，调用前先看 /zen/v1/models 实时列表（官方文档常滞后于实时列表）；⚠️ 11/9 实测 jev-1.13-free 已下线移除、pulse-alpha-free 短暂上架后亦已移除，照旧名单复制这些 ID 会直接报模型不存在",
+        "model": "★ 当前免费阵容（10 款，限时轮换 · 11/10 实测）",
+        "quota": "glm-5.3-flash-free / deepseek-v4.1-flash-free / mimo-v2.6-flash-free / flint-40b-free / beam-free / nemotron-3.5-super-vl-free / nemotron-3.5-lightning-free / longcat-2.5-free / iceman-free / inkling-2-small-free：输入 / 输出 / 缓存全 $0，每日 20 万~100 万 Token 限额（视模型而定）；名单按周轮换，调用前先看 /zen/v1/models 实时列表（官方文档常滞后于实时列表）；⚠️ 11/10 实测 crouton-alpha-free 已下线移除（11/9 才入档、仅存活约 1 天）、新入 longcat-2.5-free（注意不是已归档的 longcat-2.5-preview-free），照旧名单复制下线 ID 会直接报模型不存在",
         "type": "limited"
       },
       {
-        "model": "★ 11/9 新入档三款（Crouton Alpha / Iceman / Inkling 2 Small Free）",
-        "quota": "crouton-alpha-free / iceman-free / inkling-2-small-free：输入 / 输出 / 缓存全 $0；均为匿名或小体量模型，官方未标注上下文规格与隐私口径（是否留存数据 / 是否用于训练），按「未标注即保守对待」处理 —— 涉密代码、未公开源码别走这几档；免费档随时可能下线，调用前先看 /zen/v1/models 实时列表",
+        "model": "★ 11/9–11/10 新入档（Iceman / Inkling 2 Small / LongCat 2.5 Free）",
+        "quota": "iceman-free / inkling-2-small-free / longcat-2.5-free：输入 / 输出 / 缓存全 $0；官方未标注上下文规格与隐私口径（是否留存数据 / 是否用于训练），按「未标注即保守对待」处理 —— 涉密代码、未公开源码别走这几档；⚠️ 同批入档的 crouton-alpha-free 已于 11/10 下线（仅存活约 1 天）；longcat-2.5-free 是新 ID，与已归档的 longcat-2.5-preview-free 不是同一档，别照抄旧 ID；免费档随时可能下线，调用前先看 /zen/v1/models 实时列表",
         "type": "daily"
       },
       {
@@ -406,16 +406,16 @@
       "DeepSeek V4.1 Flash Free 与付费档 deepseek-v4.1-flash 同型号并存（付费档输入 $0.30/M、输出 $1.20/M）→ 确认 ID 带 -free 后缀，否则照常计费",
       "GLM 5.3 Flash Free 同理：与付费档 glm-5.3-flash（$0.15/M 输入、$0.50/M 输出）并存 → 确认 ID 带 -free 后缀；官方已于 10/19 补上该档的 zero-retention 说明",
       "🔑 **Space Bunny（太空兔）身份已揭晓 = MiniMax M3.1 Flash**：9/23 匿名上线（stealth，无任何官方公告），靠分词器指纹（50 组 / 7 组字符串比对）被社区推断为 MiniMax M 系，9/28 M3.1-Flash-Preview 上线后时间线吻合，但官方近一个月未认领；**10/19 官方账号发「Welcome back, Space Bunny」短视频 + 正式发布 M3.1 Flash，等于官宣**。同期 OpenCode 免费档 ID 由 space-bunny-free 换为 minimax-m3.1-flash-free（实测实时列表已无旧 ID），两者是同一模型的新旧 ID，别当成两个模型。⚠️ **10/28 复核：minimax-m3.1-flash-free 亦已从免费档移除**，该档实际只维持约 9 天",
-      "免费档下线是常态且不可预告：Step 5 Preview Free（10/15 下线）、LongCat 2.5 Preview Free 与 MiniMax M3.1 Flash Free（均 10/28 下线）、Muse Spark 1.2/1.3 Contributor Free 与 Cat Jam Free（10/19 下线）、Jev 1.13 Free（11/9 下线）、Union Alpha 上线约 5 天即下线 → 免费名单只当「当下可用」看，重要任务别只押一个免费模型",
+      "免费档下线是常态且不可预告：Step 5 Preview Free（10/15 下线）、LongCat 2.5 Preview Free 与 MiniMax M3.1 Flash Free（均 10/28 下线）、Muse Spark 1.2/1.3 Contributor Free 与 Cat Jam Free（10/19 下线）、Jev 1.13 Free（11/9 下线）、Crouton Alpha Free（11/9 入档、11/10 即下线，仅存活约 1 天）、Union Alpha 上线约 5 天即下线 → 免费名单只当「当下可用」看，重要任务别只押一个免费模型",
       "⚠️ **官方文档 ≠ 实时列表**：Zen 文档的 Free models 段落与定价表更新滞后（10/19 仍列 Space Bunny Free、未收录 MiniMax M3.1 Flash Free），**一律以 /zen/v1/models 实时列表为准**",
-      "⚠️ **11/9 实测新一轮轮换：8 款 → 10 款**：`jev-1.13-free` 已下线移除（10/28 名单里的 ID 现已不可用）、`pulse-alpha-free` 11/4 短暂上架后亦已移除；新增 `crouton-alpha-free` / `iceman-free` / `inkling-2-small-free`。站内名单每轮按 /zen/v1/models 实测刷新，别照抄旧文里的 ID",
-      "🔴 **新上架档隐私口径常缺**：11/9 新增三款官方均未标注数据留存与训练用途，与 Flint 40B、MiMo-V2.6-Flash 同属「未标注即保守对待」一档；别用它们处理未公开源码、生产凭据"
+      "⚠️ **11/9 实测新一轮轮换：8 款 → 10 款**：`jev-1.13-free` 已下线移除（10/28 名单里的 ID 现已不可用）、`pulse-alpha-free` 11/4 短暂上架后亦已移除；新增 `crouton-alpha-free` / `iceman-free` / `inkling-2-small-free`。站内名单每轮按 /zen/v1/models 实测刷新，别照抄旧文里的 ID。⚠️ **11/10 实测再度轮换、总数仍是 10 款**（不是 11 款）：`crouton-alpha-free` 下线移除、`longcat-2.5-free` 新入；一天之内阵容就会变，`check:models` 闸门只查「站内 ID 是否在线」、查不出官方新增漏收，必须比对完整 ID 集合",
+      "🔴 **新上架档隐私口径常缺**：11/9–11/10 新入档的 Iceman / Inkling 2 Small / LongCat 2.5 Free 官方均未标注数据留存与训练用途，与 Flint 40B、MiMo-V2.6-Flash 同属「未标注即保守对待」一档；别用它们处理未公开源码、生产凭据"
     ],
     "api_base": "https://opencode.ai/zen/v1/",
     "example_model": "glm-5.3-flash-free",
-    "last_verified": "2026-11-09",
+    "last_verified": "2026-11-10",
     "rating": 4,
-    "ratingNote": "编辑部实测：开源编程代理的官方模型网关（Zen），免费档轮番上 GLM 5.3 Flash、DeepSeek V4.1 Flash、MiniMax M3.1 Flash（前身即匿名模型 Space Bunny）等旗舰模型，可直接作 Claude Code 等编码工具的免费后端；扣分点是免费模型名单轮换极快且不可预告（Step 5 Preview Free 10/15 下线、Muse Spark 1.2/1.3 与 Cat Jam Free 10/19 下线，Union Alpha 上线约 5 天即下线、Jev 1.13 Free 11/9 下线）、部分免费档数据可能用于改进模型、新上架档官方隐私口径常滞后未标（官方文档常慢于实时列表）、Beam Free / Cat Jam Free 明确不含中国大陆——做主力编程源前需看清模型池。",
+    "ratingNote": "编辑部实测：开源编程代理的官方模型网关（Zen），免费档轮番上 GLM 5.3 Flash、DeepSeek V4.1 Flash、MiniMax M3.1 Flash（前身即匿名模型 Space Bunny）等旗舰模型，可直接作 Claude Code 等编码工具的免费后端；扣分点是免费模型名单轮换极快且不可预告（Step 5 Preview Free 10/15 下线、Muse Spark 1.2/1.3 与 Cat Jam Free 10/19 下线，Union Alpha 上线约 5 天即下线、Jev 1.13 Free 11/9 下线、Crouton Alpha Free 入档 1 天即于 11/10 下线）、部分免费档数据可能用于改进模型、新上架档官方隐私口径常滞后未标（官方文档常慢于实时列表）、Beam Free / Cat Jam Free 明确不含中国大陆——做主力编程源前需看清模型池。",
     "devAgent": {
       "name": "OpenCode（开源编程代理 CLI）",
       "url": "https://opencode.ai",
@@ -557,29 +557,29 @@
     "website": "https://www.scnet.cn",
     "register_url": "https://www.scnet.cn",
     "docs_url": "https://www.scnet.cn/ac/openapi/doc/2.0/moduleapi/tutorial/apicall.html",
-    "tagline": "国家超算互联网官方 MaaS 平台，新客免费领 1000 万 Token（至 11/10），首单 0.1 元秒 DeepSeek-V4.1-Flash-1017",
-    "highlight": "MaaS 特惠专场延至 **11/10 23:59**：新客注册即领 **1000 万 Token**（GLM-5.3-Flash，1024K 上下文，实时到账、**30 天有效**）；新客首单秒杀每天 10:00 开抢，**DeepSeek-V4.1-Flash-1017 5000 万 Token 仅 ¥0.10**（原价 ¥20.50）；双协议（OpenAI + Anthropic）可接 Claude Code / Cursor / Cline",
+    "tagline": "国家超算互联网官方 MaaS 平台，新客免费领 1000 万 Token（第三期至 12/31），首单 0.1 元秒 DeepSeek-V4.1-Flash-1017",
+    "highlight": "MaaS 特惠专场第三期延至 **12/31**：新客注册即领 **1000 万 Token**（GLM-5.3-Flash，1024K 上下文，实时到账、**30 天有效**）；新客首单秒杀每天 10:00 开抢，**DeepSeek-V4.1-Flash-1017 5000 万 Token 仅 ¥0.10**（原价 ¥20.50）；双协议（OpenAI + Anthropic）可接 Claude Code / Cursor / Cline",
     "tags": ["注册送", "国家背景", "首单低价", "速度一般"],
     "offers": [
-      { "model": "新客尝鲜：1000 万 Token 量包（至 11/10）", "quota": "活动期内新注册用户注册即领 **1000 万 Token**（模型 GLM-5.3-Flash、上下文 1024K），实时到账、**到账后 30 天有效**；每账号限领 1 次、总量有限先到先得；⚠️ 官方写明实际发放模型可能按供应情况调整，以到账显示为准", "type": "signup" },
+      { "model": "新客尝鲜：1000 万 Token 量包（第三期至 12/31）", "quota": "活动期内新注册用户注册即领 **1000 万 Token**（模型 GLM-5.3-Flash、上下文 1024K），实时到账、**到账后 30 天有效**；每账号限领 1 次、总量有限先到先得；⚠️ 官方写明实际发放模型可能按供应情况调整，以到账显示为准", "type": "signup" },
       { "model": "SCNet-Max（客户端默认模型）", "quota": "限时免费，默认开放，无需额外领取；具体额度上限与有效截止日期以客户端公示为准", "type": "limited" },
-      { "model": "新客首单秒杀（0.1 元起 · 至 11/10）", "quota": "每天 10:00 开抢、每日库存有限售完即止：DeepSeek-V4.1-Flash-1017 5000 万 Token ¥0.10（原价 ¥20.50，约 0.04 折）/ GLM-5.3-Flash 5000 万 ¥0.10 / DeepSeek-V4.1-Flash 2000 万 ¥0.10 / Qwen3.8-Flash 1000 万 ¥0.10；Kimi-K3、Qwen3.8-Max 另有折扣；每账号合计限购 1 次，量包自生效起 30 天有效且不支持无理由退款", "type": "credit" }
+      { "model": "新客首单秒杀（0.1 元起 · 第三期至 12/31，部分档位标 11/14）", "quota": "每天 10:00 开抢、每日库存有限售完即止：DeepSeek-V4.1-Flash-1017 5000 万 Token ¥0.10（原价 ¥20.50，约 0.04 折）/ GLM-5.3-Flash 5000 万 ¥0.10 / DeepSeek-V4.1-Flash 2000 万 ¥0.10 / Qwen3.8-Flash 1000 万 ¥0.10；Kimi-K3、Qwen3.8-Max 另有折扣；每账号合计限购 1 次，量包自生效起 30 天有效且不支持无理由退款", "type": "credit" }
     ],
     "steps": [
-      "打开 scnet.cn 手机号注册账号（活动期 2026-08-13 至 11-10 内首次注册才算新客）",
+      "打开 scnet.cn 手机号注册账号（活动期 2026-08-13 至 12-31 内首次注册才算新客）",
       "进入 MaaS 特惠活动页领取新客 1000 万 Token 量包（领取地址：https://www.scnet.cn/home/subject/maas/index.html）",
       "控制台 → 模型服务 → API Key 管理创建 Key（完整 Key 只显示一次，当场复制）",
       "OpenAI 兼容接口 base_url 指向 api.scnet.cn/api/llm/v1；另有 Anthropic 兼容 api.scnet.cn/api/llm/anthropic"
     ],
     "pitfalls": [
       "🔴 **赠送额度用完会自动扣现金余额**：官方结算顺序「赠送免费 Tokens → 现金余额」且不弹窗确认；充过值的账号额度烧完下一笔直接从余额扣 → 想零成本就别充值，或在额度见底前停用 Key / 停掉自动任务",
-        "⚠️ **30 天账期是硬线**：1000 万 Token 到账起 30 天有效、过期作废，不是每天续杯，别领回来放着；临近 11/10 收口再领，可用天数与活动剩余时间重叠更少",
+        "⚠️ **30 天账期是硬线**：1000 万 Token 到账起 30 天有效、过期作废，不是每天续杯，别领回来放着；临近 12/31 收口再领，可用天数与活动剩余时间重叠更少",
         "⚠️ **发放模型可能变**：官方规则写明「实际发放的模型可能根据供应情况调整为其他规格模型，以到账时平台显示为准」",
         "🔴 **禁止多号叠加**：平台按手机号、身份证号、支付账号、邮箱、设备识别码、IP 等多维信息判定「同一自然人」，多账号重复领会被合并计算、超出部分算违规、可取消资格并收回福利",
         "⚠️ **Token Plan 订阅 Key（sk-tp- 开头）与通用 Key 完全独立、不能混用**：官方 FAQ 明确 Token Plan 仅限在 AI 编程工具 / 智能体工具中交互式使用，Dify、Postman、cURL 等算违规、可能导致订阅被暂停；用错不报错而是直接按量扣钱",
         "推理速度可能慢于商业云厂商，对延迟敏感的任务慎用",
       "秒杀套餐每日限量，工作日 10:00 准点开抢",
-      "部分量包仅限新用户，注意活动截止时间"
+      "部分量包仅限新用户，注意活动截止时间；⚠️ 11/10 复核：官方活动主页面已改为 2026.08.13~2026.12.31（第三期）、活动中心列「进行中」，但热门推荐区仍标「即日起–11/10」、部分缓存快照弹「活动已结束」、0.1 元秒杀部分档位标「截止到 11/14」→ 站内按主页面 12/31 口径，能否领取以活动页实际按钮为准"
     ],
     "api_base": "https://api.scnet.cn/api/llm/v1",
     "example_model": "GLM-5.3-Flash",
@@ -590,7 +590,7 @@
       "url": "https://www.scnet.cn/ui/mall/client/download",
       "note": "超算互联网官方桌面客户端（GUI / CLI），可在本地下载安装后直接调用 SCNet 的 MaaS 模型额度、跑批处理任务；额度产品内使用，不可导出为 API。注意：该客户端并非编程 agent，也不含 Coding Plan，重度编码场景仍建议走 API。"
     },
-    "last_verified": "2026-10-28"
+    "last_verified": "2026-11-10"
   },
   {
     "slug": "baidu",
@@ -970,6 +970,11 @@
     "highlight": "每日免费 50 万 Token（输入+输出共享），次日 02:00（UTC+8）重置、不滚存",
     "tags": ["每日免费", "OpenAI 兼容", "按 Token 计费", "需绑支付宝"],
     "offers": [
+      {
+        "model": "Ling-3.2-flash（上线前两周 API 限时免费 · 11/10 收录）",
+        "quota": "11/5 上线的 560B/25B 原生多模态 MoE、1M 上下文、图/文/视频输入；官方 changelog 与定价页写明**上线前两周 API 免费**（输入输出均 ¥0，推算约至 11/19、官方未给精确截止时点），OpenAI + Anthropic 双协议兼容，见快讯 2026-11-antling-ling-32-flash-free；免费期后恢复原价，官方尚未列 3.2 正式费率",
+        "type": "limited"
+      },
       { "model": "全系模型（Ling-2.6-1T / Ling-2.6-flash / Ring-2.6-1T / Ming 全模态 / Ling-3.0-Flash-AF 金融增强版（即 Ling-3.0-flash-Fin）等）", "quota": "每日赠送 50 万 tokens（输入+输出共享），每日 02:00（UTC+8）自动发放、不滚存；超出按量计费（Ling-2.6-flash 输入 ¥0.60/百万、输出 ¥1.80/百万）", "type": "daily" }
     ],
     "steps": [
@@ -982,12 +987,12 @@
       "免费额度 50 万 tokens/天（输入+输出共享），每日 02:00（UTC+8）重置、不滚存，当天用尽即止",
       "首次调用前必须绑定个人支付宝账号并开通 Ling 服务；免费额度到账前产生的费用从账户余额扣除，余额不足暂停服务",
       "仅支持个人支付宝充值/扣费，企业支付宝暂不支持；按量计费单价以官方定价页为准（2.6 系列限时折扣，原价随时恢复）",
-      "Ling-3.0-flash 限时免费 API 已于 2026-08-03 23:00（北京时间）结束，官方称期满开源权重，请勿再视为当前免费；常规 50 万 tokens/日（输入+输出共享，02:00 重置）免费额度仍有效。Ling-3.0-Flash-AF 金融增强版（即 Ling-3.0-flash-Fin）是否另有活动限免，须以官方计费页为准，本结论未单独核实",
+      "Ling-3.0-flash 限时免费 API 已于 2026-08-03 23:00（北京时间）结束，官方称期满开源权重，请勿再视为当前免费；常规 50 万 tokens/日（输入+输出共享，02:00 重置）免费额度仍有效。Ling-3.0-Flash-AF 金融增强版（即 Ling-3.0-flash-Fin）是否另有活动限免，须以官方计费页为准，本结论未单独核实。另：**Ling-3.2-flash** 于 11/5 上线、上线前两周限时免费（推算约至 11/19，官方未给精确截止时点），与 3.0 那轮是不同批次活动；免费期结束即恢复按量计费，官方定价页尚未列 3.2 费率，别把两轮混写",
       "与蚂蚁数科 DTMaaS 是两套独立平台（Ling 按 Token、DTMaaS 按次），别混淆"
     ],
     "api_base": "https://api.ant-ling.com/v1",
     "example_model": "Ling-2.6-flash",
-    "last_verified": "2026-09-11"
+    "last_verified": "2026-11-10"
   },
   {
     "slug": "longcat",
