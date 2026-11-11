@@ -1,4 +1,37 @@
 [
+  {
+    "id": "2026-11-opencode-minimax-m31-flash-back",
+    "date": "2026-11-11",
+    "platform_slug": "opencode",
+    "platform_name": "OpenCode（Zen 网关）",
+    "title": "MiniMax M3.1 Flash Free 回归 OpenCode Zen 免费档：10/28 下线后重新上架，1M 上下文 · 零留存（11/11 实测）",
+    "type": "new_model",
+    "reward": "**MiniMax M3.1 Flash Free（`minimax-m3.1-flash-free`）重新出现在 OpenCode Zen 免费档**：11/11 实测 /zen/v1/models 实时列表 cost.text.input / output / cache.read 全 **0**，官方 Zen 文档 Pricing 表与 Free models 段落同步列为 Free。规格 1M 上下文 / 最高 512K 输出、稀疏注意力、文 / 图 / 视频输入、工具调用与可调推理强度（low~max），官方定位前沿多模态编码模型。这是 10/19 首轮上架（前身即匿名模型 Space Bunny）、**10/28 下线后的回归**，不是全新模型；本轮官方还补上了 **zero-retention（不留存、不用于训练）** 口径。同期实测零价 ID 共 **12 个**（11 款 `-free` + 匿名推理档 `big-pickle`）",
+    "eligibility": "注册 OpenCode 账号并创建 API Key 即可调用（OpenAI 兼容端点 https://opencode.ai/zen/v1/chat/completions），无需绑卡、无需 Go 订阅（$10/月为付费增值项）；免费档为限时限量资源、官方未公布截止日期，随时可能再次下线。11/11 实测在架，调用前先看 /zen/v1/models 实时列表",
+    "deadline": "官方未标注截止日期（限时免费、随时可能再次下线；11/11 实测在架，以 /zen/v1/models 实时列表为准）",
+    "howto": [
+      "打开 https://opencode.ai/auth 注册并登录，创建 API Key（无需绑卡）",
+      "直接调用 https://opencode.ai/zen/v1/chat/completions，或在 OpenCode 里 /connect 选 OpenCode 粘贴 Key；模型 ID 写 minimax-m3.1-flash-free（**必须带 -free 后缀**）",
+      "调用前先拉一次 https://opencode.ai/zen/v1/models，确认该 ID 的 cost.text.input.price 与 output.price 仍为 0 —— 免费档按周甚至按天轮换，站内旧名单不能照抄",
+      "需要稳定付费通道可走 MiniMax 官方 API 或 Zen 付费档 minimax-m3（输入 $0.30/M、输出 $1.20/M），别把两者混算"
+    ],
+    "pitfalls": [
+      "🔴 **这是回归、不是首发**：该档 10/19 随 MiniMax 官方认领 Space Bunny 上架、10/28 从免费档移除（首轮仅约 9 天），站内已归档 2026-10-minimax-m31-flash-free；11/11 实测又出现在实时列表。归档条目保留 ended 只作历史记录，**别把「已下线」当成永久结论**",
+      "⚠️ **免费档 ≠ 永久可用**：OpenCode 免费名单轮换极快（Crouton Alpha Free 11/9 入档、11/10 即下线，仅存活约 1 天），本轮回归同样可能随时再次移除；重要任务别只押这一个模型",
+      "🔑 **判据是实时 cost=0，不是 ID 后缀**：11/11 实测 12 个零价 ID，其中 11 款带 -free，匿名推理档 big-pickle **不带后缀但同样零价**（200K 上下文、纯文本）；反过来官方文档定价表仍列 jev-1.13-free、nemotron-3-ultra-free 等实时列表已移除/已下线的 ID → 一律以 /zen/v1/models 为准",
+      "✅ **隐私口径本轮已补齐**：官方 Zen 文档 Free models 段落现写明该档提供方执行 zero-retention、不将数据用于模型训练（与 GLM 5.3 Flash Free / DeepSeek V4.1 Flash Free 同档）；10/19 首轮收录时官方文档未标注、当时按「未标注即保守对待」处理。涉密代码仍建议自查官方页面",
+      "⚠️ **与付费档同型号并存**：minimax-m3 付费档输入 $0.30/M、输出 $1.20/M，minimax-m3.1-flash-free 才免费；ID 少写 -free 会照常计费",
+      "⚠️ **匿名期 ID 不可复用**：Space Bunny 时期的 space-bunny-free 已于 10/19 下线，与 minimax-m3.1-flash-free 是同一模型的新旧 ID，别照抄旧文",
+      "⚠️ **额度有隐形限额**：Zen 免费层没有固定速率限制，配额随负载浮动，多数免费档每日 20 万~100 万 Token 不等；LongCat 2.5 Free 官方明确每日 100 次请求上限。批量任务别依赖免费层",
+      "⚠️ **官方文档可能滞后于实时列表**：本次是「文档 + 实时列表」同向确认才收，历史上多次出现文档仍列已下线档（Space Bunny Free、Jev 1.13 Free）或未收录新档的情况 → 以实时接口为最终事实源",
+      "信源等级：OpenCode 官方 /zen/v1/models 实时接口（11/11 实测）+ 官方 Zen 文档 Pricing / Free models 段落 + 第三方 llmperks 11/10 21:53 UTC 快照（同为 11 款 -free）三方交叉；时间与规则以官方为准"
+    ],
+    "summary": "11/11 实测 OpenCode Zen 免费阵容：**MiniMax M3.1 Flash Free 回归**。该档 10/19 随 MiniMax 官方认领匿名模型 Space Bunny 上架、10/28 从免费档移除，站内当时归档为首轮窗口结束；本次实时 /zen/v1/models 又列出该 ID 且 cost 全 0，官方 Zen 文档 Pricing 表与 Free models 段落同步列 Free，第三方 11/10 快照亦为 11 款 → 三方交叉确认是回归而非缓存幻影。本轮官方还补上 zero-retention / 不用于训练的隐私口径（首轮未标注）。同步实测**零价 ID 共 12 个**：11 款 -free + 不带后缀的匿名推理档 big-pickle，说明「免费 ≠ 带 -free 后缀」，判据必须回到实时 cost=0。站内已同步平台名单，旧归档条目保留 ended 并补回归说明。属**可站外调用的 API 免费额度**，符合主线。",
+    "source": "https://opencode.ai/docs/zen/",
+    "status": "active",
+    "pinHeadline": false,
+    "publishedAt": "2026-11-11"
+  },
     {
     "id": "2026-11-zhipu-global-build-1110",
     "date": "2026-11-10",
@@ -408,27 +441,27 @@
     "pinHeadline": false,
     "publishedAt": "2026-10-21"
   },
-  {
+    {
     "id": "2026-10-minimax-m31-flash-free",
     "date": "2026-10-19",
     "platform_slug": "opencode",
     "platform_name": "OpenCode（Zen 网关）",
-    "title": "MiniMax M3.1 Flash 官方认领 Space Bunny（太空兔）：OpenCode 免费档限时开放，1M 上下文 · 200+ TPS · Agentic 编程（已结束 · 10/28 复核已从免费档移除）",
+    "title": "MiniMax M3.1 Flash 官方认领 Space Bunny（太空兔）：OpenCode 免费档限时开放，1M 上下文 · 200+ TPS · Agentic 编程（首轮窗口已结束 · 11/11 该档回归，见新快讯）",
     "type": "new_model",
-    "reward": "【已下线 · 2026-10-28 复核】MiniMax 官方于 10/19 认领匿名模型 Space Bunny（太空兔）为 **MiniMax M3.1 Flash**，并曾在 OpenCode Zen 免费档开放 **minimax-m3.1-flash-free**（输入 / 输出 / 缓存全 $0）：稀疏注意力架构、1M 上下文、最高 512K 输出、200+ TPS（P50 稳定 170+）、可调推理强度，官方称 Agentic 任务成本较上代降 70%。官方称该模型匿名期累计处理超 200 万亿 Token。⚠️ **该免费档已于 10/28 从 OpenCode 免费档移除（已下线）**",
+    "reward": "【历史条目 · 10/19–10/28 首轮免费窗口】MiniMax 官方于 10/19 认领匿名模型 Space Bunny（太空兔）为 **MiniMax M3.1 Flash**，并曾在 OpenCode Zen 免费档开放 **minimax-m3.1-flash-free**（输入 / 输出 / 缓存全 $0）：稀疏注意力架构、1M 上下文、最高 512K 输出、200+ TPS（P50 稳定 170+）、可调推理强度，官方称 Agentic 任务成本较上代降 70%。官方称该模型匿名期累计处理超 200 万亿 Token。⚠️ 首轮免费窗口于 10/28 结束；**11/11 复核该 ID 已重新出现在实时免费档（回归）**，本条保留 ended 作为首轮窗口历史记录，当前可用状态见 11/11 新快讯",
     "eligibility": "注册 OpenCode 账号并创建 API Key 即可调用，无需绑卡、无需 Go 订阅（$10/月为付费增值项）；⚠️ OpenCode 侧为限时免费档，官方未公布截止日期",
     "deadline": "官方未标注截止日期（限时免费、随时可能下线；以 /zen/v1/models 实时列表为准）",
     "howto": [
       "打开 https://opencode.ai/auth 注册并登录，创建 API Key",
       "在 OpenCode 里 /connect 选 OpenCode 粘贴 Key，或直接调用 https://opencode.ai/zen/v1/chat/completions（OpenAI 兼容）",
-      "模型 ID 填 minimax-m3.1-flash-free（曾限时免费，现已下线）；调用前先看 /zen/v1/models 确认是否仍在免费档",
+      "模型 ID 填 minimax-m3.1-flash-free（10/28 曾下线、11/11 已回归免费档）；调用前先看 /zen/v1/models 确认是否仍在免费档",
       "需要正式版能力也可走 MiniMax 官方渠道：API 每百万 Token 输入 ¥1 / 输出 ¥4 / 缓存读 ¥0.1（10/19 起价格，较上代降 50%+）"
     ],
     "pitfalls": [
-      "【已结束 · 2026-10-28 复核】**minimax-m3.1-flash-free 已从 OpenCode 免费档移除**（实测 /zen/v1/models 实时列表已无该 ID，官方文档 Free models 段落与定价表亦无该档）→ 该免费窗口实际仅维持约 9 天；⚠️ 同一轮还移出了 longcat-2.5-preview-free，并新增 flint-40b-free",
+      "【已结束 · 2026-10-28 复核】**minimax-m3.1-flash-free 已从 OpenCode 免费档移除**（实测 /zen/v1/models 实时列表已无该 ID，官方文档 Free models 段落与定价表亦无该档）→ 该免费窗口实际仅维持约 9 天；⚠️ 同一轮还移出了 longcat-2.5-preview-free，并新增 flint-40b-free ⚠️ **11/11 复核（口径更新）**：该 ID 已重新出现在 /zen/v1/models 实时列表（cost=0），官方文档 Pricing 与 Free models 段落亦列 Free → 属**免费档回归**，不是永久下架；本条保持 ended 只作 10/19–10/28 首轮窗口的历史记录，当前状态见 2026-11-opencode-minimax-m31-flash-back",
       "🔑 **匿名期与正式版是两个模型 ID**：Space Bunny 时期的 OpenCode ID 是 space-bunny-free，官方认领后同一模型在免费档换成 minimax-m3.1-flash-free；2026-10-19 实测 /zen/v1/models 已无 space-bunny-free，新旧 ID 不可混用",
-      "⚠️ **官方文档滞后于实时列表**：OpenCode Zen 文档的 Free models 段落与定价表 10/19 仍列 Space Bunny Free、未收录 MiniMax M3.1 Flash Free → **站内一律以 /zen/v1/models 实时列表为准**，调用前先自查",
-      "⚠️ **官方未标注该免费档的隐私口径**：与 GLM 5.3 Flash Free / DeepSeek V4.1 Flash Free（明确标注 zero-retention）不同，文档未见 M3.1 Flash Free 的留存与训练说明 → 按「未标注即保守对待」处理，涉密代码别走这一档",
+      "⚠️ **官方文档滞后于实时列表**：OpenCode Zen 文档的 Free models 段落与定价表 10/19 仍列 Space Bunny Free、未收录 MiniMax M3.1 Flash Free → **站内一律以 /zen/v1/models 实时列表为准**，调用前先自查（该滞后在 11/11 复核时已修复：官方文档现已收录 MiniMax M3.1 Flash Free）",
+      "⚠️ **隐私口径已补（11/11 复核）**：官方 Zen 文档 Free models 段落现写明 MiniMax M3.1 Flash Free 的提供方执行 zero-retention、不将数据用于训练（与 GLM 5.3 Flash Free / DeepSeek V4.1 Flash Free 同档）；10/19 首轮收录时官方文档确实未标注，当时按「未标注即保守对待」处理 → 口径变化已记录，涉密代码仍建议自查官方页面",
       "⚠️ 与付费档同型号并存：minimax-m3 付费档为输入 $0.30/M、输出 $1.20/M；M3.1 Flash 官方 API 价为 ¥1/M 输入、¥4/M 输出（≈$0.15/$0.60）→ 确认 ID 带 -free 后缀，否则照常计费",
       "身份溯源（供兴趣参考）：社区此前用分词器指纹（50 组 / 7 组字符串比对）推断 Space Bunny 属 MiniMax M 系，9/28 M3.1-Flash-Preview 上线后时间线吻合，但**官方当时未认领**；直到 10/19 官方账号发「Welcome back, Space Bunny」短视频 + 发布 M3.1 Flash，才正式对上",
       "MiniMax 官方文档另有时间线：M2.5 / M2.7 自 2026-10-19 起**对新用户关闭**、11-18 正式退役，M Plan / Token Plan 用户请求自动路由到 M3.1 Flash Preview（旧模型名兼容）→ 用旧名的新用户需留意",
