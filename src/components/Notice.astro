@@ -4,6 +4,8 @@ import { getActiveNotices, NOTICE_CATEGORY_STYLE } from '../lib/data';
 const notices = getActiveNotices();
 const single = notices.length === 1;
 const track = single ? notices : [...notices, ...notices];
+// 跑马灯速度随条数线性增长：每条停留约 7s，避免公告多时滚得太快（下限 40s）
+const noticeDuration = single ? '40s' : `${Math.max(40, notices.length * 7)}s`;
 ---
 
 {
@@ -33,7 +35,7 @@ const track = single ? notices : [...notices, ...notices];
           </div>
         ) : (
           <div class="notice-marquee overflow-hidden py-1">
-            <div class="notice-track flex w-max gap-6 py-1.5">
+            <div class="notice-track flex w-max gap-6 py-1.5" style={`--notice-duration: ${noticeDuration}`}>
               {
                 track.map((n) => (
                   <span
@@ -68,7 +70,7 @@ const track = single ? notices : [...notices, ...notices];
 
 <style>
   .notice-track {
-    animation: notice-scroll 32s linear infinite;
+    animation: notice-scroll var(--notice-duration, 40s) linear infinite;
   }
   .notice-marquee:hover .notice-track {
     animation-play-state: paused;
