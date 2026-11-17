@@ -1,12 +1,12 @@
 [
-  {
+    {
     "id": "notice-zcode-global-build-daily",
-    "text": "智谱 ZCode WEEKEND BUILD 周末卡：5 亿 GLM-5.3-Flash Token，今晚 23:00 生效 → 11/16 09:00 清零（常态每日卡，客户端内额度）",
+    "text": "智谱 ZCode GLOBAL BUILD 工作日卡：3 亿 GLM-5.3-Flash Token，今晚 23:00 生效 → 11/18 09:00 清零（常态每日卡，客户端内额度）",
     "category": "new",
     "source": "https://igetoken.com/deals/2026-11-zhipu-global-build-daily/",
     "linkText": "查看详情",
     "publishedAt": "2026-11-12",
-    "expireAt": "2026-11-16",
+    "expireAt": "2026-11-18",
     "priority": 10
   },
   {
@@ -40,7 +40,7 @@
     "expireAt": "2026-11-20",
     "priority": 10
   },
-  {
+    {
     "id": "notice-2026-1109-upcoming-expiry",
     "text": "到期提醒：11/14 企微教师限免、11/15 23:59 混元 Hy4 与 Hy3 限免同日结束；超算互联网 MaaS 特惠已延至 12/31（第三期），不在到期名单",
     "category": "notice",
@@ -48,7 +48,8 @@
     "linkText": "查看快讯",
     "publishedAt": "2026-11-10",
     "expireAt": "2026-11-16",
-    "priority": 8
+    "priority": 8,
+    "status": "removed"
   },
   {
     "id": "notice-2026-1109-scnet-double11-client",
@@ -60,7 +61,7 @@
     "expireAt": "2026-11-30",
     "priority": 9
   },
-  {
+    {
     "id": "notice-2026-1109-zhipu-autoclaw-double11",
     "text": "智谱 AutoClaw 双十一：11/9–11/15 登录领 5000 万 Token（海外版 1 亿），11/15 23:59 一并清零（客户端内额度）",
     "category": "new",
@@ -68,9 +69,10 @@
     "linkText": "查看快讯",
     "publishedAt": "2026-11-09",
     "expireAt": "2026-11-16",
-    "priority": 10
+    "priority": 10,
+    "status": "removed"
   },
-  {
+    {
     "id": "notice-2026-1104-hunyuan-hy4-free",
     "text": "混元 Hy4 正式版限时免费：11/4–11/15 23:59，WorkBuddy 每日送免费额度、订阅用户更高配额（产品内额度，不可导出 API）",
     "category": "new",
@@ -78,7 +80,8 @@
     "linkText": "查看快讯",
     "publishedAt": "2026-11-04",
     "expireAt": "2026-11-16",
-    "priority": 10
+    "priority": 10,
+    "status": "removed"
   },
   {
     "id": "notice-2026-1103-zcode-global-build",
@@ -102,7 +105,7 @@
     "expireAt": "2026-11-03",
     "priority": 10
   },
-  {
+    {
     "id": "notice-2026-1028-new-resources",
     "text": "近期收录速览：混元 Hy4 正式版限免、智谱 AutoClaw 双十一、SCNet 双 11 客户端特权、蚂蚁百灵 Ling-3.2-flash API 限免（可站外调用）；MaaS 特惠已延至 12/31、CodeRabbit 免费扫描已结束",
     "category": "new",
@@ -110,9 +113,10 @@
     "linkText": "查看快讯",
     "publishedAt": "2026-10-28",
     "expireAt": "2026-11-16",
-    "priority": 9
+    "priority": 9,
+    "status": "removed"
   },
-  {
+    {
     "id": "notice-2026-1028-perks-expanded",
     "text": "Agent 福利社新增 3 条：WorkBuddy 教育公益版（教师每月 2000 积分 × 12 个月）、企业微信入口限免（11/14 截止）、Freebuff 免费编程 Agent",
     "category": "new",
@@ -120,7 +124,8 @@
     "linkText": "查看专栏",
     "publishedAt": "2026-10-28",
     "expireAt": "2026-11-16",
-    "priority": 7
+    "priority": 7,
+    "status": "removed"
   },
     {
     "id": "notice-2026-1028-qiniu-conatus-free",
