@@ -1,5 +1,67 @@
 [
     {
+      "id": "2026-11-opencode-hy4-flash-free",
+      "date": "2026-11-17",
+      "platform_slug": "opencode",
+      "platform_name": "OpenCode（Zen 网关）",
+      "title": "Hy4 Flash Free 上线 OpenCode Zen 免费档：腾讯混元可通过 OpenAI 兼容接口站外调用，1M 上下文 · 零留存（11/17 实测）",
+      "type": "new_model",
+      "reward": "**Hy4 Flash Free（`hy4-flash-free`）已出现在 OpenCode Zen 实时免费档**：11/17 直打 `/zen/v1/models`（87 个模型）实测 `cost.text.input.price` / `output.price` / `cache.read.price` 全为 **0**，官方 Zen 文档 Free models 段落与 Pricing 定价表同步列为 Free。API 实测 **1,048,576（1M）上下文 / 65,536 输出**、文本 + 图像（JPEG/PNG/WebP/GIF）输入；官方标注该档提供方执行 **zero-retention、不用于模型训练**。本轮零价 ID 由 12 个增至 **13 个**（12 款 `-free` + 匿名推理档 `big-pickle`）。这是 Hy4 家族首次出现**可站外 API 调用**的免费档，恰好衔接 11/15 Hy4 客户端限免结束。",
+      "eligibility": "注册 OpenCode 账号并创建 API Key 即可调用（OpenAI 兼容端点 `https://opencode.ai/zen/v1/chat/completions`），无需绑卡、无需 Go 订阅（$10/月为付费增值项）；限时免费、官方未公布截止日期，随时可能下线。11/17 实测在架，调用前先看 `/zen/v1/models` 实时列表。",
+      "deadline": "官方未标注截止日期（限时免费、随时可能下线；11/17 实测在架，以 /zen/v1/models 实时列表为准）",
+      "howto": [
+        "打开 https://opencode.ai/auth 注册并登录，创建 API Key（无需绑卡）",
+        "调用 https://opencode.ai/zen/v1/chat/completions，或在 OpenCode 里 /connect 选 OpenCode 粘贴 Key；模型 ID 写 hy4-flash-free（**必须带 -free 后缀**）",
+        "调用前拉一次 https://opencode.ai/zen/v1/models，确认该 ID 的 cost.text.input.price 与 output.price 仍为 0 —— 免费档按周甚至按天轮换，站内名单不能照抄",
+        "需要稳定付费通道可走腾讯云 TokenHub 的 Hy4 flash 正式 API（限免外按量计费），别把免费档与付费档口径混算"
+      ],
+      "pitfalls": [
+        "🔴 **可站外调用的产品内限免不是同一份**：腾讯 WorkBuddy 客户端的 Hy4 flash 限免（11/16–11/30 23:59）是**产品内额度、不可导出为 API**；本条 `hy4-flash-free` 是 OpenCode 网关的**独立免费档**，走 OpenAI 兼容端点可站外调用。两者同属 Hy4 flash、但额度与入口互不相通",
+        "⚠️ **免费档 ≠ 永久可用**：OpenCode 名单轮换极快（Crouton Alpha Free 11/9 入档、11/10 即下线；MiniMax M3.1 Flash Free 10/28 下线、11/11 回归），本档同样可能随时移除；重要任务别只押一个模型",
+        "🔑 **判据是实时 cost=0，不是 ID 后缀**：11/17 实测 13 个零价 ID，其中 12 款带 `-free`，匿名推理档 `big-pickle` 不带后缀但同为 cost=0；反向看官方文档定价表仍列 `jev-1.13-free` / `nemotron-3-ultra-free` 等实时已移除的 ID → 一律以 `/zen/v1/models` 为准",
+        "✅ **隐私口径明确**：官方 Zen 文档 Free models 段落写明该档提供方执行 zero-retention、不用于训练，与 GLM 5.3 Flash Free / DeepSeek V4.1 Flash Free / MiniMax M3.1 Flash Free 同档（Big Pickle、Iceman、Flint 40B 等则写「可能用于改进模型」）",
+        "⚠️ **规格以实时接口为准**：官方 Zen 文档未列该档上下文与输入模态，1M 上下文 / 图文输入取自 `/zen/v1/models` 实时字段；文档常滞后于接口，别按文档推断",
+        "⚠️ **额度有隐形限额**：Zen 免费层无固定速率限制、配额随负载浮动，多数免费档每日 20 万~100 万 Token 不等；批量任务别依赖免费层",
+        "⚠️ **与付费档同型号并存**：腾讯云 TokenHub 的 Hy4 flash 正式 API 为输入 ¥0.5/M、输出 ¥2/M、缓存命中 ¥0.02/M（11/30 前另打 5 折）；OpenCode 网关侧也有对应付费档，ID 不带 `-free` 会照常计费",
+        "信源等级：OpenCode 官方 `/zen/v1/models` 实时接口（11/17 直打，87 模型 / 13 零价）+ 官方 Zen 文档 Pricing / Free models / Endpoints 段落（列为 Free、zero-retention、OpenAI 兼容端点）双向交叉；时间与规则以官方为准"
+      ],
+      "summary": "11/17 直打 `/zen/v1/models` 实测：OpenCode Zen 零价阵容由 12 个扩至 **13 个**，新增 **`hy4-flash-free`** —— 腾讯混元 Hy4 flash 首次以可站外 API 调用形态进入免费档（1M 上下文、图文输入、OpenAI 兼容端点、官方标注 zero-retention）。官方 Zen 文档 Free models / Pricing / Endpoints 三处同步收录，接口与文档同向确认。属**可站外调用的 API 免费额度**，符合主线收录红线；与 WorkBuddy 客户端内的 Hy4 flash 限免是两份互不相通的额度，已分别建条目。",
+      "source": "https://opencode.ai/docs/zen/",
+      "status": "active",
+      "pinHeadline": false,
+      "publishedAt": "2026-11-17"
+    },
+    {
+      "id": "2026-11-workbuddy-hy4-flash-free",
+      "date": "2026-11-17",
+      "platform_slug": "workbuddy",
+      "platform_name": "WorkBuddy（腾讯云）",
+      "title": "混元 Hy4 flash 首发接入 WorkBuddy：国内版 / 国际版 11/16–11/30 23:59 限时免费（产品内额度）",
+      "type": "limited_time",
+      "reward": "**腾讯混元 Hy4 flash 于 11/16 上线，WorkBuddy 国内版与国际版同步完成首发接入，11/16–11/30 23:59 限时免费体验**（限免期内调用不计积分）。模型总参数 224B（含 64B Engram 参数）、激活参数仅 12B，支持多模态与 1M 上下文，官方称其为「迄今为止最高性价比的 Hy 模型」；限免外官方 API 定价为输入 ¥0.5/M、输出 ¥2/M、缓存命中 ¥0.02/M。官方建议深度搜索、文档处理、PPT 生成、简单前端与 Computer Use 等日常任务交给 flash，长程软件工程仍推荐 Hy4。",
+      "eligibility": "下载 WorkBuddy 客户端（国内版 / 国际版均可）并注册账号，在模型列表选择 Hy4 flash 即可，限免期内不计积分；官方未另行公布限量或余额门槛。⚠️ 这是**客户端内额度**，不能导出为 API Token。",
+      "deadline": "2026-11-30 23:59",
+      "howto": [
+        "打开 https://www.workbuddy.cn 下载客户端并注册（国际版同样已首发接入）",
+        "在模型选择里切到 Hy4 flash，11/16–11/30 23:59 期间调用不计积分",
+        "日常高频任务（读材料、整理资料、洗数据、简单前端）优先用 flash；长程软件工程仍用 Hy4 正式版",
+        "若需要 API 调用，走腾讯云 TokenHub 的 Hy4 flash 付费接口（11/30 前 5 折），或 OpenCode Zen 的 hy4-flash-free 免费档 —— WorkBuddy 内额度不可导出"
+      ],
+      "pitfalls": [
+        "🔴 **产品内额度，不可导出为 API**：本次 Hy4 flash 限免只在 WorkBuddy 客户端内生效（国内版 / 国际版），不能生成 API Key 给 Claude Code / Cursor 等外部工具使用；需要站外调用请走 OpenCode `hy4-flash-free` 或腾讯云 TokenHub",
+        "⚠️ **Hy4 正式版限免已结束、Hy3 端内下线**：官方 11/16 公告明确「Hy4 模型限免时间现已结束，Hy3 模型也将端内下线」，站内对应快讯已归档；端内免费流量正向 flash 集中，别再按旧文案找 Hy4 / Hy3 限免",
+        "⚠️ **限免有明确终点**：11/30 23:59 后回归积分计费；官方 API 参考价输入 ¥0.5/M、输出 ¥2/M、缓存命中 ¥0.02/M（约为 Hy4 的 1/12、1/9、1/15），长上下文与重任务仍会较快消耗积分",
+        "🔑 **TokenHub 5 折是另一渠道**：腾讯云 TokenHub 的 Hy4 flash 在 11/30 前打 5 折，属按量付费 API，不等于 WorkBuddy 客户端内的免费体验；两者账号体系与结算口径独立",
+        "⚠️ **与 OpenCode 免费档不是同一份额度**：OpenCode Zen 的 `hy4-flash-free`（11/17 实测 cost=0、1M 上下文、零留存）是网关侧独立免费资源，可站外调用；不要把 WorkBuddy 的限免额度当成可在 OpenCode 使用的额度",
+        "信源等级：腾讯混元 / WorkBuddy 官方 11/16 发布口径（新浪财经 14:09 通稿 + 腾讯新闻 11/16 19:39 实测长文双源交叉）；具体入口与到账以客户端实际显示为准"
+      ],
+      "summary": "11/16 腾讯混元发布 Hy4 flash（224B 总参 / 12B 激活、多模态、1M 上下文），WorkBuddy 国内版与国际版同步首发接入，**11/16–11/30 23:59 限时免费**。同批公告 Hy4 正式版限免已结束、Hy3 端内下线，端内免费流量转向 flash。属**产品内额度、不可导出 API**，按红线放在快讯层并强标口径；可站外调用的同名免费档另见 OpenCode `hy4-flash-free` 条目。",
+      "source": "https://finance.sina.com.cn/jjxw/2026-11-16/doc-iniyxcif2491252.shtml",
+      "status": "active",
+      "pinHeadline": false,
+      "publishedAt": "2026-11-17"
+    },
+    {
     "id": "2026-11-zhipu-global-build-daily",
     "date": "2026-11-12",
     "platform_slug": "zhipu",

@@ -1,5 +1,25 @@
 [
     {
+      "id": "notice-2026-1117-opencode-lineup-13",
+      "text": "OpenCode Zen 免费阵容 11/17 实测更新：零价 ID 增至 13 个，新增 Hy4 Flash Free（可站外 API 调用、零留存）；名单按天轮换，以实时列表为准",
+      "category": "new",
+      "source": "https://igetoken.com/deals/2026-11-opencode-hy4-flash-free/",
+      "linkText": "查看快讯",
+      "publishedAt": "2026-11-17",
+      "expireAt": "2026-11-24",
+      "priority": 10
+    },
+    {
+      "id": "notice-2026-1117-workbuddy-hy4-flash",
+      "text": "腾讯 Hy4 flash 首发接入 WorkBuddy 国内版 / 国际版，端内限时免费体验；产品内额度不可导出 API，详情见快讯",
+      "category": "new",
+      "source": "https://igetoken.com/deals/2026-11-workbuddy-hy4-flash-free/",
+      "linkText": "查看快讯",
+      "publishedAt": "2026-11-17",
+      "expireAt": "2026-11-25",
+      "priority": 10
+    },
+    {
     "id": "notice-zcode-global-build-daily",
     "text": "智谱 ZCode GLOBAL BUILD 工作日卡：3 亿 GLM-5.3-Flash Token，今晚 23:00 生效 → 11/18 09:00 清零（常态每日卡，客户端内额度）",
     "category": "new",
@@ -10,6 +30,7 @@
     "priority": 10
   },
   {
+    "status": "removed",
     "id": "notice-2026-1111-opencode-lineup-12",
     "text": "OpenCode Zen 免费阵容 11/11 实测：MiniMax M3.1 Flash Free 10/28 下线后回归，零价 ID 增至 12 个（11 款 -free + 匿名档 big-pickle）；名单按天轮换，以实时列表为准",
     "category": "new",
